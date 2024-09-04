@@ -1,4 +1,5 @@
 {
+    "name": "promorepublic/canva-openapi-sdk",
     "description": "API for building integrations with Canva via a REST api",
     "keywords": [
         "openapitools",
