@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * ListBrandTemplatesResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ListBrandTemplatesResponse implements ModelInterface, ArrayAccess, \JsonSe
       */
     protected static $openAPITypes = [
         'continuation' => 'string',
-        'items' => '\OpenAPI\Client\Model\BrandTemplate[]'
+        'items' => '\Integrations\Canva\SDK\Model\BrandTemplate[]'
     ];
 
     /**
@@ -329,7 +329,7 @@ class ListBrandTemplatesResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets items
      *
-     * @return \OpenAPI\Client\Model\BrandTemplate[]
+     * @return \Integrations\Canva\SDK\Model\BrandTemplate[]
      */
     public function getItems()
     {
@@ -339,7 +339,7 @@ class ListBrandTemplatesResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets items
      *
-     * @param \OpenAPI\Client\Model\BrandTemplate[] $items The list of brand templates.
+     * @param \Integrations\Canva\SDK\Model\BrandTemplate[] $items The list of brand templates.
      *
      * @return self
      */

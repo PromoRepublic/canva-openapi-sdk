@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * GifExportFormat Class Doc Comment
  *
  * @category Class
  * @description Export the design as a GIF. Height or width (or both) may be specified, otherwise the file will be exported at it&#39;s default size. Large designs will be scaled down, and aspect ratio will always be maintained.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class GifExportFormat implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'export_quality' => '\OpenAPI\Client\Model\ExportQuality',
+        'export_quality' => '\Integrations\Canva\SDK\Model\ExportQuality',
         'height' => 'int',
         'width' => 'int',
         'pages' => 'int[]'
@@ -399,7 +399,7 @@ class GifExportFormat implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets export_quality
      *
-     * @return \OpenAPI\Client\Model\ExportQuality|null
+     * @return \Integrations\Canva\SDK\Model\ExportQuality|null
      */
     public function getExportQuality()
     {
@@ -409,7 +409,7 @@ class GifExportFormat implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets export_quality
      *
-     * @param \OpenAPI\Client\Model\ExportQuality|null $export_quality export_quality
+     * @param \Integrations\Canva\SDK\Model\ExportQuality|null $export_quality export_quality
      *
      * @return self
      */

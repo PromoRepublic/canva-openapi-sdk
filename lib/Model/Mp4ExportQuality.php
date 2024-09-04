@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,15 +26,15 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace Integrations\Canva\SDK\Model;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * Mp4ExportQuality Class Doc Comment
  *
  * @category Class
  * @description The orientation and resolution of the exported video. Orientation is either &#x60;horizontal&#x60; or &#x60;vertical&#x60;, and resolution is one of &#x60;480p&#x60;, &#x60;720p&#x60;, &#x60;1080p&#x60; or &#x60;4k&#x60;.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

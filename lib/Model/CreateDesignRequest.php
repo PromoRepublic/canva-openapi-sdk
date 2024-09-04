@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * CreateDesignRequest Class Doc Comment
  *
  * @category Class
  * @description Body parameters for creating a new design. At least one of &#x60;design_type&#x60; or &#x60;asset_id&#x60; must be defined to create a new design.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class CreateDesignRequest implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'design_type' => '\OpenAPI\Client\Model\DesignTypeInput',
+        'design_type' => '\Integrations\Canva\SDK\Model\DesignTypeInput',
         'asset_id' => 'string',
         'title' => 'string'
     ];
@@ -315,7 +315,7 @@ class CreateDesignRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets design_type
      *
-     * @return \OpenAPI\Client\Model\DesignTypeInput|null
+     * @return \Integrations\Canva\SDK\Model\DesignTypeInput|null
      */
     public function getDesignType()
     {
@@ -325,7 +325,7 @@ class CreateDesignRequest implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets design_type
      *
-     * @param \OpenAPI\Client\Model\DesignTypeInput|null $design_type design_type
+     * @param \Integrations\Canva\SDK\Model\DesignTypeInput|null $design_type design_type
      *
      * @return self
      */

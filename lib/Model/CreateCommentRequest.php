@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * CreateCommentRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class CreateCommentRequest implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'attached_to' => '\OpenAPI\Client\Model\CommentObjectInput',
+        'attached_to' => '\Integrations\Canva\SDK\Model\CommentObjectInput',
         'message' => 'string',
         'assignee_id' => 'string'
     ];
@@ -312,7 +312,7 @@ class CreateCommentRequest implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets attached_to
      *
-     * @return \OpenAPI\Client\Model\CommentObjectInput
+     * @return \Integrations\Canva\SDK\Model\CommentObjectInput
      */
     public function getAttachedTo()
     {
@@ -322,7 +322,7 @@ class CreateCommentRequest implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets attached_to
      *
-     * @param \OpenAPI\Client\Model\CommentObjectInput $attached_to attached_to
+     * @param \Integrations\Canva\SDK\Model\CommentObjectInput $attached_to attached_to
      *
      * @return self
      */

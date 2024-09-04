@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * UserProfileResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class UserProfileResponse implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'profile' => '\OpenAPI\Client\Model\UserProfile'
+        'profile' => '\Integrations\Canva\SDK\Model\UserProfile'
     ];
 
     /**
@@ -295,7 +295,7 @@ class UserProfileResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets profile
      *
-     * @return \OpenAPI\Client\Model\UserProfile
+     * @return \Integrations\Canva\SDK\Model\UserProfile
      */
     public function getProfile()
     {
@@ -305,7 +305,7 @@ class UserProfileResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets profile
      *
-     * @param \OpenAPI\Client\Model\UserProfile $profile profile
+     * @param \Integrations\Canva\SDK\Model\UserProfile $profile profile
      *
      * @return self
      */

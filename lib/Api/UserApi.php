@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Integrations\Canva\SDK\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Integrations\Canva\SDK\ApiException;
+use Integrations\Canva\SDK\Configuration;
+use Integrations\Canva\SDK\HeaderSelector;
+use Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * UserApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -130,9 +130,9 @@ class UserApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getUserProfile'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\UserProfileResponse|\OpenAPI\Client\Model\Error
+     * @return \Integrations\Canva\SDK\Model\UserProfileResponse|\Integrations\Canva\SDK\Model\Error
      */
     public function getUserProfile(string $contentType = self::contentTypes['getUserProfile'][0])
     {
@@ -145,9 +145,9 @@ class UserApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getUserProfile'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\UserProfileResponse|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Integrations\Canva\SDK\Model\UserProfileResponse|\Integrations\Canva\SDK\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUserProfileWithHttpInfo(string $contentType = self::contentTypes['getUserProfile'][0])
     {
@@ -190,11 +190,11 @@ class UserApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\UserProfileResponse' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\UserProfileResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\UserProfileResponse' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\UserProfileResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -212,16 +212,16 @@ class UserApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\UserProfileResponse', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\UserProfileResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\Error' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -239,13 +239,13 @@ class UserApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\UserProfileResponse';
+            $returnType = '\Integrations\Canva\SDK\Model\UserProfileResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -278,7 +278,7 @@ class UserApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\UserProfileResponse',
+                        '\Integrations\Canva\SDK\Model\UserProfileResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -286,7 +286,7 @@ class UserApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Integrations\Canva\SDK\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -324,7 +324,7 @@ class UserApi
      */
     public function getUserProfileAsyncWithHttpInfo(string $contentType = self::contentTypes['getUserProfile'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\UserProfileResponse';
+        $returnType = '\Integrations\Canva\SDK\Model\UserProfileResponse';
         $request = $this->getUserProfileRequest($contentType);
 
         return $this->client
@@ -448,9 +448,9 @@ class UserApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['usersMe'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\UsersMeResponse|\OpenAPI\Client\Model\Error
+     * @return \Integrations\Canva\SDK\Model\UsersMeResponse|\Integrations\Canva\SDK\Model\Error
      */
     public function usersMe(string $contentType = self::contentTypes['usersMe'][0])
     {
@@ -463,9 +463,9 @@ class UserApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['usersMe'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\UsersMeResponse|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Integrations\Canva\SDK\Model\UsersMeResponse|\Integrations\Canva\SDK\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function usersMeWithHttpInfo(string $contentType = self::contentTypes['usersMe'][0])
     {
@@ -508,11 +508,11 @@ class UserApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\UsersMeResponse' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\UsersMeResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\UsersMeResponse' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\UsersMeResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -530,16 +530,16 @@ class UserApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\UsersMeResponse', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\UsersMeResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\Error' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -557,13 +557,13 @@ class UserApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\UsersMeResponse';
+            $returnType = '\Integrations\Canva\SDK\Model\UsersMeResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -596,7 +596,7 @@ class UserApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\UsersMeResponse',
+                        '\Integrations\Canva\SDK\Model\UsersMeResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -604,7 +604,7 @@ class UserApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Integrations\Canva\SDK\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -642,7 +642,7 @@ class UserApi
      */
     public function usersMeAsyncWithHttpInfo(string $contentType = self::contentTypes['usersMe'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\UsersMeResponse';
+        $returnType = '\Integrations\Canva\SDK\Model\UsersMeResponse';
         $request = $this->usersMeRequest($contentType);
 
         return $this->client

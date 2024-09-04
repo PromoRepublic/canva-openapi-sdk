@@ -1,4 +1,4 @@
-# OpenAPI\Client\BrandTemplateApi
+# Integrations\Canva\SDK\BrandTemplateApi
 
 All URIs are relative to https://api.canva.com/rest, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to https://api.canva.com/rest, except if the operation def
 ## `getBrandTemplate()`
 
 ```php
-getBrandTemplate($brand_template_id): \OpenAPI\Client\Model\GetBrandTemplateResponse
+getBrandTemplate($brand_template_id): \Integrations\Canva\SDK\Model\GetBrandTemplateResponse
 ```
 
 
@@ -27,10 +27,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\BrandTemplateApi(
+$apiInstance = new Integrations\Canva\SDK\Api\BrandTemplateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -54,7 +54,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetBrandTemplateResponse**](../Model/GetBrandTemplateResponse.md)
+[**\Integrations\Canva\SDK\Model\GetBrandTemplateResponse**](../Model/GetBrandTemplateResponse.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ try {
 ## `getBrandTemplateDataset()`
 
 ```php
-getBrandTemplateDataset($brand_template_id): \OpenAPI\Client\Model\GetBrandTemplateDatasetResponse
+getBrandTemplateDataset($brand_template_id): \Integrations\Canva\SDK\Model\GetBrandTemplateDatasetResponse
 ```
 
 
@@ -87,10 +87,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\BrandTemplateApi(
+$apiInstance = new Integrations\Canva\SDK\Api\BrandTemplateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -114,7 +114,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetBrandTemplateDatasetResponse**](../Model/GetBrandTemplateDatasetResponse.md)
+[**\Integrations\Canva\SDK\Model\GetBrandTemplateDatasetResponse**](../Model/GetBrandTemplateDatasetResponse.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ try {
 ## `listBrandTemplates()`
 
 ```php
-listBrandTemplates($query, $continuation, $ownership, $sort_by): \OpenAPI\Client\Model\ListBrandTemplatesResponse
+listBrandTemplates($query, $continuation, $ownership, $sort_by): \Integrations\Canva\SDK\Model\ListBrandTemplatesResponse
 ```
 
 
@@ -147,10 +147,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\BrandTemplateApi(
+$apiInstance = new Integrations\Canva\SDK\Api\BrandTemplateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -158,8 +158,8 @@ $apiInstance = new OpenAPI\Client\Api\BrandTemplateApi(
 );
 $query = 'query_example'; // string | Lets you search the brand templates available to the user using a search term or terms.
 $continuation = 'continuation_example'; // string | If the success response contains a continuation token, the user has access to more brand templates you can list. You can use this token as a query parameter and retrieve more templates from the list, for example `/v1/brand-templates?continuation={continuation}`. To retrieve all the brand templates available to the user, you might need to make multiple requests.
-$ownership = new \OpenAPI\Client\Model\OwnershipType(); // OwnershipType | Filter the list of brand templates based on the user's ownership of the brand templates. This can be one of the following:  - `any`: (Default) Brand templates owned by and shared with the user. - `owned`: Brand templates owned by the user. - `shared`: Brand templates shared with the user.
-$sort_by = new \OpenAPI\Client\Model\SortByType(); // SortByType | Sort the list of brand templates. This can be one of the following:  - `relevance`: (Default) Sort results using a relevance algorithm. - `modified_descending`: Sort results by the date last modified in descending order. - `modified_ascending`: Sort results by the date last modified in ascending order. - `title_descending`: Sort results by title in descending order. - `title_ascending`: Sort results by title in ascending order.
+$ownership = new \Integrations\Canva\SDK\Model\OwnershipType(); // OwnershipType | Filter the list of brand templates based on the user's ownership of the brand templates. This can be one of the following:  - `any`: (Default) Brand templates owned by and shared with the user. - `owned`: Brand templates owned by the user. - `shared`: Brand templates shared with the user.
+$sort_by = new \Integrations\Canva\SDK\Model\SortByType(); // SortByType | Sort the list of brand templates. This can be one of the following:  - `relevance`: (Default) Sort results using a relevance algorithm. - `modified_descending`: Sort results by the date last modified in descending order. - `modified_ascending`: Sort results by the date last modified in ascending order. - `title_descending`: Sort results by title in descending order. - `title_ascending`: Sort results by title in ascending order.
 
 try {
     $result = $apiInstance->listBrandTemplates($query, $continuation, $ownership, $sort_by);
@@ -180,7 +180,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ListBrandTemplatesResponse**](../Model/ListBrandTemplatesResponse.md)
+[**\Integrations\Canva\SDK\Model\ListBrandTemplatesResponse**](../Model/ListBrandTemplatesResponse.md)
 
 ### Authorization
 

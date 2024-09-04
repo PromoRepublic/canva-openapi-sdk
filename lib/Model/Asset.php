@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * Asset Class Doc Comment
  *
  * @category Class
  * @description The asset object, which contains metadata about the asset.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,10 +61,10 @@ class Asset implements ModelInterface, ArrayAccess, \JsonSerializable
         'id' => 'string',
         'name' => 'string',
         'tags' => 'string[]',
-        'import_status' => '\OpenAPI\Client\Model\ImportStatus',
+        'import_status' => '\Integrations\Canva\SDK\Model\ImportStatus',
         'created_at' => 'int',
         'updated_at' => 'int',
-        'thumbnail' => '\OpenAPI\Client\Model\Thumbnail'
+        'thumbnail' => '\Integrations\Canva\SDK\Model\Thumbnail'
     ];
 
     /**
@@ -431,7 +431,7 @@ class Asset implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets import_status
      *
-     * @return \OpenAPI\Client\Model\ImportStatus|null
+     * @return \Integrations\Canva\SDK\Model\ImportStatus|null
      * @deprecated
      */
     public function getImportStatus()
@@ -442,7 +442,7 @@ class Asset implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets import_status
      *
-     * @param \OpenAPI\Client\Model\ImportStatus|null $import_status import_status
+     * @param \Integrations\Canva\SDK\Model\ImportStatus|null $import_status import_status
      *
      * @return self
      * @deprecated
@@ -514,7 +514,7 @@ class Asset implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets thumbnail
      *
-     * @return \OpenAPI\Client\Model\Thumbnail|null
+     * @return \Integrations\Canva\SDK\Model\Thumbnail|null
      */
     public function getThumbnail()
     {
@@ -524,7 +524,7 @@ class Asset implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets thumbnail
      *
-     * @param \OpenAPI\Client\Model\Thumbnail|null $thumbnail thumbnail
+     * @param \Integrations\Canva\SDK\Model\Thumbnail|null $thumbnail thumbnail
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * ListFolderItemsResponse Class Doc Comment
  *
  * @category Class
  * @description A list of the items in a folder. If the success response contains a continuation token, the folder contains more items you can list. You can use this token as a query parameter and retrieve more items from the list, for example &#x60;/v1/folders/{folderId}/items?continuation&#x3D;{continuation}&#x60;.  To retrieve all the items in a folder, you might need to make multiple requests.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ListFolderItemsResponse implements ModelInterface, ArrayAccess, \JsonSeria
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\OpenAPI\Client\Model\FolderItemSummary[]',
+        'items' => '\Integrations\Canva\SDK\Model\FolderItemSummary[]',
         'continuation' => 'string'
     ];
 
@@ -303,7 +303,7 @@ class ListFolderItemsResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets items
      *
-     * @return \OpenAPI\Client\Model\FolderItemSummary[]
+     * @return \Integrations\Canva\SDK\Model\FolderItemSummary[]
      */
     public function getItems()
     {
@@ -313,7 +313,7 @@ class ListFolderItemsResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets items
      *
-     * @param \OpenAPI\Client\Model\FolderItemSummary[] $items An array of items in the folder.
+     * @param \Integrations\Canva\SDK\Model\FolderItemSummary[] $items An array of items in the folder.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * CreateDesignExportJobRequest Class Doc Comment
  *
  * @category Class
  * @description Body parameters for starting an export job for a design. It must include a design ID, and one of the supported export formats.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class CreateDesignExportJobRequest implements ModelInterface, ArrayAccess, \Json
       */
     protected static $openAPITypes = [
         'design_id' => 'string',
-        'format' => '\OpenAPI\Client\Model\ExportFormat'
+        'format' => '\Integrations\Canva\SDK\Model\ExportFormat'
     ];
 
     /**
@@ -333,7 +333,7 @@ class CreateDesignExportJobRequest implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets format
      *
-     * @return \OpenAPI\Client\Model\ExportFormat
+     * @return \Integrations\Canva\SDK\Model\ExportFormat
      */
     public function getFormat()
     {
@@ -343,7 +343,7 @@ class CreateDesignExportJobRequest implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets format
      *
-     * @param \OpenAPI\Client\Model\ExportFormat $format format
+     * @param \Integrations\Canva\SDK\Model\ExportFormat $format format
      *
      * @return self
      */

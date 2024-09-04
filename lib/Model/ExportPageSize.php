@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,15 +26,15 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace Integrations\Canva\SDK\Model;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * ExportPageSize Class Doc Comment
  *
  * @category Class
  * @description The paper size of the export PDF file. The &#x60;size&#x60; attribute is only supported for Documents (Canva Docs).
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

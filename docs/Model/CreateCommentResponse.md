@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**comment** | [**\OpenAPI\Client\Model\ParentComment**](ParentComment.md) |  |
+**comment** | [**\Integrations\Canva\SDK\Model\ParentComment**](ParentComment.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

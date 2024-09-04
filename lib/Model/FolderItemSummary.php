@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * FolderItemSummary Class Doc Comment
  *
  * @category Class
  * @description Details about the folder item.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,10 +59,10 @@ class FolderItemSummary implements ModelInterface, ArrayAccess, \JsonSerializabl
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'asset' => '\OpenAPI\Client\Model\Asset',
-        'folder' => '\OpenAPI\Client\Model\Folder',
-        'design' => '\OpenAPI\Client\Model\Design',
-        'template' => '\OpenAPI\Client\Model\Template'
+        'asset' => '\Integrations\Canva\SDK\Model\Asset',
+        'folder' => '\Integrations\Canva\SDK\Model\Folder',
+        'design' => '\Integrations\Canva\SDK\Model\Design',
+        'template' => '\Integrations\Canva\SDK\Model\Template'
     ];
 
     /**
@@ -404,7 +404,7 @@ class FolderItemSummary implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets asset
      *
-     * @return \OpenAPI\Client\Model\Asset
+     * @return \Integrations\Canva\SDK\Model\Asset
      */
     public function getAsset()
     {
@@ -414,7 +414,7 @@ class FolderItemSummary implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets asset
      *
-     * @param \OpenAPI\Client\Model\Asset $asset asset
+     * @param \Integrations\Canva\SDK\Model\Asset $asset asset
      *
      * @return self
      */
@@ -431,7 +431,7 @@ class FolderItemSummary implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets folder
      *
-     * @return \OpenAPI\Client\Model\Folder
+     * @return \Integrations\Canva\SDK\Model\Folder
      */
     public function getFolder()
     {
@@ -441,7 +441,7 @@ class FolderItemSummary implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets folder
      *
-     * @param \OpenAPI\Client\Model\Folder $folder folder
+     * @param \Integrations\Canva\SDK\Model\Folder $folder folder
      *
      * @return self
      */
@@ -458,7 +458,7 @@ class FolderItemSummary implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets design
      *
-     * @return \OpenAPI\Client\Model\Design
+     * @return \Integrations\Canva\SDK\Model\Design
      */
     public function getDesign()
     {
@@ -468,7 +468,7 @@ class FolderItemSummary implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets design
      *
-     * @param \OpenAPI\Client\Model\Design $design design
+     * @param \Integrations\Canva\SDK\Model\Design $design design
      *
      * @return self
      */
@@ -485,7 +485,7 @@ class FolderItemSummary implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets template
      *
-     * @return \OpenAPI\Client\Model\Template
+     * @return \Integrations\Canva\SDK\Model\Template
      */
     public function getTemplate()
     {
@@ -495,7 +495,7 @@ class FolderItemSummary implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets template
      *
-     * @param \OpenAPI\Client\Model\Template $template template
+     * @param \Integrations\Canva\SDK\Model\Template $template template
      *
      * @return self
      */

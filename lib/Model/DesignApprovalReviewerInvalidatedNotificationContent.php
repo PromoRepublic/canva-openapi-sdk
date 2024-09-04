@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * DesignApprovalReviewerInvalidatedNotificationContent Class Doc Comment
  *
  * @category Class
  * @description The notification content for when a reviewer in a design is invalidated.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,8 +59,8 @@ class DesignApprovalReviewerInvalidatedNotificationContent implements ModelInter
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'receiving_team_user' => '\OpenAPI\Client\Model\TeamUserSummary',
-        'design' => '\OpenAPI\Client\Model\DesignSummary'
+        'receiving_team_user' => '\Integrations\Canva\SDK\Model\TeamUserSummary',
+        'design' => '\Integrations\Canva\SDK\Model\DesignSummary'
     ];
 
     /**
@@ -375,7 +375,7 @@ class DesignApprovalReviewerInvalidatedNotificationContent implements ModelInter
     /**
      * Gets receiving_team_user
      *
-     * @return \OpenAPI\Client\Model\TeamUserSummary
+     * @return \Integrations\Canva\SDK\Model\TeamUserSummary
      */
     public function getReceivingTeamUser()
     {
@@ -385,7 +385,7 @@ class DesignApprovalReviewerInvalidatedNotificationContent implements ModelInter
     /**
      * Sets receiving_team_user
      *
-     * @param \OpenAPI\Client\Model\TeamUserSummary $receiving_team_user receiving_team_user
+     * @param \Integrations\Canva\SDK\Model\TeamUserSummary $receiving_team_user receiving_team_user
      *
      * @return self
      */
@@ -402,7 +402,7 @@ class DesignApprovalReviewerInvalidatedNotificationContent implements ModelInter
     /**
      * Gets design
      *
-     * @return \OpenAPI\Client\Model\DesignSummary
+     * @return \Integrations\Canva\SDK\Model\DesignSummary
      */
     public function getDesign()
     {
@@ -412,7 +412,7 @@ class DesignApprovalReviewerInvalidatedNotificationContent implements ModelInter
     /**
      * Sets design
      *
-     * @param \OpenAPI\Client\Model\DesignSummary $design design
+     * @param \Integrations\Canva\SDK\Model\DesignSummary $design design
      *
      * @return self
      */

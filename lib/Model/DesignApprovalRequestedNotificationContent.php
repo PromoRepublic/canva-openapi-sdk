@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * DesignApprovalRequestedNotificationContent Class Doc Comment
  *
  * @category Class
  * @description The notification content for when someone requests a user to [approve a design](https://www.canva.com/help/get-approval/).
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,11 +59,11 @@ class DesignApprovalRequestedNotificationContent implements ModelInterface, Arra
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'triggering_user' => '\OpenAPI\Client\Model\User',
-        'receiving_team_user' => '\OpenAPI\Client\Model\TeamUser',
-        'requested_groups' => '\OpenAPI\Client\Model\Group[]',
-        'design' => '\OpenAPI\Client\Model\DesignSummary',
-        'approval_request' => '\OpenAPI\Client\Model\ApprovalRequestAction'
+        'triggering_user' => '\Integrations\Canva\SDK\Model\User',
+        'receiving_team_user' => '\Integrations\Canva\SDK\Model\TeamUser',
+        'requested_groups' => '\Integrations\Canva\SDK\Model\Group[]',
+        'design' => '\Integrations\Canva\SDK\Model\DesignSummary',
+        'approval_request' => '\Integrations\Canva\SDK\Model\ApprovalRequestAction'
     ];
 
     /**
@@ -405,7 +405,7 @@ class DesignApprovalRequestedNotificationContent implements ModelInterface, Arra
     /**
      * Gets triggering_user
      *
-     * @return \OpenAPI\Client\Model\User
+     * @return \Integrations\Canva\SDK\Model\User
      */
     public function getTriggeringUser()
     {
@@ -415,7 +415,7 @@ class DesignApprovalRequestedNotificationContent implements ModelInterface, Arra
     /**
      * Sets triggering_user
      *
-     * @param \OpenAPI\Client\Model\User $triggering_user triggering_user
+     * @param \Integrations\Canva\SDK\Model\User $triggering_user triggering_user
      *
      * @return self
      */
@@ -432,7 +432,7 @@ class DesignApprovalRequestedNotificationContent implements ModelInterface, Arra
     /**
      * Gets receiving_team_user
      *
-     * @return \OpenAPI\Client\Model\TeamUser
+     * @return \Integrations\Canva\SDK\Model\TeamUser
      */
     public function getReceivingTeamUser()
     {
@@ -442,7 +442,7 @@ class DesignApprovalRequestedNotificationContent implements ModelInterface, Arra
     /**
      * Sets receiving_team_user
      *
-     * @param \OpenAPI\Client\Model\TeamUser $receiving_team_user receiving_team_user
+     * @param \Integrations\Canva\SDK\Model\TeamUser $receiving_team_user receiving_team_user
      *
      * @return self
      */
@@ -459,7 +459,7 @@ class DesignApprovalRequestedNotificationContent implements ModelInterface, Arra
     /**
      * Gets requested_groups
      *
-     * @return \OpenAPI\Client\Model\Group[]
+     * @return \Integrations\Canva\SDK\Model\Group[]
      */
     public function getRequestedGroups()
     {
@@ -469,7 +469,7 @@ class DesignApprovalRequestedNotificationContent implements ModelInterface, Arra
     /**
      * Sets requested_groups
      *
-     * @param \OpenAPI\Client\Model\Group[] $requested_groups requested_groups
+     * @param \Integrations\Canva\SDK\Model\Group[] $requested_groups requested_groups
      *
      * @return self
      */
@@ -486,7 +486,7 @@ class DesignApprovalRequestedNotificationContent implements ModelInterface, Arra
     /**
      * Gets design
      *
-     * @return \OpenAPI\Client\Model\DesignSummary
+     * @return \Integrations\Canva\SDK\Model\DesignSummary
      */
     public function getDesign()
     {
@@ -496,7 +496,7 @@ class DesignApprovalRequestedNotificationContent implements ModelInterface, Arra
     /**
      * Sets design
      *
-     * @param \OpenAPI\Client\Model\DesignSummary $design design
+     * @param \Integrations\Canva\SDK\Model\DesignSummary $design design
      *
      * @return self
      */
@@ -513,7 +513,7 @@ class DesignApprovalRequestedNotificationContent implements ModelInterface, Arra
     /**
      * Gets approval_request
      *
-     * @return \OpenAPI\Client\Model\ApprovalRequestAction
+     * @return \Integrations\Canva\SDK\Model\ApprovalRequestAction
      */
     public function getApprovalRequest()
     {
@@ -523,7 +523,7 @@ class DesignApprovalRequestedNotificationContent implements ModelInterface, Arra
     /**
      * Sets approval_request
      *
-     * @param \OpenAPI\Client\Model\ApprovalRequestAction $approval_request approval_request
+     * @param \Integrations\Canva\SDK\Model\ApprovalRequestAction $approval_request approval_request
      *
      * @return self
      */

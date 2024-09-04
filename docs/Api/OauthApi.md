@@ -1,4 +1,4 @@
-# OpenAPI\Client\OauthApi
+# Integrations\Canva\SDK\OauthApi
 
 All URIs are relative to https://api.canva.com/rest, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to https://api.canva.com/rest, except if the operation def
 ## `exchangeAccessToken()`
 
 ```php
-exchangeAccessToken($grant_type, $code_verifier, $code, $client_id, $client_secret, $redirect_uri, $refresh_token, $scope): \OpenAPI\Client\Model\ExchangeAccessTokenResponse
+exchangeAccessToken($grant_type, $code_verifier, $code, $client_id, $client_secret, $redirect_uri, $refresh_token, $scope): \Integrations\Canva\SDK\Model\ExchangeAccessTokenResponse
 ```
 
 
@@ -27,12 +27,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basicAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new OpenAPI\Client\Api\OauthApi(
+$apiInstance = new Integrations\Canva\SDK\Api\OauthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -70,7 +70,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ExchangeAccessTokenResponse**](../Model/ExchangeAccessTokenResponse.md)
+[**\Integrations\Canva\SDK\Model\ExchangeAccessTokenResponse**](../Model/ExchangeAccessTokenResponse.md)
 
 ### Authorization
 
@@ -88,7 +88,7 @@ try {
 ## `introspectToken()`
 
 ```php
-introspectToken($token, $client_id, $client_secret): \OpenAPI\Client\Model\IntrospectTokenResponse
+introspectToken($token, $client_id, $client_secret): \Integrations\Canva\SDK\Model\IntrospectTokenResponse
 ```
 
 
@@ -103,12 +103,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basicAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new OpenAPI\Client\Api\OauthApi(
+$apiInstance = new Integrations\Canva\SDK\Api\OauthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -136,7 +136,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\IntrospectTokenResponse**](../Model/IntrospectTokenResponse.md)
+[**\Integrations\Canva\SDK\Model\IntrospectTokenResponse**](../Model/IntrospectTokenResponse.md)
 
 ### Authorization
 
@@ -169,12 +169,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure HTTP basic authorization: basicAuth
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()
               ->setUsername('YOUR_USERNAME')
               ->setPassword('YOUR_PASSWORD');
 
 
-$apiInstance = new OpenAPI\Client\Api\OauthApi(
+$apiInstance = new Integrations\Canva\SDK\Api\OauthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

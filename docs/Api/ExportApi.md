@@ -1,4 +1,4 @@
-# OpenAPI\Client\ExportApi
+# Integrations\Canva\SDK\ExportApi
 
 All URIs are relative to https://api.canva.com/rest, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://api.canva.com/rest, except if the operation def
 ## `createDesignExportJob()`
 
 ```php
-createDesignExportJob($create_design_export_job_request): \OpenAPI\Client\Model\CreateDesignExportJobResponse
+createDesignExportJob($create_design_export_job_request): \Integrations\Canva\SDK\Model\CreateDesignExportJobResponse
 ```
 
 
@@ -26,16 +26,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ExportApi(
+$apiInstance = new Integrations\Canva\SDK\Api\ExportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_design_export_job_request = new \OpenAPI\Client\Model\CreateDesignExportJobRequest(); // \OpenAPI\Client\Model\CreateDesignExportJobRequest
+$create_design_export_job_request = new \Integrations\Canva\SDK\Model\CreateDesignExportJobRequest(); // \Integrations\Canva\SDK\Model\CreateDesignExportJobRequest
 
 try {
     $result = $apiInstance->createDesignExportJob($create_design_export_job_request);
@@ -49,11 +49,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_design_export_job_request** | [**\OpenAPI\Client\Model\CreateDesignExportJobRequest**](../Model/CreateDesignExportJobRequest.md)|  | [optional] |
+| **create_design_export_job_request** | [**\Integrations\Canva\SDK\Model\CreateDesignExportJobRequest**](../Model/CreateDesignExportJobRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreateDesignExportJobResponse**](../Model/CreateDesignExportJobResponse.md)
+[**\Integrations\Canva\SDK\Model\CreateDesignExportJobResponse**](../Model/CreateDesignExportJobResponse.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ try {
 ## `getDesignExportJob()`
 
 ```php
-getDesignExportJob($export_id): \OpenAPI\Client\Model\GetDesignExportJobResponse
+getDesignExportJob($export_id): \Integrations\Canva\SDK\Model\GetDesignExportJobResponse
 ```
 
 
@@ -86,10 +86,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\ExportApi(
+$apiInstance = new Integrations\Canva\SDK\Api\ExportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -113,7 +113,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetDesignExportJobResponse**](../Model/GetDesignExportJobResponse.md)
+[**\Integrations\Canva\SDK\Model\GetDesignExportJobResponse**](../Model/GetDesignExportJobResponse.md)
 
 ### Authorization
 

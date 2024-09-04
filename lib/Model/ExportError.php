@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * ExportError Class Doc Comment
  *
  * @category Class
  * @description If the export fails, this object provides details about the error.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ExportError implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'code' => '\OpenAPI\Client\Model\ExportErrorCode',
+        'code' => '\Integrations\Canva\SDK\Model\ExportErrorCode',
         'message' => 'string'
     ];
 
@@ -300,7 +300,7 @@ class ExportError implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets code
      *
-     * @return \OpenAPI\Client\Model\ExportErrorCode|null
+     * @return \Integrations\Canva\SDK\Model\ExportErrorCode|null
      */
     public function getCode()
     {
@@ -310,7 +310,7 @@ class ExportError implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets code
      *
-     * @param \OpenAPI\Client\Model\ExportErrorCode|null $code code
+     * @param \Integrations\Canva\SDK\Model\ExportErrorCode|null $code code
      *
      * @return self
      */

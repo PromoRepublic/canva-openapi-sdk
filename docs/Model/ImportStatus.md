@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**state** | [**\OpenAPI\Client\Model\ImportStatusState**](ImportStatusState.md) |  |
-**error** | [**\OpenAPI\Client\Model\ImportError**](ImportError.md) |  | [optional]
+**state** | [**\Integrations\Canva\SDK\Model\ImportStatusState**](ImportStatusState.md) |  |
+**error** | [**\Integrations\Canva\SDK\Model\ImportError**](ImportError.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

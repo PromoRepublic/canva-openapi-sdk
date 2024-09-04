@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * DesignItem Class Doc Comment
  *
  * @category Class
  * @description Details about the design.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class DesignItem implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'design' => '\OpenAPI\Client\Model\Design'
+        'design' => '\Integrations\Canva\SDK\Model\Design'
     ];
 
     /**
@@ -365,7 +365,7 @@ class DesignItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets design
      *
-     * @return \OpenAPI\Client\Model\Design
+     * @return \Integrations\Canva\SDK\Model\Design
      */
     public function getDesign()
     {
@@ -375,7 +375,7 @@ class DesignItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets design
      *
-     * @param \OpenAPI\Client\Model\Design $design design
+     * @param \Integrations\Canva\SDK\Model\Design $design design
      *
      * @return self
      */

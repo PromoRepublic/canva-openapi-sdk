@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Integrations\Canva\SDK\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Integrations\Canva\SDK\ApiException;
+use Integrations\Canva\SDK\Configuration;
+use Integrations\Canva\SDK\HeaderSelector;
+use Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * DesignApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -131,12 +131,12 @@ class DesignApi
     /**
      * Operation createDesign
      *
-     * @param  \OpenAPI\Client\Model\CreateDesignRequest $create_design_request create_design_request (optional)
+     * @param  \Integrations\Canva\SDK\Model\CreateDesignRequest $create_design_request create_design_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDesign'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CreateDesignResponse|\OpenAPI\Client\Model\Error
+     * @return \Integrations\Canva\SDK\Model\CreateDesignResponse|\Integrations\Canva\SDK\Model\Error
      */
     public function createDesign($create_design_request = null, string $contentType = self::contentTypes['createDesign'][0])
     {
@@ -147,12 +147,12 @@ class DesignApi
     /**
      * Operation createDesignWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\CreateDesignRequest $create_design_request (optional)
+     * @param  \Integrations\Canva\SDK\Model\CreateDesignRequest $create_design_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDesign'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CreateDesignResponse|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Integrations\Canva\SDK\Model\CreateDesignResponse|\Integrations\Canva\SDK\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function createDesignWithHttpInfo($create_design_request = null, string $contentType = self::contentTypes['createDesign'][0])
     {
@@ -195,11 +195,11 @@ class DesignApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CreateDesignResponse' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\CreateDesignResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CreateDesignResponse' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\CreateDesignResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -217,16 +217,16 @@ class DesignApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CreateDesignResponse', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\CreateDesignResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\Error' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -244,13 +244,13 @@ class DesignApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\CreateDesignResponse';
+            $returnType = '\Integrations\Canva\SDK\Model\CreateDesignResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -283,7 +283,7 @@ class DesignApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CreateDesignResponse',
+                        '\Integrations\Canva\SDK\Model\CreateDesignResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -291,7 +291,7 @@ class DesignApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Integrations\Canva\SDK\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -304,7 +304,7 @@ class DesignApi
     /**
      * Operation createDesignAsync
      *
-     * @param  \OpenAPI\Client\Model\CreateDesignRequest $create_design_request (optional)
+     * @param  \Integrations\Canva\SDK\Model\CreateDesignRequest $create_design_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDesign'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -323,7 +323,7 @@ class DesignApi
     /**
      * Operation createDesignAsyncWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\CreateDesignRequest $create_design_request (optional)
+     * @param  \Integrations\Canva\SDK\Model\CreateDesignRequest $create_design_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDesign'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -331,7 +331,7 @@ class DesignApi
      */
     public function createDesignAsyncWithHttpInfo($create_design_request = null, string $contentType = self::contentTypes['createDesign'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CreateDesignResponse';
+        $returnType = '\Integrations\Canva\SDK\Model\CreateDesignResponse';
         $request = $this->createDesignRequest($create_design_request, $contentType);
 
         return $this->client
@@ -373,7 +373,7 @@ class DesignApi
     /**
      * Create request for operation 'createDesign'
      *
-     * @param  \OpenAPI\Client\Model\CreateDesignRequest $create_design_request (optional)
+     * @param  \Integrations\Canva\SDK\Model\CreateDesignRequest $create_design_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDesign'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -465,9 +465,9 @@ class DesignApi
      * @param  string $design_id The design ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDesign'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetDesignResponse|\OpenAPI\Client\Model\Error
+     * @return \Integrations\Canva\SDK\Model\GetDesignResponse|\Integrations\Canva\SDK\Model\Error
      */
     public function getDesign($design_id, string $contentType = self::contentTypes['getDesign'][0])
     {
@@ -481,9 +481,9 @@ class DesignApi
      * @param  string $design_id The design ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDesign'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetDesignResponse|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Integrations\Canva\SDK\Model\GetDesignResponse|\Integrations\Canva\SDK\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDesignWithHttpInfo($design_id, string $contentType = self::contentTypes['getDesign'][0])
     {
@@ -526,11 +526,11 @@ class DesignApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetDesignResponse' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\GetDesignResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetDesignResponse' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\GetDesignResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -548,16 +548,16 @@ class DesignApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetDesignResponse', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\GetDesignResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\Error' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -575,13 +575,13 @@ class DesignApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetDesignResponse';
+            $returnType = '\Integrations\Canva\SDK\Model\GetDesignResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -614,7 +614,7 @@ class DesignApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetDesignResponse',
+                        '\Integrations\Canva\SDK\Model\GetDesignResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -622,7 +622,7 @@ class DesignApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Integrations\Canva\SDK\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -662,7 +662,7 @@ class DesignApi
      */
     public function getDesignAsyncWithHttpInfo($design_id, string $contentType = self::contentTypes['getDesign'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetDesignResponse';
+        $returnType = '\Integrations\Canva\SDK\Model\GetDesignResponse';
         $request = $this->getDesignRequest($design_id, $contentType);
 
         return $this->client
@@ -809,9 +809,9 @@ class DesignApi
      * @param  SortByType $sort_by Sort the list of designs. This can be one of the following:  - &#x60;relevance&#x60;: (Default) Sort results using a relevance algorithm. - &#x60;modified_descending&#x60;: Sort results by the date last modified in descending order. - &#x60;modified_ascending&#x60;: Sort results by the date last modified in ascending order. - &#x60;title_descending&#x60;: Sort results by title in descending order. - &#x60;title_ascending&#x60;: Sort results by title in ascending order. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listDesigns'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetListDesignResponse|\OpenAPI\Client\Model\Error
+     * @return \Integrations\Canva\SDK\Model\GetListDesignResponse|\Integrations\Canva\SDK\Model\Error
      */
     public function listDesigns($query = null, $continuation = null, $ownership = null, $sort_by = null, string $contentType = self::contentTypes['listDesigns'][0])
     {
@@ -828,9 +828,9 @@ class DesignApi
      * @param  SortByType $sort_by Sort the list of designs. This can be one of the following:  - &#x60;relevance&#x60;: (Default) Sort results using a relevance algorithm. - &#x60;modified_descending&#x60;: Sort results by the date last modified in descending order. - &#x60;modified_ascending&#x60;: Sort results by the date last modified in ascending order. - &#x60;title_descending&#x60;: Sort results by title in descending order. - &#x60;title_ascending&#x60;: Sort results by title in ascending order. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listDesigns'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetListDesignResponse|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Integrations\Canva\SDK\Model\GetListDesignResponse|\Integrations\Canva\SDK\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function listDesignsWithHttpInfo($query = null, $continuation = null, $ownership = null, $sort_by = null, string $contentType = self::contentTypes['listDesigns'][0])
     {
@@ -873,11 +873,11 @@ class DesignApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetListDesignResponse' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\GetListDesignResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetListDesignResponse' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\GetListDesignResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -895,16 +895,16 @@ class DesignApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetListDesignResponse', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\GetListDesignResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\Error' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -922,13 +922,13 @@ class DesignApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetListDesignResponse';
+            $returnType = '\Integrations\Canva\SDK\Model\GetListDesignResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -961,7 +961,7 @@ class DesignApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetListDesignResponse',
+                        '\Integrations\Canva\SDK\Model\GetListDesignResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -969,7 +969,7 @@ class DesignApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Integrations\Canva\SDK\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1015,7 +1015,7 @@ class DesignApi
      */
     public function listDesignsAsyncWithHttpInfo($query = null, $continuation = null, $ownership = null, $sort_by = null, string $contentType = self::contentTypes['listDesigns'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetListDesignResponse';
+        $returnType = '\Integrations\Canva\SDK\Model\GetListDesignResponse';
         $request = $this->listDesignsRequest($query, $continuation, $ownership, $sort_by, $contentType);
 
         return $this->client

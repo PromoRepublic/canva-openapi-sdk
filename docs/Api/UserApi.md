@@ -1,4 +1,4 @@
-# OpenAPI\Client\UserApi
+# Integrations\Canva\SDK\UserApi
 
 All URIs are relative to https://api.canva.com/rest, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://api.canva.com/rest, except if the operation def
 ## `getUserProfile()`
 
 ```php
-getUserProfile(): \OpenAPI\Client\Model\UserProfileResponse
+getUserProfile(): \Integrations\Canva\SDK\Model\UserProfileResponse
 ```
 
 
@@ -26,10 +26,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\UserApi(
+$apiInstance = new Integrations\Canva\SDK\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -50,7 +50,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\UserProfileResponse**](../Model/UserProfileResponse.md)
+[**\Integrations\Canva\SDK\Model\UserProfileResponse**](../Model/UserProfileResponse.md)
 
 ### Authorization
 
@@ -68,7 +68,7 @@ This endpoint does not need any parameter.
 ## `usersMe()`
 
 ```php
-usersMe(): \OpenAPI\Client\Model\UsersMeResponse
+usersMe(): \Integrations\Canva\SDK\Model\UsersMeResponse
 ```
 
 
@@ -83,10 +83,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\UserApi(
+$apiInstance = new Integrations\Canva\SDK\Api\UserApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -107,7 +107,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\UsersMeResponse**](../Model/UsersMeResponse.md)
+[**\Integrations\Canva\SDK\Model\UsersMeResponse**](../Model/UsersMeResponse.md)
 
 ### Authorization
 

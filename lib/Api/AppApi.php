@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Integrations\Canva\SDK\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Integrations\Canva\SDK\ApiException;
+use Integrations\Canva\SDK\Configuration;
+use Integrations\Canva\SDK\HeaderSelector;
+use Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * AppApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -128,9 +128,9 @@ class AppApi
      * @param  string $app_id The app id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAppJwks'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetAppJwksResponse|\OpenAPI\Client\Model\Error
+     * @return \Integrations\Canva\SDK\Model\GetAppJwksResponse|\Integrations\Canva\SDK\Model\Error
      */
     public function getAppJwks($app_id, string $contentType = self::contentTypes['getAppJwks'][0])
     {
@@ -144,9 +144,9 @@ class AppApi
      * @param  string $app_id The app id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getAppJwks'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetAppJwksResponse|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Integrations\Canva\SDK\Model\GetAppJwksResponse|\Integrations\Canva\SDK\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAppJwksWithHttpInfo($app_id, string $contentType = self::contentTypes['getAppJwks'][0])
     {
@@ -189,11 +189,11 @@ class AppApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetAppJwksResponse' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\GetAppJwksResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetAppJwksResponse' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\GetAppJwksResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -211,16 +211,16 @@ class AppApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetAppJwksResponse', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\GetAppJwksResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\Error' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -238,13 +238,13 @@ class AppApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetAppJwksResponse';
+            $returnType = '\Integrations\Canva\SDK\Model\GetAppJwksResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -277,7 +277,7 @@ class AppApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetAppJwksResponse',
+                        '\Integrations\Canva\SDK\Model\GetAppJwksResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -285,7 +285,7 @@ class AppApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Integrations\Canva\SDK\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -325,7 +325,7 @@ class AppApi
      */
     public function getAppJwksAsyncWithHttpInfo($app_id, string $contentType = self::contentTypes['getAppJwks'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetAppJwksResponse';
+        $returnType = '\Integrations\Canva\SDK\Model\GetAppJwksResponse';
         $request = $this->getAppJwksRequest($app_id, $contentType);
 
         return $this->client

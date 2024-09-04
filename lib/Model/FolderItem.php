@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * FolderItem Class Doc Comment
  *
  * @category Class
  * @description Details about the folder.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class FolderItem implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'folder' => '\OpenAPI\Client\Model\Folder'
+        'folder' => '\Integrations\Canva\SDK\Model\Folder'
     ];
 
     /**
@@ -365,7 +365,7 @@ class FolderItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets folder
      *
-     * @return \OpenAPI\Client\Model\Folder
+     * @return \Integrations\Canva\SDK\Model\Folder
      */
     public function getFolder()
     {
@@ -375,7 +375,7 @@ class FolderItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets folder
      *
-     * @param \OpenAPI\Client\Model\Folder $folder folder
+     * @param \Integrations\Canva\SDK\Model\Folder $folder folder
      *
      * @return self
      */

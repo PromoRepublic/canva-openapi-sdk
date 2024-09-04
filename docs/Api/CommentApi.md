@@ -1,4 +1,4 @@
-# OpenAPI\Client\CommentApi
+# Integrations\Canva\SDK\CommentApi
 
 All URIs are relative to https://api.canva.com/rest, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to https://api.canva.com/rest, except if the operation def
 ## `createComment()`
 
 ```php
-createComment($create_comment_request): \OpenAPI\Client\Model\CreateCommentResponse
+createComment($create_comment_request): \Integrations\Canva\SDK\Model\CreateCommentResponse
 ```
 
 
@@ -27,16 +27,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CommentApi(
+$apiInstance = new Integrations\Canva\SDK\Api\CommentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_comment_request = new \OpenAPI\Client\Model\CreateCommentRequest(); // \OpenAPI\Client\Model\CreateCommentRequest
+$create_comment_request = new \Integrations\Canva\SDK\Model\CreateCommentRequest(); // \Integrations\Canva\SDK\Model\CreateCommentRequest
 
 try {
     $result = $apiInstance->createComment($create_comment_request);
@@ -50,11 +50,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_comment_request** | [**\OpenAPI\Client\Model\CreateCommentRequest**](../Model/CreateCommentRequest.md)|  | |
+| **create_comment_request** | [**\Integrations\Canva\SDK\Model\CreateCommentRequest**](../Model/CreateCommentRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreateCommentResponse**](../Model/CreateCommentResponse.md)
+[**\Integrations\Canva\SDK\Model\CreateCommentResponse**](../Model/CreateCommentResponse.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ try {
 ## `createReply()`
 
 ```php
-createReply($comment_id, $create_reply_request): \OpenAPI\Client\Model\CreateReplyResponse
+createReply($comment_id, $create_reply_request): \Integrations\Canva\SDK\Model\CreateReplyResponse
 ```
 
 
@@ -87,17 +87,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CommentApi(
+$apiInstance = new Integrations\Canva\SDK\Api\CommentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $comment_id = KeAZEAjijEb; // string | The `id` of the comment.
-$create_reply_request = new \OpenAPI\Client\Model\CreateReplyRequest(); // \OpenAPI\Client\Model\CreateReplyRequest
+$create_reply_request = new \Integrations\Canva\SDK\Model\CreateReplyRequest(); // \Integrations\Canva\SDK\Model\CreateReplyRequest
 
 try {
     $result = $apiInstance->createReply($comment_id, $create_reply_request);
@@ -112,11 +112,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **comment_id** | **string**| The &#x60;id&#x60; of the comment. | |
-| **create_reply_request** | [**\OpenAPI\Client\Model\CreateReplyRequest**](../Model/CreateReplyRequest.md)|  | |
+| **create_reply_request** | [**\Integrations\Canva\SDK\Model\CreateReplyRequest**](../Model/CreateReplyRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreateReplyResponse**](../Model/CreateReplyResponse.md)
+[**\Integrations\Canva\SDK\Model\CreateReplyResponse**](../Model/CreateReplyResponse.md)
 
 ### Authorization
 
@@ -134,7 +134,7 @@ try {
 ## `getComment()`
 
 ```php
-getComment($design_id, $comment_id): \OpenAPI\Client\Model\GetCommentResponse
+getComment($design_id, $comment_id): \Integrations\Canva\SDK\Model\GetCommentResponse
 ```
 
 
@@ -149,10 +149,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CommentApi(
+$apiInstance = new Integrations\Canva\SDK\Api\CommentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -178,7 +178,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetCommentResponse**](../Model/GetCommentResponse.md)
+[**\Integrations\Canva\SDK\Model\GetCommentResponse**](../Model/GetCommentResponse.md)
 
 ### Authorization
 

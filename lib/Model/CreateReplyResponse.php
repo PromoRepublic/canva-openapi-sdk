@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * CreateReplyResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class CreateReplyResponse implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'comment' => '\OpenAPI\Client\Model\ReplyComment'
+        'comment' => '\Integrations\Canva\SDK\Model\ReplyComment'
     ];
 
     /**
@@ -295,7 +295,7 @@ class CreateReplyResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets comment
      *
-     * @return \OpenAPI\Client\Model\ReplyComment
+     * @return \Integrations\Canva\SDK\Model\ReplyComment
      */
     public function getComment()
     {
@@ -305,7 +305,7 @@ class CreateReplyResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets comment
      *
-     * @param \OpenAPI\Client\Model\ReplyComment $comment comment
+     * @param \Integrations\Canva\SDK\Model\ReplyComment $comment comment
      *
      * @return self
      */

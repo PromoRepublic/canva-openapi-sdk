@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Integrations\Canva\SDK\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Integrations\Canva\SDK\ApiException;
+use Integrations\Canva\SDK\Configuration;
+use Integrations\Canva\SDK\HeaderSelector;
+use Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * OauthApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -141,9 +141,9 @@ class OauthApi
      * @param  string $scope Optional scope value when refreshing an access token. Separate multiple [scopes](https://www.canva.dev/docs/connect/appendix/scopes/) with a single space between each scope.  The requested scope cannot include any permissions not already granted, so this parameter allows you to limit the scope when refreshing a token. If omitted, the scope for the token remains unchanged. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['exchangeAccessToken'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ExchangeAccessTokenResponse|\OpenAPI\Client\Model\OauthError
+     * @return \Integrations\Canva\SDK\Model\ExchangeAccessTokenResponse|\Integrations\Canva\SDK\Model\OauthError
      */
     public function exchangeAccessToken($grant_type = null, $code_verifier = null, $code = null, $client_id = null, $client_secret = null, $redirect_uri = null, $refresh_token = null, $scope = null, string $contentType = self::contentTypes['exchangeAccessToken'][0])
     {
@@ -164,9 +164,9 @@ class OauthApi
      * @param  string $scope Optional scope value when refreshing an access token. Separate multiple [scopes](https://www.canva.dev/docs/connect/appendix/scopes/) with a single space between each scope.  The requested scope cannot include any permissions not already granted, so this parameter allows you to limit the scope when refreshing a token. If omitted, the scope for the token remains unchanged. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['exchangeAccessToken'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ExchangeAccessTokenResponse|\OpenAPI\Client\Model\OauthError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Integrations\Canva\SDK\Model\ExchangeAccessTokenResponse|\Integrations\Canva\SDK\Model\OauthError, HTTP status code, HTTP response headers (array of strings)
      */
     public function exchangeAccessTokenWithHttpInfo($grant_type = null, $code_verifier = null, $code = null, $client_id = null, $client_secret = null, $redirect_uri = null, $refresh_token = null, $scope = null, string $contentType = self::contentTypes['exchangeAccessToken'][0])
     {
@@ -209,11 +209,11 @@ class OauthApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ExchangeAccessTokenResponse' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\ExchangeAccessTokenResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ExchangeAccessTokenResponse' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\ExchangeAccessTokenResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -231,16 +231,16 @@ class OauthApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ExchangeAccessTokenResponse', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\ExchangeAccessTokenResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\OauthError' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\OauthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\OauthError' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\OauthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -258,13 +258,13 @@ class OauthApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\OauthError', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\OauthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ExchangeAccessTokenResponse';
+            $returnType = '\Integrations\Canva\SDK\Model\ExchangeAccessTokenResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -297,7 +297,7 @@ class OauthApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ExchangeAccessTokenResponse',
+                        '\Integrations\Canva\SDK\Model\ExchangeAccessTokenResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -305,7 +305,7 @@ class OauthApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\OauthError',
+                        '\Integrations\Canva\SDK\Model\OauthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -359,7 +359,7 @@ class OauthApi
      */
     public function exchangeAccessTokenAsyncWithHttpInfo($grant_type = null, $code_verifier = null, $code = null, $client_id = null, $client_secret = null, $redirect_uri = null, $refresh_token = null, $scope = null, string $contentType = self::contentTypes['exchangeAccessToken'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ExchangeAccessTokenResponse';
+        $returnType = '\Integrations\Canva\SDK\Model\ExchangeAccessTokenResponse';
         $request = $this->exchangeAccessTokenRequest($grant_type, $code_verifier, $code, $client_id, $client_secret, $redirect_uri, $refresh_token, $scope, $contentType);
 
         return $this->client
@@ -534,9 +534,9 @@ class OauthApi
      * @param  string $client_secret Your integration&#39;s client secret, for authenticating the request. Begins with &#x60;cnvca&#x60;.  NOTE: We recommend that you use basic access authentication instead of specifying &#x60;client_id&#x60; and &#x60;client_secret&#x60; as body parameters. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['introspectToken'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\IntrospectTokenResponse|\OpenAPI\Client\Model\OauthError
+     * @return \Integrations\Canva\SDK\Model\IntrospectTokenResponse|\Integrations\Canva\SDK\Model\OauthError
      */
     public function introspectToken($token, $client_id = null, $client_secret = null, string $contentType = self::contentTypes['introspectToken'][0])
     {
@@ -552,9 +552,9 @@ class OauthApi
      * @param  string $client_secret Your integration&#39;s client secret, for authenticating the request. Begins with &#x60;cnvca&#x60;.  NOTE: We recommend that you use basic access authentication instead of specifying &#x60;client_id&#x60; and &#x60;client_secret&#x60; as body parameters. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['introspectToken'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\IntrospectTokenResponse|\OpenAPI\Client\Model\OauthError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Integrations\Canva\SDK\Model\IntrospectTokenResponse|\Integrations\Canva\SDK\Model\OauthError, HTTP status code, HTTP response headers (array of strings)
      */
     public function introspectTokenWithHttpInfo($token, $client_id = null, $client_secret = null, string $contentType = self::contentTypes['introspectToken'][0])
     {
@@ -597,11 +597,11 @@ class OauthApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\IntrospectTokenResponse' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\IntrospectTokenResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\IntrospectTokenResponse' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\IntrospectTokenResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -619,16 +619,16 @@ class OauthApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\IntrospectTokenResponse', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\IntrospectTokenResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\OauthError' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\OauthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\OauthError' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\OauthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -646,13 +646,13 @@ class OauthApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\OauthError', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\OauthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\IntrospectTokenResponse';
+            $returnType = '\Integrations\Canva\SDK\Model\IntrospectTokenResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -685,7 +685,7 @@ class OauthApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\IntrospectTokenResponse',
+                        '\Integrations\Canva\SDK\Model\IntrospectTokenResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -693,7 +693,7 @@ class OauthApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\OauthError',
+                        '\Integrations\Canva\SDK\Model\OauthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -737,7 +737,7 @@ class OauthApi
      */
     public function introspectTokenAsyncWithHttpInfo($token, $client_id = null, $client_secret = null, string $contentType = self::contentTypes['introspectToken'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\IntrospectTokenResponse';
+        $returnType = '\Integrations\Canva\SDK\Model\IntrospectTokenResponse';
         $request = $this->introspectTokenRequest($token, $client_id, $client_secret, $contentType);
 
         return $this->client
@@ -888,9 +888,9 @@ class OauthApi
      * @param  string $client_secret Your integration&#39;s client secret, for authenticating the request. Begins with &#x60;cnvca&#x60;.  NOTE: We recommend that you use basic access authentication instead of specifying &#x60;client_id&#x60; and &#x60;client_secret&#x60; as body parameters. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['revokeTokens'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return object|\OpenAPI\Client\Model\OauthError
+     * @return object|\Integrations\Canva\SDK\Model\OauthError
      */
     public function revokeTokens($token, $client_id = null, $client_secret = null, string $contentType = self::contentTypes['revokeTokens'][0])
     {
@@ -906,9 +906,9 @@ class OauthApi
      * @param  string $client_secret Your integration&#39;s client secret, for authenticating the request. Begins with &#x60;cnvca&#x60;.  NOTE: We recommend that you use basic access authentication instead of specifying &#x60;client_id&#x60; and &#x60;client_secret&#x60; as body parameters. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['revokeTokens'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of object|\OpenAPI\Client\Model\OauthError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of object|\Integrations\Canva\SDK\Model\OauthError, HTTP status code, HTTP response headers (array of strings)
      */
     public function revokeTokensWithHttpInfo($token, $client_id = null, $client_secret = null, string $contentType = self::contentTypes['revokeTokens'][0])
     {
@@ -978,11 +978,11 @@ class OauthApi
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\OauthError' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\OauthError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\OauthError' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\OauthError' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1000,7 +1000,7 @@ class OauthApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\OauthError', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\OauthError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1047,7 +1047,7 @@ class OauthApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\OauthError',
+                        '\Integrations\Canva\SDK\Model\OauthError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);

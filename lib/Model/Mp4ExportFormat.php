@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * Mp4ExportFormat Class Doc Comment
  *
  * @category Class
  * @description Export the design as an MP4. You must specify the quality of the exported video.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,8 +59,8 @@ class Mp4ExportFormat implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'export_quality' => '\OpenAPI\Client\Model\ExportQuality',
-        'quality' => '\OpenAPI\Client\Model\Mp4ExportQuality',
+        'export_quality' => '\Integrations\Canva\SDK\Model\ExportQuality',
+        'quality' => '\Integrations\Canva\SDK\Model\Mp4ExportQuality',
         'pages' => 'int[]'
     ];
 
@@ -379,7 +379,7 @@ class Mp4ExportFormat implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets export_quality
      *
-     * @return \OpenAPI\Client\Model\ExportQuality|null
+     * @return \Integrations\Canva\SDK\Model\ExportQuality|null
      */
     public function getExportQuality()
     {
@@ -389,7 +389,7 @@ class Mp4ExportFormat implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets export_quality
      *
-     * @param \OpenAPI\Client\Model\ExportQuality|null $export_quality export_quality
+     * @param \Integrations\Canva\SDK\Model\ExportQuality|null $export_quality export_quality
      *
      * @return self
      */
@@ -406,7 +406,7 @@ class Mp4ExportFormat implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets quality
      *
-     * @return \OpenAPI\Client\Model\Mp4ExportQuality
+     * @return \Integrations\Canva\SDK\Model\Mp4ExportQuality
      */
     public function getQuality()
     {
@@ -416,7 +416,7 @@ class Mp4ExportFormat implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets quality
      *
-     * @param \OpenAPI\Client\Model\Mp4ExportQuality $quality quality
+     * @param \Integrations\Canva\SDK\Model\Mp4ExportQuality $quality quality
      *
      * @return self
      */

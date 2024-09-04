@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * PdfExportFormat Class Doc Comment
  *
  * @category Class
  * @description Export the design as a PDF. Providing a paper size is optional. The default paper size is A4.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,8 +59,8 @@ class PdfExportFormat implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'export_quality' => '\OpenAPI\Client\Model\ExportQuality',
-        'size' => '\OpenAPI\Client\Model\ExportPageSize',
+        'export_quality' => '\Integrations\Canva\SDK\Model\ExportQuality',
+        'size' => '\Integrations\Canva\SDK\Model\ExportPageSize',
         'pages' => 'int[]'
     ];
 
@@ -376,7 +376,7 @@ class PdfExportFormat implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets export_quality
      *
-     * @return \OpenAPI\Client\Model\ExportQuality|null
+     * @return \Integrations\Canva\SDK\Model\ExportQuality|null
      */
     public function getExportQuality()
     {
@@ -386,7 +386,7 @@ class PdfExportFormat implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets export_quality
      *
-     * @param \OpenAPI\Client\Model\ExportQuality|null $export_quality export_quality
+     * @param \Integrations\Canva\SDK\Model\ExportQuality|null $export_quality export_quality
      *
      * @return self
      */
@@ -403,7 +403,7 @@ class PdfExportFormat implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets size
      *
-     * @return \OpenAPI\Client\Model\ExportPageSize|null
+     * @return \Integrations\Canva\SDK\Model\ExportPageSize|null
      */
     public function getSize()
     {
@@ -413,7 +413,7 @@ class PdfExportFormat implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets size
      *
-     * @param \OpenAPI\Client\Model\ExportPageSize|null $size size
+     * @param \Integrations\Canva\SDK\Model\ExportPageSize|null $size size
      *
      * @return self
      */

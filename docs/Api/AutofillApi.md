@@ -1,4 +1,4 @@
-# OpenAPI\Client\AutofillApi
+# Integrations\Canva\SDK\AutofillApi
 
 All URIs are relative to https://api.canva.com/rest, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://api.canva.com/rest, except if the operation def
 ## `createDesignAutofillJob()`
 
 ```php
-createDesignAutofillJob($create_design_autofill_job_request): \OpenAPI\Client\Model\CreateDesignAutofillJobResponse
+createDesignAutofillJob($create_design_autofill_job_request): \Integrations\Canva\SDK\Model\CreateDesignAutofillJobResponse
 ```
 
 
@@ -26,16 +26,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AutofillApi(
+$apiInstance = new Integrations\Canva\SDK\Api\AutofillApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_design_autofill_job_request = new \OpenAPI\Client\Model\CreateDesignAutofillJobRequest(); // \OpenAPI\Client\Model\CreateDesignAutofillJobRequest
+$create_design_autofill_job_request = new \Integrations\Canva\SDK\Model\CreateDesignAutofillJobRequest(); // \Integrations\Canva\SDK\Model\CreateDesignAutofillJobRequest
 
 try {
     $result = $apiInstance->createDesignAutofillJob($create_design_autofill_job_request);
@@ -49,11 +49,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_design_autofill_job_request** | [**\OpenAPI\Client\Model\CreateDesignAutofillJobRequest**](../Model/CreateDesignAutofillJobRequest.md)|  | [optional] |
+| **create_design_autofill_job_request** | [**\Integrations\Canva\SDK\Model\CreateDesignAutofillJobRequest**](../Model/CreateDesignAutofillJobRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreateDesignAutofillJobResponse**](../Model/CreateDesignAutofillJobResponse.md)
+[**\Integrations\Canva\SDK\Model\CreateDesignAutofillJobResponse**](../Model/CreateDesignAutofillJobResponse.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ try {
 ## `getDesignAutofillJob()`
 
 ```php
-getDesignAutofillJob($job_id): \OpenAPI\Client\Model\GetDesignAutofillJobResponse
+getDesignAutofillJob($job_id): \Integrations\Canva\SDK\Model\GetDesignAutofillJobResponse
 ```
 
 
@@ -86,10 +86,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AutofillApi(
+$apiInstance = new Integrations\Canva\SDK\Api\AutofillApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -113,7 +113,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetDesignAutofillJobResponse**](../Model/GetDesignAutofillJobResponse.md)
+[**\Integrations\Canva\SDK\Model\GetDesignAutofillJobResponse**](../Model/GetDesignAutofillJobResponse.md)
 
 ### Authorization
 

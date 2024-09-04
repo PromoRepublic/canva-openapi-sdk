@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,15 +26,15 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace Integrations\Canva\SDK\Model;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * ExportErrorCode Class Doc Comment
  *
  * @category Class
  * @description If the export failed, this specifies the reason why it failed. This can be one of the following:  - &#x60;license_required&#x60;: The design contains [premium elements](https://www.canva.com/help/premium-elements/) that haven&#39;t been purchased. You can either buy the elements or upgrade to a Canva plan (such as Canva Pro) that has premium features, then try again. Alternatively, you can set &#x60;export_quality&#x60; to &#x60;regular&#x60; to export your document in regular quality. - &#x60;internal_failure&#x60;: The service encountered an error when exporting your design.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

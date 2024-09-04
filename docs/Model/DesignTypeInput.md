@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **type** | **string** |  |
-**name** | [**\OpenAPI\Client\Model\PresetDesignTypeName**](PresetDesignTypeName.md) |  |
+**name** | [**\Integrations\Canva\SDK\Model\PresetDesignTypeName**](PresetDesignTypeName.md) |  |
 **width** | **int** | The width of the design (in pixels). Minimum 40px, maximum 8000px. |
 **height** | **int** | The height of the design (in pixels). Minimum 40px, maximum 8000px. |
 

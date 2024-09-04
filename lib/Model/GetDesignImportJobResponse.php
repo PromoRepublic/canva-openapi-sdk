@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * GetDesignImportJobResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class GetDesignImportJobResponse implements ModelInterface, ArrayAccess, \JsonSe
       */
     protected static $openAPITypes = [
         'job_id' => 'string',
-        'status' => '\OpenAPI\Client\Model\DesignImportStatus',
-        'designs' => '\OpenAPI\Client\Model\Design[]'
+        'status' => '\Integrations\Canva\SDK\Model\DesignImportStatus',
+        'designs' => '\Integrations\Canva\SDK\Model\Design[]'
     ];
 
     /**
@@ -339,7 +339,7 @@ class GetDesignImportJobResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets status
      *
-     * @return \OpenAPI\Client\Model\DesignImportStatus
+     * @return \Integrations\Canva\SDK\Model\DesignImportStatus
      */
     public function getStatus()
     {
@@ -349,7 +349,7 @@ class GetDesignImportJobResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets status
      *
-     * @param \OpenAPI\Client\Model\DesignImportStatus $status status
+     * @param \Integrations\Canva\SDK\Model\DesignImportStatus $status status
      *
      * @return self
      */
@@ -366,7 +366,7 @@ class GetDesignImportJobResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets designs
      *
-     * @return \OpenAPI\Client\Model\Design[]|null
+     * @return \Integrations\Canva\SDK\Model\Design[]|null
      */
     public function getDesigns()
     {
@@ -376,7 +376,7 @@ class GetDesignImportJobResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets designs
      *
-     * @param \OpenAPI\Client\Model\Design[]|null $designs A list of designs imported from the external file. It usually contains one item. Imports with a large number of pages or assets are split into multiple designs.
+     * @param \Integrations\Canva\SDK\Model\Design[]|null $designs A list of designs imported from the external file. It usually contains one item. Imports with a large number of pages or assets are split into multiple designs.
      *
      * @return self
      */

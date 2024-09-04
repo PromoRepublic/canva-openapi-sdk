@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * TeamInviteNotificationContent Class Doc Comment
  *
  * @category Class
  * @description The notification content for when someone is invited to a [Canva team](https://www.canva.com/help/about-canva-for-teams/).
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,9 +59,9 @@ class TeamInviteNotificationContent implements ModelInterface, ArrayAccess, \Jso
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'triggering_user' => '\OpenAPI\Client\Model\User',
-        'receiving_user' => '\OpenAPI\Client\Model\User',
-        'inviting_team' => '\OpenAPI\Client\Model\Team'
+        'triggering_user' => '\Integrations\Canva\SDK\Model\User',
+        'receiving_user' => '\Integrations\Canva\SDK\Model\User',
+        'inviting_team' => '\Integrations\Canva\SDK\Model\Team'
     ];
 
     /**
@@ -385,7 +385,7 @@ class TeamInviteNotificationContent implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets triggering_user
      *
-     * @return \OpenAPI\Client\Model\User
+     * @return \Integrations\Canva\SDK\Model\User
      */
     public function getTriggeringUser()
     {
@@ -395,7 +395,7 @@ class TeamInviteNotificationContent implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets triggering_user
      *
-     * @param \OpenAPI\Client\Model\User $triggering_user triggering_user
+     * @param \Integrations\Canva\SDK\Model\User $triggering_user triggering_user
      *
      * @return self
      */
@@ -412,7 +412,7 @@ class TeamInviteNotificationContent implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets receiving_user
      *
-     * @return \OpenAPI\Client\Model\User
+     * @return \Integrations\Canva\SDK\Model\User
      */
     public function getReceivingUser()
     {
@@ -422,7 +422,7 @@ class TeamInviteNotificationContent implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets receiving_user
      *
-     * @param \OpenAPI\Client\Model\User $receiving_user receiving_user
+     * @param \Integrations\Canva\SDK\Model\User $receiving_user receiving_user
      *
      * @return self
      */
@@ -439,7 +439,7 @@ class TeamInviteNotificationContent implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets inviting_team
      *
-     * @return \OpenAPI\Client\Model\Team
+     * @return \Integrations\Canva\SDK\Model\Team
      */
     public function getInvitingTeam()
     {
@@ -449,7 +449,7 @@ class TeamInviteNotificationContent implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets inviting_team
      *
-     * @param \OpenAPI\Client\Model\Team $inviting_team inviting_team
+     * @param \Integrations\Canva\SDK\Model\Team $inviting_team inviting_team
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * ShareFolderNotificationContent Class Doc Comment
  *
  * @category Class
  * @description The notification content for when someone shares a folder.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,10 +59,10 @@ class ShareFolderNotificationContent implements ModelInterface, ArrayAccess, \Js
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'triggering_user' => '\OpenAPI\Client\Model\User',
-        'receiving_team_user' => '\OpenAPI\Client\Model\TeamUser',
-        'folder' => '\OpenAPI\Client\Model\FolderSummary',
-        'share' => '\OpenAPI\Client\Model\ShareAction'
+        'triggering_user' => '\Integrations\Canva\SDK\Model\User',
+        'receiving_team_user' => '\Integrations\Canva\SDK\Model\TeamUser',
+        'folder' => '\Integrations\Canva\SDK\Model\FolderSummary',
+        'share' => '\Integrations\Canva\SDK\Model\ShareAction'
     ];
 
     /**
@@ -392,7 +392,7 @@ class ShareFolderNotificationContent implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets triggering_user
      *
-     * @return \OpenAPI\Client\Model\User
+     * @return \Integrations\Canva\SDK\Model\User
      */
     public function getTriggeringUser()
     {
@@ -402,7 +402,7 @@ class ShareFolderNotificationContent implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets triggering_user
      *
-     * @param \OpenAPI\Client\Model\User $triggering_user triggering_user
+     * @param \Integrations\Canva\SDK\Model\User $triggering_user triggering_user
      *
      * @return self
      */
@@ -419,7 +419,7 @@ class ShareFolderNotificationContent implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets receiving_team_user
      *
-     * @return \OpenAPI\Client\Model\TeamUser
+     * @return \Integrations\Canva\SDK\Model\TeamUser
      */
     public function getReceivingTeamUser()
     {
@@ -429,7 +429,7 @@ class ShareFolderNotificationContent implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets receiving_team_user
      *
-     * @param \OpenAPI\Client\Model\TeamUser $receiving_team_user receiving_team_user
+     * @param \Integrations\Canva\SDK\Model\TeamUser $receiving_team_user receiving_team_user
      *
      * @return self
      */
@@ -446,7 +446,7 @@ class ShareFolderNotificationContent implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets folder
      *
-     * @return \OpenAPI\Client\Model\FolderSummary
+     * @return \Integrations\Canva\SDK\Model\FolderSummary
      */
     public function getFolder()
     {
@@ -456,7 +456,7 @@ class ShareFolderNotificationContent implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets folder
      *
-     * @param \OpenAPI\Client\Model\FolderSummary $folder folder
+     * @param \Integrations\Canva\SDK\Model\FolderSummary $folder folder
      *
      * @return self
      */
@@ -473,7 +473,7 @@ class ShareFolderNotificationContent implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets share
      *
-     * @return \OpenAPI\Client\Model\ShareAction|null
+     * @return \Integrations\Canva\SDK\Model\ShareAction|null
      */
     public function getShare()
     {
@@ -483,7 +483,7 @@ class ShareFolderNotificationContent implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets share
      *
-     * @param \OpenAPI\Client\Model\ShareAction|null $share share
+     * @param \Integrations\Canva\SDK\Model\ShareAction|null $share share
      *
      * @return self
      */

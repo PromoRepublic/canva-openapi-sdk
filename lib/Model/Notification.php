@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * Notification Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class Notification implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'id' => 'string',
         'created_at' => 'int',
-        'content' => '\OpenAPI\Client\Model\NotificationContent'
+        'content' => '\Integrations\Canva\SDK\Model\NotificationContent'
     ];
 
     /**
@@ -369,7 +369,7 @@ class Notification implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets content
      *
-     * @return \OpenAPI\Client\Model\NotificationContent
+     * @return \Integrations\Canva\SDK\Model\NotificationContent
      */
     public function getContent()
     {
@@ -379,7 +379,7 @@ class Notification implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets content
      *
-     * @param \OpenAPI\Client\Model\NotificationContent $content content
+     * @param \Integrations\Canva\SDK\Model\NotificationContent $content content
      *
      * @return self
      */

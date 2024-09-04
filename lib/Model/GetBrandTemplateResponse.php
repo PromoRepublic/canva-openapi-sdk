@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * GetBrandTemplateResponse Class Doc Comment
  *
  * @category Class
  * @description Successful response from a &#x60;getBrandTemplate&#x60; request.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetBrandTemplateResponse implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'brand_template' => '\OpenAPI\Client\Model\BrandTemplate'
+        'brand_template' => '\Integrations\Canva\SDK\Model\BrandTemplate'
     ];
 
     /**
@@ -296,7 +296,7 @@ class GetBrandTemplateResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets brand_template
      *
-     * @return \OpenAPI\Client\Model\BrandTemplate
+     * @return \Integrations\Canva\SDK\Model\BrandTemplate
      */
     public function getBrandTemplate()
     {
@@ -306,7 +306,7 @@ class GetBrandTemplateResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets brand_template
      *
-     * @param \OpenAPI\Client\Model\BrandTemplate $brand_template brand_template
+     * @param \Integrations\Canva\SDK\Model\BrandTemplate $brand_template brand_template
      *
      * @return self
      */

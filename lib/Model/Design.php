@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * Design Class Doc Comment
  *
  * @category Class
  * @description The design object, which contains metadata about the design.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,9 +60,9 @@ class Design implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'id' => 'string',
         'title' => 'string',
-        'owner' => '\OpenAPI\Client\Model\TeamUserSummary',
-        'thumbnail' => '\OpenAPI\Client\Model\Thumbnail',
-        'urls' => '\OpenAPI\Client\Model\DesignLinks'
+        'owner' => '\Integrations\Canva\SDK\Model\TeamUserSummary',
+        'thumbnail' => '\Integrations\Canva\SDK\Model\Thumbnail',
+        'urls' => '\Integrations\Canva\SDK\Model\DesignLinks'
     ];
 
     /**
@@ -384,7 +384,7 @@ class Design implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets owner
      *
-     * @return \OpenAPI\Client\Model\TeamUserSummary
+     * @return \Integrations\Canva\SDK\Model\TeamUserSummary
      */
     public function getOwner()
     {
@@ -394,7 +394,7 @@ class Design implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets owner
      *
-     * @param \OpenAPI\Client\Model\TeamUserSummary $owner owner
+     * @param \Integrations\Canva\SDK\Model\TeamUserSummary $owner owner
      *
      * @return self
      */
@@ -411,7 +411,7 @@ class Design implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets thumbnail
      *
-     * @return \OpenAPI\Client\Model\Thumbnail|null
+     * @return \Integrations\Canva\SDK\Model\Thumbnail|null
      */
     public function getThumbnail()
     {
@@ -421,7 +421,7 @@ class Design implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets thumbnail
      *
-     * @param \OpenAPI\Client\Model\Thumbnail|null $thumbnail thumbnail
+     * @param \Integrations\Canva\SDK\Model\Thumbnail|null $thumbnail thumbnail
      *
      * @return self
      */
@@ -438,7 +438,7 @@ class Design implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets urls
      *
-     * @return \OpenAPI\Client\Model\DesignLinks
+     * @return \Integrations\Canva\SDK\Model\DesignLinks
      */
     public function getUrls()
     {
@@ -448,7 +448,7 @@ class Design implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets urls
      *
-     * @param \OpenAPI\Client\Model\DesignLinks $urls urls
+     * @param \Integrations\Canva\SDK\Model\DesignLinks $urls urls
      *
      * @return self
      */

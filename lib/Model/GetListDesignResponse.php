@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * GetListDesignResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetListDesignResponse implements ModelInterface, ArrayAccess, \JsonSeriali
       */
     protected static $openAPITypes = [
         'continuation' => 'string',
-        'items' => '\OpenAPI\Client\Model\Design[]'
+        'items' => '\Integrations\Canva\SDK\Model\Design[]'
     ];
 
     /**
@@ -329,7 +329,7 @@ class GetListDesignResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets items
      *
-     * @return \OpenAPI\Client\Model\Design[]
+     * @return \Integrations\Canva\SDK\Model\Design[]
      */
     public function getItems()
     {
@@ -339,7 +339,7 @@ class GetListDesignResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets items
      *
-     * @param \OpenAPI\Client\Model\Design[] $items The list of designs.
+     * @param \Integrations\Canva\SDK\Model\Design[] $items The list of designs.
      *
      * @return self
      */

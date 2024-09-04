@@ -5,10 +5,10 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **type** | **string** |  |
-**export_quality** | [**\OpenAPI\Client\Model\ExportQuality**](ExportQuality.md) |  | [optional]
-**size** | [**\OpenAPI\Client\Model\ExportPageSize**](ExportPageSize.md) |  | [optional]
+**export_quality** | [**\Integrations\Canva\SDK\Model\ExportQuality**](ExportQuality.md) |  | [optional]
+**size** | [**\Integrations\Canva\SDK\Model\ExportPageSize**](ExportPageSize.md) |  | [optional]
 **pages** | **int[]** | To specify which pages to export in a multi-page design, provide the page numbers as an array. The first page in a design is page &#x60;1&#x60;. If &#x60;pages&#x60; isn&#39;t specified, all the pages are exported. | [optional]
-**quality** | [**\OpenAPI\Client\Model\Mp4ExportQuality**](Mp4ExportQuality.md) |  |
+**quality** | [**\Integrations\Canva\SDK\Model\Mp4ExportQuality**](Mp4ExportQuality.md) |  |
 **height** | **int** | Specify the height in pixels of the exported image. If only one of height or width is specified, then the image will be scaled to match that dimension, respecting the design&#39;s aspect ratio. If no width or height is specified, the image will be exported using the dimensions of the design. | [optional]
 **width** | **int** | Specify the width in pixels of the exported image. If only one of height or width is specified, then the image will be scaled to match that dimension, respecting the design&#39;s aspect ratio. If no width or height is specified, the image will be exported using the dimensions of the design. | [optional]
 **lossless** | **bool** | When &#x60;true&#x60;, the PNG is compressed with a lossless compression algorithm (&#x60;false&#x60; by default). | [optional] [default to false]

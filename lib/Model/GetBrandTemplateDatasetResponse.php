@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * GetBrandTemplateDatasetResponse Class Doc Comment
  *
  * @category Class
  * @description Successful response from a &#x60;getBrandTemplateDataset&#x60; request.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetBrandTemplateDatasetResponse implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'dataset' => 'array<string,\OpenAPI\Client\Model\DataField>'
+        'dataset' => 'array<string,\Integrations\Canva\SDK\Model\DataField>'
     ];
 
     /**
@@ -293,7 +293,7 @@ class GetBrandTemplateDatasetResponse implements ModelInterface, ArrayAccess, \J
     /**
      * Gets dataset
      *
-     * @return array<string,\OpenAPI\Client\Model\DataField>|null
+     * @return array<string,\Integrations\Canva\SDK\Model\DataField>|null
      */
     public function getDataset()
     {
@@ -303,7 +303,7 @@ class GetBrandTemplateDatasetResponse implements ModelInterface, ArrayAccess, \J
     /**
      * Sets dataset
      *
-     * @param array<string,\OpenAPI\Client\Model\DataField>|null $dataset The dataset definition for the brand template. The dataset definition contains the data inputs available for use with the [Create design autofill job API](https://www.canva.dev/docs/connect/api-reference/autofills/create-design-autofill-job/).
+     * @param array<string,\Integrations\Canva\SDK\Model\DataField>|null $dataset The dataset definition for the brand template. The dataset definition contains the data inputs available for use with the [Create design autofill job API](https://www.canva.dev/docs/connect/api-reference/autofills/create-design-autofill-job/).
      *
      * @return self
      */

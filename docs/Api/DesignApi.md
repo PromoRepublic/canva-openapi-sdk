@@ -1,4 +1,4 @@
-# OpenAPI\Client\DesignApi
+# Integrations\Canva\SDK\DesignApi
 
 All URIs are relative to https://api.canva.com/rest, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to https://api.canva.com/rest, except if the operation def
 ## `createDesign()`
 
 ```php
-createDesign($create_design_request): \OpenAPI\Client\Model\CreateDesignResponse
+createDesign($create_design_request): \Integrations\Canva\SDK\Model\CreateDesignResponse
 ```
 
 
@@ -27,16 +27,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DesignApi(
+$apiInstance = new Integrations\Canva\SDK\Api\DesignApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_design_request = new \OpenAPI\Client\Model\CreateDesignRequest(); // \OpenAPI\Client\Model\CreateDesignRequest
+$create_design_request = new \Integrations\Canva\SDK\Model\CreateDesignRequest(); // \Integrations\Canva\SDK\Model\CreateDesignRequest
 
 try {
     $result = $apiInstance->createDesign($create_design_request);
@@ -50,11 +50,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_design_request** | [**\OpenAPI\Client\Model\CreateDesignRequest**](../Model/CreateDesignRequest.md)|  | [optional] |
+| **create_design_request** | [**\Integrations\Canva\SDK\Model\CreateDesignRequest**](../Model/CreateDesignRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreateDesignResponse**](../Model/CreateDesignResponse.md)
+[**\Integrations\Canva\SDK\Model\CreateDesignResponse**](../Model/CreateDesignResponse.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ try {
 ## `getDesign()`
 
 ```php
-getDesign($design_id): \OpenAPI\Client\Model\GetDesignResponse
+getDesign($design_id): \Integrations\Canva\SDK\Model\GetDesignResponse
 ```
 
 
@@ -87,10 +87,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DesignApi(
+$apiInstance = new Integrations\Canva\SDK\Api\DesignApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -114,7 +114,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetDesignResponse**](../Model/GetDesignResponse.md)
+[**\Integrations\Canva\SDK\Model\GetDesignResponse**](../Model/GetDesignResponse.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ try {
 ## `listDesigns()`
 
 ```php
-listDesigns($query, $continuation, $ownership, $sort_by): \OpenAPI\Client\Model\GetListDesignResponse
+listDesigns($query, $continuation, $ownership, $sort_by): \Integrations\Canva\SDK\Model\GetListDesignResponse
 ```
 
 
@@ -147,10 +147,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DesignApi(
+$apiInstance = new Integrations\Canva\SDK\Api\DesignApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -180,7 +180,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetListDesignResponse**](../Model/GetListDesignResponse.md)
+[**\Integrations\Canva\SDK\Model\GetListDesignResponse**](../Model/GetListDesignResponse.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * NotificationContent Class Doc Comment
  *
  * @category Class
  * @description The notification content object, which contains metadata about the event.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,19 +59,19 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'triggering_user' => '\OpenAPI\Client\Model\TeamUser',
-        'receiving_team_user' => '\OpenAPI\Client\Model\TeamUser',
-        'design' => '\OpenAPI\Client\Model\DesignSummary',
-        'share' => '\OpenAPI\Client\Model\ShareAction',
-        'folder' => '\OpenAPI\Client\Model\Folder',
-        'comment' => '\OpenAPI\Client\Model\CommentEvent',
-        'requested_groups' => '\OpenAPI\Client\Model\Group[]',
-        'approval_request' => '\OpenAPI\Client\Model\ApprovalRequestAction',
-        'requesting_user' => '\OpenAPI\Client\Model\User',
-        'responding_groups' => '\OpenAPI\Client\Model\Group[]',
-        'approval_response' => '\OpenAPI\Client\Model\ApprovalResponseAction',
-        'receiving_user' => '\OpenAPI\Client\Model\User',
-        'inviting_team' => '\OpenAPI\Client\Model\Team'
+        'triggering_user' => '\Integrations\Canva\SDK\Model\TeamUser',
+        'receiving_team_user' => '\Integrations\Canva\SDK\Model\TeamUser',
+        'design' => '\Integrations\Canva\SDK\Model\DesignSummary',
+        'share' => '\Integrations\Canva\SDK\Model\ShareAction',
+        'folder' => '\Integrations\Canva\SDK\Model\Folder',
+        'comment' => '\Integrations\Canva\SDK\Model\CommentEvent',
+        'requested_groups' => '\Integrations\Canva\SDK\Model\Group[]',
+        'approval_request' => '\Integrations\Canva\SDK\Model\ApprovalRequestAction',
+        'requesting_user' => '\Integrations\Canva\SDK\Model\User',
+        'responding_groups' => '\Integrations\Canva\SDK\Model\Group[]',
+        'approval_response' => '\Integrations\Canva\SDK\Model\ApprovalResponseAction',
+        'receiving_user' => '\Integrations\Canva\SDK\Model\User',
+        'inviting_team' => '\Integrations\Canva\SDK\Model\Team'
     ];
 
     /**
@@ -500,7 +500,7 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets triggering_user
      *
-     * @return \OpenAPI\Client\Model\TeamUser
+     * @return \Integrations\Canva\SDK\Model\TeamUser
      */
     public function getTriggeringUser()
     {
@@ -510,7 +510,7 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets triggering_user
      *
-     * @param \OpenAPI\Client\Model\TeamUser $triggering_user triggering_user
+     * @param \Integrations\Canva\SDK\Model\TeamUser $triggering_user triggering_user
      *
      * @return self
      */
@@ -527,7 +527,7 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets receiving_team_user
      *
-     * @return \OpenAPI\Client\Model\TeamUser
+     * @return \Integrations\Canva\SDK\Model\TeamUser
      */
     public function getReceivingTeamUser()
     {
@@ -537,7 +537,7 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets receiving_team_user
      *
-     * @param \OpenAPI\Client\Model\TeamUser $receiving_team_user receiving_team_user
+     * @param \Integrations\Canva\SDK\Model\TeamUser $receiving_team_user receiving_team_user
      *
      * @return self
      */
@@ -554,7 +554,7 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets design
      *
-     * @return \OpenAPI\Client\Model\DesignSummary
+     * @return \Integrations\Canva\SDK\Model\DesignSummary
      */
     public function getDesign()
     {
@@ -564,7 +564,7 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets design
      *
-     * @param \OpenAPI\Client\Model\DesignSummary $design design
+     * @param \Integrations\Canva\SDK\Model\DesignSummary $design design
      *
      * @return self
      */
@@ -581,7 +581,7 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets share
      *
-     * @return \OpenAPI\Client\Model\ShareAction|null
+     * @return \Integrations\Canva\SDK\Model\ShareAction|null
      */
     public function getShare()
     {
@@ -591,7 +591,7 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets share
      *
-     * @param \OpenAPI\Client\Model\ShareAction|null $share share
+     * @param \Integrations\Canva\SDK\Model\ShareAction|null $share share
      *
      * @return self
      */
@@ -608,7 +608,7 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets folder
      *
-     * @return \OpenAPI\Client\Model\Folder
+     * @return \Integrations\Canva\SDK\Model\Folder
      */
     public function getFolder()
     {
@@ -618,7 +618,7 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets folder
      *
-     * @param \OpenAPI\Client\Model\Folder $folder folder
+     * @param \Integrations\Canva\SDK\Model\Folder $folder folder
      *
      * @return self
      */
@@ -635,7 +635,7 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets comment
      *
-     * @return \OpenAPI\Client\Model\CommentEvent
+     * @return \Integrations\Canva\SDK\Model\CommentEvent
      */
     public function getComment()
     {
@@ -645,7 +645,7 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets comment
      *
-     * @param \OpenAPI\Client\Model\CommentEvent $comment comment
+     * @param \Integrations\Canva\SDK\Model\CommentEvent $comment comment
      *
      * @return self
      */
@@ -662,7 +662,7 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets requested_groups
      *
-     * @return \OpenAPI\Client\Model\Group[]
+     * @return \Integrations\Canva\SDK\Model\Group[]
      */
     public function getRequestedGroups()
     {
@@ -672,7 +672,7 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets requested_groups
      *
-     * @param \OpenAPI\Client\Model\Group[] $requested_groups requested_groups
+     * @param \Integrations\Canva\SDK\Model\Group[] $requested_groups requested_groups
      *
      * @return self
      */
@@ -689,7 +689,7 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets approval_request
      *
-     * @return \OpenAPI\Client\Model\ApprovalRequestAction
+     * @return \Integrations\Canva\SDK\Model\ApprovalRequestAction
      */
     public function getApprovalRequest()
     {
@@ -699,7 +699,7 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets approval_request
      *
-     * @param \OpenAPI\Client\Model\ApprovalRequestAction $approval_request approval_request
+     * @param \Integrations\Canva\SDK\Model\ApprovalRequestAction $approval_request approval_request
      *
      * @return self
      */
@@ -716,7 +716,7 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets requesting_user
      *
-     * @return \OpenAPI\Client\Model\User|null
+     * @return \Integrations\Canva\SDK\Model\User|null
      */
     public function getRequestingUser()
     {
@@ -726,7 +726,7 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets requesting_user
      *
-     * @param \OpenAPI\Client\Model\User|null $requesting_user requesting_user
+     * @param \Integrations\Canva\SDK\Model\User|null $requesting_user requesting_user
      *
      * @return self
      */
@@ -743,7 +743,7 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets responding_groups
      *
-     * @return \OpenAPI\Client\Model\Group[]
+     * @return \Integrations\Canva\SDK\Model\Group[]
      */
     public function getRespondingGroups()
     {
@@ -753,7 +753,7 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets responding_groups
      *
-     * @param \OpenAPI\Client\Model\Group[] $responding_groups responding_groups
+     * @param \Integrations\Canva\SDK\Model\Group[] $responding_groups responding_groups
      *
      * @return self
      */
@@ -770,7 +770,7 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets approval_response
      *
-     * @return \OpenAPI\Client\Model\ApprovalResponseAction
+     * @return \Integrations\Canva\SDK\Model\ApprovalResponseAction
      */
     public function getApprovalResponse()
     {
@@ -780,7 +780,7 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets approval_response
      *
-     * @param \OpenAPI\Client\Model\ApprovalResponseAction $approval_response approval_response
+     * @param \Integrations\Canva\SDK\Model\ApprovalResponseAction $approval_response approval_response
      *
      * @return self
      */
@@ -797,7 +797,7 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets receiving_user
      *
-     * @return \OpenAPI\Client\Model\User
+     * @return \Integrations\Canva\SDK\Model\User
      */
     public function getReceivingUser()
     {
@@ -807,7 +807,7 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets receiving_user
      *
-     * @param \OpenAPI\Client\Model\User $receiving_user receiving_user
+     * @param \Integrations\Canva\SDK\Model\User $receiving_user receiving_user
      *
      * @return self
      */
@@ -824,7 +824,7 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets inviting_team
      *
-     * @return \OpenAPI\Client\Model\Team
+     * @return \Integrations\Canva\SDK\Model\Team
      */
     public function getInvitingTeam()
     {
@@ -834,7 +834,7 @@ class NotificationContent implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets inviting_team
      *
-     * @param \OpenAPI\Client\Model\Team $inviting_team inviting_team
+     * @param \Integrations\Canva\SDK\Model\Team $inviting_team inviting_team
      *
      * @return self
      */

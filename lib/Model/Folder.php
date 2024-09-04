@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * Folder Class Doc Comment
  *
  * @category Class
  * @description The folder object, which contains metadata about the folder.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class Folder implements ModelInterface, ArrayAccess, \JsonSerializable
         'name' => 'string',
         'created_at' => 'int',
         'updated_at' => 'int',
-        'thumbnail' => '\OpenAPI\Client\Model\Thumbnail'
+        'thumbnail' => '\Integrations\Canva\SDK\Model\Thumbnail'
     ];
 
     /**
@@ -441,7 +441,7 @@ class Folder implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets thumbnail
      *
-     * @return \OpenAPI\Client\Model\Thumbnail|null
+     * @return \Integrations\Canva\SDK\Model\Thumbnail|null
      */
     public function getThumbnail()
     {
@@ -451,7 +451,7 @@ class Folder implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets thumbnail
      *
-     * @param \OpenAPI\Client\Model\Thumbnail|null $thumbnail thumbnail
+     * @param \Integrations\Canva\SDK\Model\Thumbnail|null $thumbnail thumbnail
      *
      * @return self
      */

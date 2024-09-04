@@ -1,4 +1,4 @@
-# OpenAPI\Client\FolderApi
+# Integrations\Canva\SDK\FolderApi
 
 All URIs are relative to https://api.canva.com/rest, except if the operation defines another base path.
 
@@ -15,7 +15,7 @@ All URIs are relative to https://api.canva.com/rest, except if the operation def
 ## `createFolder()`
 
 ```php
-createFolder($create_folder_request): \OpenAPI\Client\Model\CreateFolderResponse
+createFolder($create_folder_request): \Integrations\Canva\SDK\Model\CreateFolderResponse
 ```
 
 
@@ -30,16 +30,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\FolderApi(
+$apiInstance = new Integrations\Canva\SDK\Api\FolderApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_folder_request = new \OpenAPI\Client\Model\CreateFolderRequest(); // \OpenAPI\Client\Model\CreateFolderRequest
+$create_folder_request = new \Integrations\Canva\SDK\Model\CreateFolderRequest(); // \Integrations\Canva\SDK\Model\CreateFolderRequest
 
 try {
     $result = $apiInstance->createFolder($create_folder_request);
@@ -53,11 +53,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_folder_request** | [**\OpenAPI\Client\Model\CreateFolderRequest**](../Model/CreateFolderRequest.md)|  | |
+| **create_folder_request** | [**\Integrations\Canva\SDK\Model\CreateFolderRequest**](../Model/CreateFolderRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreateFolderResponse**](../Model/CreateFolderResponse.md)
+[**\Integrations\Canva\SDK\Model\CreateFolderResponse**](../Model/CreateFolderResponse.md)
 
 ### Authorization
 
@@ -90,10 +90,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\FolderApi(
+$apiInstance = new Integrations\Canva\SDK\Api\FolderApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -134,7 +134,7 @@ void (empty response body)
 ## `getFolder()`
 
 ```php
-getFolder($folder_id): \OpenAPI\Client\Model\GetFolderResponse
+getFolder($folder_id): \Integrations\Canva\SDK\Model\GetFolderResponse
 ```
 
 
@@ -149,10 +149,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\FolderApi(
+$apiInstance = new Integrations\Canva\SDK\Api\FolderApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -176,7 +176,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetFolderResponse**](../Model/GetFolderResponse.md)
+[**\Integrations\Canva\SDK\Model\GetFolderResponse**](../Model/GetFolderResponse.md)
 
 ### Authorization
 
@@ -194,7 +194,7 @@ try {
 ## `listFolderItems()`
 
 ```php
-listFolderItems($folder_id, $continuation, $item_types, $sort_by): \OpenAPI\Client\Model\ListFolderItemsResponse
+listFolderItems($folder_id, $continuation, $item_types, $sort_by): \Integrations\Canva\SDK\Model\ListFolderItemsResponse
 ```
 
 
@@ -209,10 +209,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\FolderApi(
+$apiInstance = new Integrations\Canva\SDK\Api\FolderApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -220,7 +220,7 @@ $apiInstance = new OpenAPI\Client\Api\FolderApi(
 );
 $folder_id = FAF2lZtloor; // string | The folder ID.
 $continuation = RkFGMgXlsVTDbMd:MR3L0QjiaUzycIAjx0yMyuNiV0OildoiOwL0x32G4NjNu4FwtAQNxowUQNMMYN; // string | If the success response contains a continuation token, the folder contains more items you can list. You can use this token as a query parameter and retrieve more items from the list, for example `/v1/folders/{folderId}/items?continuation={continuation}`.  To retrieve all the items in a folder, you might need to make multiple requests.
-$item_types = array(new \OpenAPI\Client\Model\\OpenAPI\Client\Model\FolderItemType()); // \OpenAPI\Client\Model\FolderItemType[] | Filter the folder items to only return specified types. The available types are: `asset`, `design`, `folder`, and `template`. To filter for more than one item type, provide a comma-delimited list.
+$item_types = array(new \Integrations\Canva\SDK\Model\\Integrations\Canva\SDK\Model\FolderItemType()); // \Integrations\Canva\SDK\Model\FolderItemType[] | Filter the folder items to only return specified types. The available types are: `asset`, `design`, `folder`, and `template`. To filter for more than one item type, provide a comma-delimited list.
 $sort_by = title_ascending; // FolderItemSortBy | Sort the list of folder items. This can be one of the following:  - `created_ascending`: Sort results by creation date, in ascending order. - `created_descending`: Sort results by creation date, in descending order. - `modified_ascending`: Sort results by the last modified date, in ascending order. - `modified_descending`: (Default) Sort results by the last modified date, in descending order. - `title_ascending`: Sort results by title, in ascending order. The title is either the `name` field for a folder or asset, or the `title` field for a design. - `title_descending`: Sort results by title, in descending order. The title is either the `name` field for a folder or asset, or the `title` field for a design.
 
 try {
@@ -237,12 +237,12 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **folder_id** | **string**| The folder ID. | |
 | **continuation** | **string**| If the success response contains a continuation token, the folder contains more items you can list. You can use this token as a query parameter and retrieve more items from the list, for example &#x60;/v1/folders/{folderId}/items?continuation&#x3D;{continuation}&#x60;.  To retrieve all the items in a folder, you might need to make multiple requests. | [optional] |
-| **item_types** | [**\OpenAPI\Client\Model\FolderItemType[]**](../Model/\OpenAPI\Client\Model\FolderItemType.md)| Filter the folder items to only return specified types. The available types are: &#x60;asset&#x60;, &#x60;design&#x60;, &#x60;folder&#x60;, and &#x60;template&#x60;. To filter for more than one item type, provide a comma-delimited list. | [optional] |
+| **item_types** | [**\Integrations\Canva\SDK\Model\FolderItemType[]**](../Model/\Integrations\Canva\SDK\Model\FolderItemType.md)| Filter the folder items to only return specified types. The available types are: &#x60;asset&#x60;, &#x60;design&#x60;, &#x60;folder&#x60;, and &#x60;template&#x60;. To filter for more than one item type, provide a comma-delimited list. | [optional] |
 | **sort_by** | [**FolderItemSortBy**](../Model/.md)| Sort the list of folder items. This can be one of the following:  - &#x60;created_ascending&#x60;: Sort results by creation date, in ascending order. - &#x60;created_descending&#x60;: Sort results by creation date, in descending order. - &#x60;modified_ascending&#x60;: Sort results by the last modified date, in ascending order. - &#x60;modified_descending&#x60;: (Default) Sort results by the last modified date, in descending order. - &#x60;title_ascending&#x60;: Sort results by title, in ascending order. The title is either the &#x60;name&#x60; field for a folder or asset, or the &#x60;title&#x60; field for a design. - &#x60;title_descending&#x60;: Sort results by title, in descending order. The title is either the &#x60;name&#x60; field for a folder or asset, or the &#x60;title&#x60; field for a design. | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ListFolderItemsResponse**](../Model/ListFolderItemsResponse.md)
+[**\Integrations\Canva\SDK\Model\ListFolderItemsResponse**](../Model/ListFolderItemsResponse.md)
 
 ### Authorization
 
@@ -275,16 +275,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\FolderApi(
+$apiInstance = new Integrations\Canva\SDK\Api\FolderApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$move_folder_item_request = new \OpenAPI\Client\Model\MoveFolderItemRequest(); // \OpenAPI\Client\Model\MoveFolderItemRequest
+$move_folder_item_request = new \Integrations\Canva\SDK\Model\MoveFolderItemRequest(); // \Integrations\Canva\SDK\Model\MoveFolderItemRequest
 
 try {
     $apiInstance->moveFolderItem($move_folder_item_request);
@@ -297,7 +297,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **move_folder_item_request** | [**\OpenAPI\Client\Model\MoveFolderItemRequest**](../Model/MoveFolderItemRequest.md)|  | [optional] |
+| **move_folder_item_request** | [**\Integrations\Canva\SDK\Model\MoveFolderItemRequest**](../Model/MoveFolderItemRequest.md)|  | [optional] |
 
 ### Return type
 
@@ -319,7 +319,7 @@ void (empty response body)
 ## `updateFolder()`
 
 ```php
-updateFolder($folder_id, $update_folder_request): \OpenAPI\Client\Model\UpdateFolderResponse
+updateFolder($folder_id, $update_folder_request): \Integrations\Canva\SDK\Model\UpdateFolderResponse
 ```
 
 
@@ -334,17 +334,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\FolderApi(
+$apiInstance = new Integrations\Canva\SDK\Api\FolderApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $folder_id = FAF2lZtloor; // string | The folder ID.
-$update_folder_request = new \OpenAPI\Client\Model\UpdateFolderRequest(); // \OpenAPI\Client\Model\UpdateFolderRequest
+$update_folder_request = new \Integrations\Canva\SDK\Model\UpdateFolderRequest(); // \Integrations\Canva\SDK\Model\UpdateFolderRequest
 
 try {
     $result = $apiInstance->updateFolder($folder_id, $update_folder_request);
@@ -359,11 +359,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **folder_id** | **string**| The folder ID. | |
-| **update_folder_request** | [**\OpenAPI\Client\Model\UpdateFolderRequest**](../Model/UpdateFolderRequest.md)|  | |
+| **update_folder_request** | [**\Integrations\Canva\SDK\Model\UpdateFolderRequest**](../Model/UpdateFolderRequest.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\UpdateFolderResponse**](../Model/UpdateFolderResponse.md)
+[**\Integrations\Canva\SDK\Model\UpdateFolderResponse**](../Model/UpdateFolderResponse.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * CommentEvent Class Doc Comment
  *
  * @category Class
  * @description Basic details about the comment.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class CommentEvent implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'type' => '\OpenAPI\Client\Model\CommentEventType',
-        'data' => '\OpenAPI\Client\Model\Comment'
+        'type' => '\Integrations\Canva\SDK\Model\CommentEventType',
+        'data' => '\Integrations\Canva\SDK\Model\Comment'
     ];
 
     /**
@@ -306,7 +306,7 @@ class CommentEvent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets type
      *
-     * @return \OpenAPI\Client\Model\CommentEventType
+     * @return \Integrations\Canva\SDK\Model\CommentEventType
      */
     public function getType()
     {
@@ -316,7 +316,7 @@ class CommentEvent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets type
      *
-     * @param \OpenAPI\Client\Model\CommentEventType $type type
+     * @param \Integrations\Canva\SDK\Model\CommentEventType $type type
      *
      * @return self
      */
@@ -333,7 +333,7 @@ class CommentEvent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets data
      *
-     * @return \OpenAPI\Client\Model\Comment
+     * @return \Integrations\Canva\SDK\Model\Comment
      */
     public function getData()
     {
@@ -343,7 +343,7 @@ class CommentEvent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets data
      *
-     * @param \OpenAPI\Client\Model\Comment $data data
+     * @param \Integrations\Canva\SDK\Model\Comment $data data
      *
      * @return self
      */

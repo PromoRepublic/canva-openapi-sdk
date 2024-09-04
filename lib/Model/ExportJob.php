@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * ExportJob Class Doc Comment
  *
  * @category Class
  * @description The status of the export job.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,9 +59,9 @@ class ExportJob implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'status' => '\OpenAPI\Client\Model\DesignExportStatus',
+        'status' => '\Integrations\Canva\SDK\Model\DesignExportStatus',
         'urls' => 'string[]',
-        'error' => '\OpenAPI\Client\Model\ExportError'
+        'error' => '\Integrations\Canva\SDK\Model\ExportError'
     ];
 
     /**
@@ -347,7 +347,7 @@ class ExportJob implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets status
      *
-     * @return \OpenAPI\Client\Model\DesignExportStatus
+     * @return \Integrations\Canva\SDK\Model\DesignExportStatus
      */
     public function getStatus()
     {
@@ -357,7 +357,7 @@ class ExportJob implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets status
      *
-     * @param \OpenAPI\Client\Model\DesignExportStatus $status status
+     * @param \Integrations\Canva\SDK\Model\DesignExportStatus $status status
      *
      * @return self
      */
@@ -401,7 +401,7 @@ class ExportJob implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets error
      *
-     * @return \OpenAPI\Client\Model\ExportError|null
+     * @return \Integrations\Canva\SDK\Model\ExportError|null
      */
     public function getError()
     {
@@ -411,7 +411,7 @@ class ExportJob implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets error
      *
-     * @param \OpenAPI\Client\Model\ExportError|null $error error
+     * @param \Integrations\Canva\SDK\Model\ExportError|null $error error
      *
      * @return self
      */

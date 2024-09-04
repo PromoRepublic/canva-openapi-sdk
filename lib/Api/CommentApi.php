@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Integrations\Canva\SDK\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Integrations\Canva\SDK\ApiException;
+use Integrations\Canva\SDK\Configuration;
+use Integrations\Canva\SDK\HeaderSelector;
+use Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * CommentApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -131,12 +131,12 @@ class CommentApi
     /**
      * Operation createComment
      *
-     * @param  \OpenAPI\Client\Model\CreateCommentRequest $create_comment_request create_comment_request (required)
+     * @param  \Integrations\Canva\SDK\Model\CreateCommentRequest $create_comment_request create_comment_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createComment'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CreateCommentResponse|\OpenAPI\Client\Model\Error
+     * @return \Integrations\Canva\SDK\Model\CreateCommentResponse|\Integrations\Canva\SDK\Model\Error
      */
     public function createComment($create_comment_request, string $contentType = self::contentTypes['createComment'][0])
     {
@@ -147,12 +147,12 @@ class CommentApi
     /**
      * Operation createCommentWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\CreateCommentRequest $create_comment_request (required)
+     * @param  \Integrations\Canva\SDK\Model\CreateCommentRequest $create_comment_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createComment'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CreateCommentResponse|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Integrations\Canva\SDK\Model\CreateCommentResponse|\Integrations\Canva\SDK\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function createCommentWithHttpInfo($create_comment_request, string $contentType = self::contentTypes['createComment'][0])
     {
@@ -195,11 +195,11 @@ class CommentApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CreateCommentResponse' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\CreateCommentResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CreateCommentResponse' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\CreateCommentResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -217,16 +217,16 @@ class CommentApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CreateCommentResponse', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\CreateCommentResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\Error' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -244,13 +244,13 @@ class CommentApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\CreateCommentResponse';
+            $returnType = '\Integrations\Canva\SDK\Model\CreateCommentResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -283,7 +283,7 @@ class CommentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CreateCommentResponse',
+                        '\Integrations\Canva\SDK\Model\CreateCommentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -291,7 +291,7 @@ class CommentApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Integrations\Canva\SDK\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -304,7 +304,7 @@ class CommentApi
     /**
      * Operation createCommentAsync
      *
-     * @param  \OpenAPI\Client\Model\CreateCommentRequest $create_comment_request (required)
+     * @param  \Integrations\Canva\SDK\Model\CreateCommentRequest $create_comment_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createComment'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -323,7 +323,7 @@ class CommentApi
     /**
      * Operation createCommentAsyncWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\CreateCommentRequest $create_comment_request (required)
+     * @param  \Integrations\Canva\SDK\Model\CreateCommentRequest $create_comment_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createComment'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -331,7 +331,7 @@ class CommentApi
      */
     public function createCommentAsyncWithHttpInfo($create_comment_request, string $contentType = self::contentTypes['createComment'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CreateCommentResponse';
+        $returnType = '\Integrations\Canva\SDK\Model\CreateCommentResponse';
         $request = $this->createCommentRequest($create_comment_request, $contentType);
 
         return $this->client
@@ -373,7 +373,7 @@ class CommentApi
     /**
      * Create request for operation 'createComment'
      *
-     * @param  \OpenAPI\Client\Model\CreateCommentRequest $create_comment_request (required)
+     * @param  \Integrations\Canva\SDK\Model\CreateCommentRequest $create_comment_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createComment'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -469,12 +469,12 @@ class CommentApi
      * Operation createReply
      *
      * @param  string $comment_id The &#x60;id&#x60; of the comment. (required)
-     * @param  \OpenAPI\Client\Model\CreateReplyRequest $create_reply_request create_reply_request (required)
+     * @param  \Integrations\Canva\SDK\Model\CreateReplyRequest $create_reply_request create_reply_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createReply'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CreateReplyResponse|\OpenAPI\Client\Model\Error
+     * @return \Integrations\Canva\SDK\Model\CreateReplyResponse|\Integrations\Canva\SDK\Model\Error
      */
     public function createReply($comment_id, $create_reply_request, string $contentType = self::contentTypes['createReply'][0])
     {
@@ -486,12 +486,12 @@ class CommentApi
      * Operation createReplyWithHttpInfo
      *
      * @param  string $comment_id The &#x60;id&#x60; of the comment. (required)
-     * @param  \OpenAPI\Client\Model\CreateReplyRequest $create_reply_request (required)
+     * @param  \Integrations\Canva\SDK\Model\CreateReplyRequest $create_reply_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createReply'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CreateReplyResponse|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Integrations\Canva\SDK\Model\CreateReplyResponse|\Integrations\Canva\SDK\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function createReplyWithHttpInfo($comment_id, $create_reply_request, string $contentType = self::contentTypes['createReply'][0])
     {
@@ -534,11 +534,11 @@ class CommentApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CreateReplyResponse' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\CreateReplyResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CreateReplyResponse' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\CreateReplyResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -556,16 +556,16 @@ class CommentApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CreateReplyResponse', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\CreateReplyResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\Error' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -583,13 +583,13 @@ class CommentApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\CreateReplyResponse';
+            $returnType = '\Integrations\Canva\SDK\Model\CreateReplyResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -622,7 +622,7 @@ class CommentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CreateReplyResponse',
+                        '\Integrations\Canva\SDK\Model\CreateReplyResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -630,7 +630,7 @@ class CommentApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Integrations\Canva\SDK\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -644,7 +644,7 @@ class CommentApi
      * Operation createReplyAsync
      *
      * @param  string $comment_id The &#x60;id&#x60; of the comment. (required)
-     * @param  \OpenAPI\Client\Model\CreateReplyRequest $create_reply_request (required)
+     * @param  \Integrations\Canva\SDK\Model\CreateReplyRequest $create_reply_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createReply'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -664,7 +664,7 @@ class CommentApi
      * Operation createReplyAsyncWithHttpInfo
      *
      * @param  string $comment_id The &#x60;id&#x60; of the comment. (required)
-     * @param  \OpenAPI\Client\Model\CreateReplyRequest $create_reply_request (required)
+     * @param  \Integrations\Canva\SDK\Model\CreateReplyRequest $create_reply_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createReply'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -672,7 +672,7 @@ class CommentApi
      */
     public function createReplyAsyncWithHttpInfo($comment_id, $create_reply_request, string $contentType = self::contentTypes['createReply'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CreateReplyResponse';
+        $returnType = '\Integrations\Canva\SDK\Model\CreateReplyResponse';
         $request = $this->createReplyRequest($comment_id, $create_reply_request, $contentType);
 
         return $this->client
@@ -715,7 +715,7 @@ class CommentApi
      * Create request for operation 'createReply'
      *
      * @param  string $comment_id The &#x60;id&#x60; of the comment. (required)
-     * @param  \OpenAPI\Client\Model\CreateReplyRequest $create_reply_request (required)
+     * @param  \Integrations\Canva\SDK\Model\CreateReplyRequest $create_reply_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createReply'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -832,9 +832,9 @@ class CommentApi
      * @param  string $comment_id The &#x60;id&#x60; of the comment. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getComment'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetCommentResponse|\OpenAPI\Client\Model\Error
+     * @return \Integrations\Canva\SDK\Model\GetCommentResponse|\Integrations\Canva\SDK\Model\Error
      */
     public function getComment($design_id, $comment_id, string $contentType = self::contentTypes['getComment'][0])
     {
@@ -849,9 +849,9 @@ class CommentApi
      * @param  string $comment_id The &#x60;id&#x60; of the comment. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getComment'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetCommentResponse|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Integrations\Canva\SDK\Model\GetCommentResponse|\Integrations\Canva\SDK\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCommentWithHttpInfo($design_id, $comment_id, string $contentType = self::contentTypes['getComment'][0])
     {
@@ -894,11 +894,11 @@ class CommentApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetCommentResponse' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\GetCommentResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetCommentResponse' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\GetCommentResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -916,16 +916,16 @@ class CommentApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetCommentResponse', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\GetCommentResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\Error' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -943,13 +943,13 @@ class CommentApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetCommentResponse';
+            $returnType = '\Integrations\Canva\SDK\Model\GetCommentResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -982,7 +982,7 @@ class CommentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetCommentResponse',
+                        '\Integrations\Canva\SDK\Model\GetCommentResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -990,7 +990,7 @@ class CommentApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Integrations\Canva\SDK\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1032,7 +1032,7 @@ class CommentApi
      */
     public function getCommentAsyncWithHttpInfo($design_id, $comment_id, string $contentType = self::contentTypes['getComment'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetCommentResponse';
+        $returnType = '\Integrations\Canva\SDK\Model\GetCommentResponse';
         $request = $this->getCommentRequest($design_id, $comment_id, $contentType);
 
         return $this->client

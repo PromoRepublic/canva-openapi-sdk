@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * DesignAutofillJobResult Class Doc Comment
  *
  * @category Class
  * @description Result of the design autofill job. Only present if job status is &#x60;success&#x60;.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class DesignAutofillJobResult implements ModelInterface, ArrayAccess, \JsonSeria
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'design' => '\OpenAPI\Client\Model\DesignSummary'
+        'design' => '\Integrations\Canva\SDK\Model\DesignSummary'
     ];
 
     /**
@@ -368,7 +368,7 @@ class DesignAutofillJobResult implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets design
      *
-     * @return \OpenAPI\Client\Model\DesignSummary
+     * @return \Integrations\Canva\SDK\Model\DesignSummary
      */
     public function getDesign()
     {
@@ -378,7 +378,7 @@ class DesignAutofillJobResult implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets design
      *
-     * @param \OpenAPI\Client\Model\DesignSummary $design design
+     * @param \Integrations\Canva\SDK\Model\DesignSummary $design design
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * DesignAutofillJob Class Doc Comment
  *
  * @category Class
  * @description Details about the autofill job.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,9 +59,9 @@ class DesignAutofillJob implements ModelInterface, ArrayAccess, \JsonSerializabl
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'status' => '\OpenAPI\Client\Model\DesignAutofillStatus',
-        'result' => '\OpenAPI\Client\Model\DesignAutofillJobResult',
-        'error' => '\OpenAPI\Client\Model\AutofillError'
+        'status' => '\Integrations\Canva\SDK\Model\DesignAutofillStatus',
+        'result' => '\Integrations\Canva\SDK\Model\DesignAutofillJobResult',
+        'error' => '\Integrations\Canva\SDK\Model\AutofillError'
     ];
 
     /**
@@ -347,7 +347,7 @@ class DesignAutofillJob implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets status
      *
-     * @return \OpenAPI\Client\Model\DesignAutofillStatus
+     * @return \Integrations\Canva\SDK\Model\DesignAutofillStatus
      */
     public function getStatus()
     {
@@ -357,7 +357,7 @@ class DesignAutofillJob implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets status
      *
-     * @param \OpenAPI\Client\Model\DesignAutofillStatus $status status
+     * @param \Integrations\Canva\SDK\Model\DesignAutofillStatus $status status
      *
      * @return self
      */
@@ -374,7 +374,7 @@ class DesignAutofillJob implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets result
      *
-     * @return \OpenAPI\Client\Model\DesignAutofillJobResult|null
+     * @return \Integrations\Canva\SDK\Model\DesignAutofillJobResult|null
      */
     public function getResult()
     {
@@ -384,7 +384,7 @@ class DesignAutofillJob implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets result
      *
-     * @param \OpenAPI\Client\Model\DesignAutofillJobResult|null $result result
+     * @param \Integrations\Canva\SDK\Model\DesignAutofillJobResult|null $result result
      *
      * @return self
      */
@@ -401,7 +401,7 @@ class DesignAutofillJob implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets error
      *
-     * @return \OpenAPI\Client\Model\AutofillError|null
+     * @return \Integrations\Canva\SDK\Model\AutofillError|null
      */
     public function getError()
     {
@@ -411,7 +411,7 @@ class DesignAutofillJob implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets error
      *
-     * @param \OpenAPI\Client\Model\AutofillError|null $error error
+     * @param \Integrations\Canva\SDK\Model\AutofillError|null $error error
      *
      * @return self
      */

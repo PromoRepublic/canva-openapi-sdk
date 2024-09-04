@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,15 +26,15 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace Integrations\Canva\SDK\Model;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * ExportQuality Class Doc Comment
  *
  * @category Class
  * @description Specifies the export quality of the design. This can be one of the following: - &#x60;regular&#x60;: Regular quality export. This is the default. - &#x60;pro&#x60;: Premium quality export.    NOTE: A &#x60;pro&#x60; export might fail if the design contains [premium elements](https://www.canva.com/help/premium-elements/) and the calling user either hasn&#39;t purchased the elements or isn&#39;t on a Canva plan (such as Canva Pro) that has premium features.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

@@ -1,4 +1,4 @@
-# OpenAPI\Client\ConnectApi
+# Integrations\Canva\SDK\ConnectApi
 
 All URIs are relative to https://api.canva.com/rest, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://api.canva.com/rest, except if the operation def
 ## `getSigningPublicKeys()`
 
 ```php
-getSigningPublicKeys(): \OpenAPI\Client\Model\GetSigningPublicKeysResponse
+getSigningPublicKeys(): \Integrations\Canva\SDK\Model\GetSigningPublicKeysResponse
 ```
 
 
@@ -25,7 +25,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\ConnectApi(
+$apiInstance = new Integrations\Canva\SDK\Api\ConnectApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -45,7 +45,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetSigningPublicKeysResponse**](../Model/GetSigningPublicKeysResponse.md)
+[**\Integrations\Canva\SDK\Model\GetSigningPublicKeysResponse**](../Model/GetSigningPublicKeysResponse.md)
 
 ### Authorization
 

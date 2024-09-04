@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * GetAppJwksResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetAppJwksResponse implements ModelInterface, ArrayAccess, \JsonSerializab
       * @var string[]
       */
     protected static $openAPITypes = [
-        'keys' => '\OpenAPI\Client\Model\JsonWebKey[]'
+        'keys' => '\Integrations\Canva\SDK\Model\JsonWebKey[]'
     ];
 
     /**
@@ -295,7 +295,7 @@ class GetAppJwksResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets keys
      *
-     * @return \OpenAPI\Client\Model\JsonWebKey[]
+     * @return \Integrations\Canva\SDK\Model\JsonWebKey[]
      */
     public function getKeys()
     {
@@ -305,7 +305,7 @@ class GetAppJwksResponse implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets keys
      *
-     * @param \OpenAPI\Client\Model\JsonWebKey[] $keys The value of the \"keys\" parameter is an array of JWK values. The order of keys has no meaning.
+     * @param \Integrations\Canva\SDK\Model\JsonWebKey[] $keys The value of the \"keys\" parameter is an array of JWK values. The order of keys has no meaning.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * PresetDesignTypeInput Class Doc Comment
  *
  * @category Class
  * @description Provide the common design type.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class PresetDesignTypeInput implements ModelInterface, ArrayAccess, \JsonSeriali
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'name' => '\OpenAPI\Client\Model\PresetDesignTypeName'
+        'name' => '\Integrations\Canva\SDK\Model\PresetDesignTypeName'
     ];
 
     /**
@@ -365,7 +365,7 @@ class PresetDesignTypeInput implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets name
      *
-     * @return \OpenAPI\Client\Model\PresetDesignTypeName
+     * @return \Integrations\Canva\SDK\Model\PresetDesignTypeName
      */
     public function getName()
     {
@@ -375,7 +375,7 @@ class PresetDesignTypeInput implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets name
      *
-     * @param \OpenAPI\Client\Model\PresetDesignTypeName $name name
+     * @param \Integrations\Canva\SDK\Model\PresetDesignTypeName $name name
      *
      * @return self
      */

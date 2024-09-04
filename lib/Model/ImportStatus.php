@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * ImportStatus Class Doc Comment
  *
  * @category Class
  * @description The import status of the asset.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class ImportStatus implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'state' => '\OpenAPI\Client\Model\ImportStatusState',
-        'error' => '\OpenAPI\Client\Model\ImportError'
+        'state' => '\Integrations\Canva\SDK\Model\ImportStatusState',
+        'error' => '\Integrations\Canva\SDK\Model\ImportError'
     ];
 
     /**
@@ -303,7 +303,7 @@ class ImportStatus implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets state
      *
-     * @return \OpenAPI\Client\Model\ImportStatusState
+     * @return \Integrations\Canva\SDK\Model\ImportStatusState
      * @deprecated
      */
     public function getState()
@@ -314,7 +314,7 @@ class ImportStatus implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets state
      *
-     * @param \OpenAPI\Client\Model\ImportStatusState $state state
+     * @param \Integrations\Canva\SDK\Model\ImportStatusState $state state
      *
      * @return self
      * @deprecated
@@ -332,7 +332,7 @@ class ImportStatus implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets error
      *
-     * @return \OpenAPI\Client\Model\ImportError|null
+     * @return \Integrations\Canva\SDK\Model\ImportError|null
      * @deprecated
      */
     public function getError()
@@ -343,7 +343,7 @@ class ImportStatus implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets error
      *
-     * @param \OpenAPI\Client\Model\ImportError|null $error error
+     * @param \Integrations\Canva\SDK\Model\ImportError|null $error error
      *
      * @return self
      * @deprecated

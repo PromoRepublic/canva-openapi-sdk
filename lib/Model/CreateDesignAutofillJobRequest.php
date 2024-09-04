@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * CreateDesignAutofillJobRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class CreateDesignAutofillJobRequest implements ModelInterface, ArrayAccess, \Js
     protected static $openAPITypes = [
         'brand_template_id' => 'string',
         'title' => 'string',
-        'data' => 'array<string,\OpenAPI\Client\Model\DatasetValue>'
+        'data' => 'array<string,\Integrations\Canva\SDK\Model\DatasetValue>'
     ];
 
     /**
@@ -381,7 +381,7 @@ class CreateDesignAutofillJobRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets data
      *
-     * @return array<string,\OpenAPI\Client\Model\DatasetValue>
+     * @return array<string,\Integrations\Canva\SDK\Model\DatasetValue>
      */
     public function getData()
     {
@@ -391,7 +391,7 @@ class CreateDesignAutofillJobRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets data
      *
-     * @param array<string,\OpenAPI\Client\Model\DatasetValue> $data Data object containing the data fields and values to autofill.
+     * @param array<string,\Integrations\Canva\SDK\Model\DatasetValue> $data Data object containing the data fields and values to autofill.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * DesignImportStatus Class Doc Comment
  *
  * @category Class
  * @description The status of the design import.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class DesignImportStatus implements ModelInterface, ArrayAccess, \JsonSerializab
       * @var string[]
       */
     protected static $openAPITypes = [
-        'state' => '\OpenAPI\Client\Model\DesignImportStatusState',
-        'error' => '\OpenAPI\Client\Model\DesignImportError'
+        'state' => '\Integrations\Canva\SDK\Model\DesignImportStatusState',
+        'error' => '\Integrations\Canva\SDK\Model\DesignImportError'
     ];
 
     /**
@@ -303,7 +303,7 @@ class DesignImportStatus implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets state
      *
-     * @return \OpenAPI\Client\Model\DesignImportStatusState
+     * @return \Integrations\Canva\SDK\Model\DesignImportStatusState
      */
     public function getState()
     {
@@ -313,7 +313,7 @@ class DesignImportStatus implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets state
      *
-     * @param \OpenAPI\Client\Model\DesignImportStatusState $state state
+     * @param \Integrations\Canva\SDK\Model\DesignImportStatusState $state state
      *
      * @return self
      */
@@ -330,7 +330,7 @@ class DesignImportStatus implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets error
      *
-     * @return \OpenAPI\Client\Model\DesignImportError|null
+     * @return \Integrations\Canva\SDK\Model\DesignImportError|null
      */
     public function getError()
     {
@@ -340,7 +340,7 @@ class DesignImportStatus implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets error
      *
-     * @param \OpenAPI\Client\Model\DesignImportError|null $error error
+     * @param \Integrations\Canva\SDK\Model\DesignImportError|null $error error
      *
      * @return self
      */

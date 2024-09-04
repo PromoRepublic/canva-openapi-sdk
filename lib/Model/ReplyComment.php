@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * ReplyComment Class Doc Comment
  *
  * @category Class
  * @description Data about the reply comment, including the message, author, and the object (such as a design) the comment is attached to.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,12 +60,12 @@ class ReplyComment implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'type' => 'string',
         'id' => 'string',
-        'attached_to' => '\OpenAPI\Client\Model\CommentObject',
+        'attached_to' => '\Integrations\Canva\SDK\Model\CommentObject',
         'message' => 'string',
-        'author' => '\OpenAPI\Client\Model\User',
+        'author' => '\Integrations\Canva\SDK\Model\User',
         'created_at' => 'int',
         'updated_at' => 'int',
-        'mentions' => 'array<string,\OpenAPI\Client\Model\TeamUser>',
+        'mentions' => 'array<string,\Integrations\Canva\SDK\Model\TeamUser>',
         'thread_id' => 'string'
     ];
 
@@ -453,7 +453,7 @@ class ReplyComment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets attached_to
      *
-     * @return \OpenAPI\Client\Model\CommentObject|null
+     * @return \Integrations\Canva\SDK\Model\CommentObject|null
      */
     public function getAttachedTo()
     {
@@ -463,7 +463,7 @@ class ReplyComment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets attached_to
      *
-     * @param \OpenAPI\Client\Model\CommentObject|null $attached_to attached_to
+     * @param \Integrations\Canva\SDK\Model\CommentObject|null $attached_to attached_to
      *
      * @return self
      */
@@ -507,7 +507,7 @@ class ReplyComment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets author
      *
-     * @return \OpenAPI\Client\Model\User
+     * @return \Integrations\Canva\SDK\Model\User
      */
     public function getAuthor()
     {
@@ -517,7 +517,7 @@ class ReplyComment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets author
      *
-     * @param \OpenAPI\Client\Model\User $author author
+     * @param \Integrations\Canva\SDK\Model\User $author author
      *
      * @return self
      */
@@ -588,7 +588,7 @@ class ReplyComment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets mentions
      *
-     * @return array<string,\OpenAPI\Client\Model\TeamUser>
+     * @return array<string,\Integrations\Canva\SDK\Model\TeamUser>
      */
     public function getMentions()
     {
@@ -598,7 +598,7 @@ class ReplyComment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets mentions
      *
-     * @param array<string,\OpenAPI\Client\Model\TeamUser> $mentions The Canva users mentioned in the comment.
+     * @param array<string,\Integrations\Canva\SDK\Model\TeamUser> $mentions The Canva users mentioned in the comment.
      *
      * @return self
      */

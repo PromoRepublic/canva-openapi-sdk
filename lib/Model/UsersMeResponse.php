@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * UsersMeResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class UsersMeResponse implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'team_user' => '\OpenAPI\Client\Model\TeamUserSummary'
+        'team_user' => '\Integrations\Canva\SDK\Model\TeamUserSummary'
     ];
 
     /**
@@ -295,7 +295,7 @@ class UsersMeResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets team_user
      *
-     * @return \OpenAPI\Client\Model\TeamUserSummary
+     * @return \Integrations\Canva\SDK\Model\TeamUserSummary
      */
     public function getTeamUser()
     {
@@ -305,7 +305,7 @@ class UsersMeResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets team_user
      *
-     * @param \OpenAPI\Client\Model\TeamUserSummary $team_user team_user
+     * @param \Integrations\Canva\SDK\Model\TeamUserSummary $team_user team_user
      *
      * @return self
      */

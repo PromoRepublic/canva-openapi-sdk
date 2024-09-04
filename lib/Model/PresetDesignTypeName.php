@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,15 +26,15 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace Integrations\Canva\SDK\Model;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * PresetDesignTypeName Class Doc Comment
  *
  * @category Class
  * @description The name of the design type. This can be one of the following:  - &#x60;doc&#x60;: A [Canva doc](https://www.canva.com/docs/); a document for Canva&#39;s online text editor. - &#x60;whiteboard&#x60;: A [whiteboard](https://www.canva.com/online-whiteboard/); a design which gives you infinite space to collaborate. - &#x60;presentation&#x60;: A [presentation](https://www.canva.com/presentations/); lets you create and collaborate for presenting to an audience.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

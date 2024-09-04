@@ -1,4 +1,4 @@
-# OpenAPI\Client\DesignImportApi
+# Integrations\Canva\SDK\DesignImportApi
 
 All URIs are relative to https://api.canva.com/rest, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://api.canva.com/rest, except if the operation def
 ## `createDesignImportJob()`
 
 ```php
-createDesignImportJob($import_metadata, $body): \OpenAPI\Client\Model\CreateDesignImportJobResponse
+createDesignImportJob($import_metadata, $body): \Integrations\Canva\SDK\Model\CreateDesignImportJobResponse
 ```
 
 
@@ -26,16 +26,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DesignImportApi(
+$apiInstance = new Integrations\Canva\SDK\Api\DesignImportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$import_metadata = new \OpenAPI\Client\Model\DesignImportMetadata(); // DesignImportMetadata
+$import_metadata = new \Integrations\Canva\SDK\Model\DesignImportMetadata(); // DesignImportMetadata
 $body = "/path/to/file.txt"; // \SplFileObject | Binary of the file to import.
 
 try {
@@ -55,7 +55,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreateDesignImportJobResponse**](../Model/CreateDesignImportJobResponse.md)
+[**\Integrations\Canva\SDK\Model\CreateDesignImportJobResponse**](../Model/CreateDesignImportJobResponse.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ try {
 ## `getDesignImportJob()`
 
 ```php
-getDesignImportJob($job_id): \OpenAPI\Client\Model\GetDesignImportJobResponse
+getDesignImportJob($job_id): \Integrations\Canva\SDK\Model\GetDesignImportJobResponse
 ```
 
 
@@ -88,10 +88,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\DesignImportApi(
+$apiInstance = new Integrations\Canva\SDK\Api\DesignImportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -115,7 +115,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetDesignImportJobResponse**](../Model/GetDesignImportJobResponse.md)
+[**\Integrations\Canva\SDK\Model\GetDesignImportJobResponse**](../Model/GetDesignImportJobResponse.md)
 
 ### Authorization
 

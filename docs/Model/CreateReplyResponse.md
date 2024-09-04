@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**comment** | [**\OpenAPI\Client\Model\ReplyComment**](ReplyComment.md) |  |
+**comment** | [**\Integrations\Canva\SDK\Model\ReplyComment**](ReplyComment.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

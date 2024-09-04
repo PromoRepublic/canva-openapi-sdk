@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Integrations\Canva\SDK\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Integrations\Canva\SDK\ApiException;
+use Integrations\Canva\SDK\Configuration;
+use Integrations\Canva\SDK\HeaderSelector;
+use Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * DesignImportApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -132,9 +132,9 @@ class DesignImportApi
      * @param  \SplFileObject $body Binary of the file to import. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDesignImportJob'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CreateDesignImportJobResponse|\OpenAPI\Client\Model\Error
+     * @return \Integrations\Canva\SDK\Model\CreateDesignImportJobResponse|\Integrations\Canva\SDK\Model\Error
      */
     public function createDesignImportJob($import_metadata, $body, string $contentType = self::contentTypes['createDesignImportJob'][0])
     {
@@ -149,9 +149,9 @@ class DesignImportApi
      * @param  \SplFileObject $body Binary of the file to import. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDesignImportJob'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CreateDesignImportJobResponse|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Integrations\Canva\SDK\Model\CreateDesignImportJobResponse|\Integrations\Canva\SDK\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function createDesignImportJobWithHttpInfo($import_metadata, $body, string $contentType = self::contentTypes['createDesignImportJob'][0])
     {
@@ -194,11 +194,11 @@ class DesignImportApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CreateDesignImportJobResponse' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\CreateDesignImportJobResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CreateDesignImportJobResponse' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\CreateDesignImportJobResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -216,16 +216,16 @@ class DesignImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CreateDesignImportJobResponse', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\CreateDesignImportJobResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\Error' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -243,13 +243,13 @@ class DesignImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\CreateDesignImportJobResponse';
+            $returnType = '\Integrations\Canva\SDK\Model\CreateDesignImportJobResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -282,7 +282,7 @@ class DesignImportApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CreateDesignImportJobResponse',
+                        '\Integrations\Canva\SDK\Model\CreateDesignImportJobResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -290,7 +290,7 @@ class DesignImportApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Integrations\Canva\SDK\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -332,7 +332,7 @@ class DesignImportApi
      */
     public function createDesignImportJobAsyncWithHttpInfo($import_metadata, $body, string $contentType = self::contentTypes['createDesignImportJob'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CreateDesignImportJobResponse';
+        $returnType = '\Integrations\Canva\SDK\Model\CreateDesignImportJobResponse';
         $request = $this->createDesignImportJobRequest($import_metadata, $body, $contentType);
 
         return $this->client
@@ -484,9 +484,9 @@ class DesignImportApi
      * @param  string $job_id The design import job ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDesignImportJob'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetDesignImportJobResponse|\OpenAPI\Client\Model\Error
+     * @return \Integrations\Canva\SDK\Model\GetDesignImportJobResponse|\Integrations\Canva\SDK\Model\Error
      */
     public function getDesignImportJob($job_id, string $contentType = self::contentTypes['getDesignImportJob'][0])
     {
@@ -500,9 +500,9 @@ class DesignImportApi
      * @param  string $job_id The design import job ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDesignImportJob'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetDesignImportJobResponse|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Integrations\Canva\SDK\Model\GetDesignImportJobResponse|\Integrations\Canva\SDK\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDesignImportJobWithHttpInfo($job_id, string $contentType = self::contentTypes['getDesignImportJob'][0])
     {
@@ -545,11 +545,11 @@ class DesignImportApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetDesignImportJobResponse' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\GetDesignImportJobResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetDesignImportJobResponse' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\GetDesignImportJobResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -567,16 +567,16 @@ class DesignImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetDesignImportJobResponse', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\GetDesignImportJobResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\Error' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -594,13 +594,13 @@ class DesignImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetDesignImportJobResponse';
+            $returnType = '\Integrations\Canva\SDK\Model\GetDesignImportJobResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -633,7 +633,7 @@ class DesignImportApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetDesignImportJobResponse',
+                        '\Integrations\Canva\SDK\Model\GetDesignImportJobResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -641,7 +641,7 @@ class DesignImportApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Integrations\Canva\SDK\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -681,7 +681,7 @@ class DesignImportApi
      */
     public function getDesignImportJobAsyncWithHttpInfo($job_id, string $contentType = self::contentTypes['getDesignImportJob'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetDesignImportJobResponse';
+        $returnType = '\Integrations\Canva\SDK\Model\GetDesignImportJobResponse';
         $request = $this->getDesignImportJobRequest($job_id, $contentType);
 
         return $this->client

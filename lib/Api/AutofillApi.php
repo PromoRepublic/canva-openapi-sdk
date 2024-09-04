@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Integrations\Canva\SDK\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Integrations\Canva\SDK\ApiException;
+use Integrations\Canva\SDK\Configuration;
+use Integrations\Canva\SDK\HeaderSelector;
+use Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * AutofillApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -128,12 +128,12 @@ class AutofillApi
     /**
      * Operation createDesignAutofillJob
      *
-     * @param  \OpenAPI\Client\Model\CreateDesignAutofillJobRequest $create_design_autofill_job_request create_design_autofill_job_request (optional)
+     * @param  \Integrations\Canva\SDK\Model\CreateDesignAutofillJobRequest $create_design_autofill_job_request create_design_autofill_job_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDesignAutofillJob'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CreateDesignAutofillJobResponse|\OpenAPI\Client\Model\Error
+     * @return \Integrations\Canva\SDK\Model\CreateDesignAutofillJobResponse|\Integrations\Canva\SDK\Model\Error
      */
     public function createDesignAutofillJob($create_design_autofill_job_request = null, string $contentType = self::contentTypes['createDesignAutofillJob'][0])
     {
@@ -144,12 +144,12 @@ class AutofillApi
     /**
      * Operation createDesignAutofillJobWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\CreateDesignAutofillJobRequest $create_design_autofill_job_request (optional)
+     * @param  \Integrations\Canva\SDK\Model\CreateDesignAutofillJobRequest $create_design_autofill_job_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDesignAutofillJob'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CreateDesignAutofillJobResponse|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Integrations\Canva\SDK\Model\CreateDesignAutofillJobResponse|\Integrations\Canva\SDK\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function createDesignAutofillJobWithHttpInfo($create_design_autofill_job_request = null, string $contentType = self::contentTypes['createDesignAutofillJob'][0])
     {
@@ -192,11 +192,11 @@ class AutofillApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CreateDesignAutofillJobResponse' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\CreateDesignAutofillJobResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CreateDesignAutofillJobResponse' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\CreateDesignAutofillJobResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -214,16 +214,16 @@ class AutofillApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CreateDesignAutofillJobResponse', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\CreateDesignAutofillJobResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\Error' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -241,13 +241,13 @@ class AutofillApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\CreateDesignAutofillJobResponse';
+            $returnType = '\Integrations\Canva\SDK\Model\CreateDesignAutofillJobResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -280,7 +280,7 @@ class AutofillApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CreateDesignAutofillJobResponse',
+                        '\Integrations\Canva\SDK\Model\CreateDesignAutofillJobResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -288,7 +288,7 @@ class AutofillApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Integrations\Canva\SDK\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -301,7 +301,7 @@ class AutofillApi
     /**
      * Operation createDesignAutofillJobAsync
      *
-     * @param  \OpenAPI\Client\Model\CreateDesignAutofillJobRequest $create_design_autofill_job_request (optional)
+     * @param  \Integrations\Canva\SDK\Model\CreateDesignAutofillJobRequest $create_design_autofill_job_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDesignAutofillJob'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -320,7 +320,7 @@ class AutofillApi
     /**
      * Operation createDesignAutofillJobAsyncWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\CreateDesignAutofillJobRequest $create_design_autofill_job_request (optional)
+     * @param  \Integrations\Canva\SDK\Model\CreateDesignAutofillJobRequest $create_design_autofill_job_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDesignAutofillJob'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -328,7 +328,7 @@ class AutofillApi
      */
     public function createDesignAutofillJobAsyncWithHttpInfo($create_design_autofill_job_request = null, string $contentType = self::contentTypes['createDesignAutofillJob'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CreateDesignAutofillJobResponse';
+        $returnType = '\Integrations\Canva\SDK\Model\CreateDesignAutofillJobResponse';
         $request = $this->createDesignAutofillJobRequest($create_design_autofill_job_request, $contentType);
 
         return $this->client
@@ -370,7 +370,7 @@ class AutofillApi
     /**
      * Create request for operation 'createDesignAutofillJob'
      *
-     * @param  \OpenAPI\Client\Model\CreateDesignAutofillJobRequest $create_design_autofill_job_request (optional)
+     * @param  \Integrations\Canva\SDK\Model\CreateDesignAutofillJobRequest $create_design_autofill_job_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createDesignAutofillJob'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -462,9 +462,9 @@ class AutofillApi
      * @param  string $job_id The design autofill job ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDesignAutofillJob'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetDesignAutofillJobResponse|\OpenAPI\Client\Model\Error
+     * @return \Integrations\Canva\SDK\Model\GetDesignAutofillJobResponse|\Integrations\Canva\SDK\Model\Error
      */
     public function getDesignAutofillJob($job_id, string $contentType = self::contentTypes['getDesignAutofillJob'][0])
     {
@@ -478,9 +478,9 @@ class AutofillApi
      * @param  string $job_id The design autofill job ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getDesignAutofillJob'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetDesignAutofillJobResponse|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Integrations\Canva\SDK\Model\GetDesignAutofillJobResponse|\Integrations\Canva\SDK\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDesignAutofillJobWithHttpInfo($job_id, string $contentType = self::contentTypes['getDesignAutofillJob'][0])
     {
@@ -523,11 +523,11 @@ class AutofillApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetDesignAutofillJobResponse' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\GetDesignAutofillJobResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetDesignAutofillJobResponse' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\GetDesignAutofillJobResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -545,16 +545,16 @@ class AutofillApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetDesignAutofillJobResponse', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\GetDesignAutofillJobResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\Error' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -572,13 +572,13 @@ class AutofillApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetDesignAutofillJobResponse';
+            $returnType = '\Integrations\Canva\SDK\Model\GetDesignAutofillJobResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -611,7 +611,7 @@ class AutofillApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetDesignAutofillJobResponse',
+                        '\Integrations\Canva\SDK\Model\GetDesignAutofillJobResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -619,7 +619,7 @@ class AutofillApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Integrations\Canva\SDK\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -659,7 +659,7 @@ class AutofillApi
      */
     public function getDesignAutofillJobAsyncWithHttpInfo($job_id, string $contentType = self::contentTypes['getDesignAutofillJob'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetDesignAutofillJobResponse';
+        $returnType = '\Integrations\Canva\SDK\Model\GetDesignAutofillJobResponse';
         $request = $this->getDesignAutofillJobRequest($job_id, $contentType);
 
         return $this->client

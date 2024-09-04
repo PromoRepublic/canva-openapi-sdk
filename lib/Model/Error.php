@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * Error Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class Error implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'code' => '\OpenAPI\Client\Model\ErrorCode',
+        'code' => '\Integrations\Canva\SDK\Model\ErrorCode',
         'message' => 'string'
     ];
 
@@ -305,7 +305,7 @@ class Error implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets code
      *
-     * @return \OpenAPI\Client\Model\ErrorCode
+     * @return \Integrations\Canva\SDK\Model\ErrorCode
      */
     public function getCode()
     {
@@ -315,7 +315,7 @@ class Error implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets code
      *
-     * @param \OpenAPI\Client\Model\ErrorCode $code code
+     * @param \Integrations\Canva\SDK\Model\ErrorCode $code code
      *
      * @return self
      */

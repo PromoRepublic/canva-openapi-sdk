@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * DesignImportError Class Doc Comment
  *
  * @category Class
  * @description Information about why the import failed.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class DesignImportError implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'code' => '\OpenAPI\Client\Model\DesignImportErrorCode',
+        'code' => '\Integrations\Canva\SDK\Model\DesignImportErrorCode',
         'message' => 'string'
     ];
 
@@ -306,7 +306,7 @@ class DesignImportError implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets code
      *
-     * @return \OpenAPI\Client\Model\DesignImportErrorCode
+     * @return \Integrations\Canva\SDK\Model\DesignImportErrorCode
      */
     public function getCode()
     {
@@ -316,7 +316,7 @@ class DesignImportError implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets code
      *
-     * @param \OpenAPI\Client\Model\DesignImportErrorCode $code code
+     * @param \Integrations\Canva\SDK\Model\DesignImportErrorCode $code code
      *
      * @return self
      */

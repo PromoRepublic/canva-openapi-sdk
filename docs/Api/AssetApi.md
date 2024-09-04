@@ -1,4 +1,4 @@
-# OpenAPI\Client\AssetApi
+# Integrations\Canva\SDK\AssetApi
 
 All URIs are relative to https://api.canva.com/rest, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://api.canva.com/rest, except if the operation def
 ## `createAssetUploadJob()`
 
 ```php
-createAssetUploadJob($asset_upload_metadata, $body): \OpenAPI\Client\Model\CreateAssetUploadJobResponse
+createAssetUploadJob($asset_upload_metadata, $body): \Integrations\Canva\SDK\Model\CreateAssetUploadJobResponse
 ```
 
 
@@ -29,16 +29,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AssetApi(
+$apiInstance = new Integrations\Canva\SDK\Api\AssetApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$asset_upload_metadata = new \OpenAPI\Client\Model\AssetUploadMetadata(); // AssetUploadMetadata
+$asset_upload_metadata = new \Integrations\Canva\SDK\Model\AssetUploadMetadata(); // AssetUploadMetadata
 $body = "/path/to/file.txt"; // \SplFileObject | Binary of the asset to upload.
 
 try {
@@ -58,7 +58,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\CreateAssetUploadJobResponse**](../Model/CreateAssetUploadJobResponse.md)
+[**\Integrations\Canva\SDK\Model\CreateAssetUploadJobResponse**](../Model/CreateAssetUploadJobResponse.md)
 
 ### Authorization
 
@@ -91,10 +91,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AssetApi(
+$apiInstance = new Integrations\Canva\SDK\Api\AssetApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -135,7 +135,7 @@ void (empty response body)
 ## `getAsset()`
 
 ```php
-getAsset($asset_id): \OpenAPI\Client\Model\GetAssetResponse
+getAsset($asset_id): \Integrations\Canva\SDK\Model\GetAssetResponse
 ```
 
 
@@ -150,10 +150,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AssetApi(
+$apiInstance = new Integrations\Canva\SDK\Api\AssetApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -177,7 +177,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetAssetResponse**](../Model/GetAssetResponse.md)
+[**\Integrations\Canva\SDK\Model\GetAssetResponse**](../Model/GetAssetResponse.md)
 
 ### Authorization
 
@@ -195,7 +195,7 @@ try {
 ## `getAssetUploadJob()`
 
 ```php
-getAssetUploadJob($job_id): \OpenAPI\Client\Model\GetAssetUploadJobResponse
+getAssetUploadJob($job_id): \Integrations\Canva\SDK\Model\GetAssetUploadJobResponse
 ```
 
 
@@ -210,10 +210,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AssetApi(
+$apiInstance = new Integrations\Canva\SDK\Api\AssetApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -237,7 +237,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetAssetUploadJobResponse**](../Model/GetAssetUploadJobResponse.md)
+[**\Integrations\Canva\SDK\Model\GetAssetUploadJobResponse**](../Model/GetAssetUploadJobResponse.md)
 
 ### Authorization
 
@@ -255,7 +255,7 @@ try {
 ## `updateAsset()`
 
 ```php
-updateAsset($asset_id, $update_asset_request): \OpenAPI\Client\Model\UpdateAssetResponse
+updateAsset($asset_id, $update_asset_request): \Integrations\Canva\SDK\Model\UpdateAssetResponse
 ```
 
 
@@ -270,17 +270,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: oauthAuthCode
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Integrations\Canva\SDK\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AssetApi(
+$apiInstance = new Integrations\Canva\SDK\Api\AssetApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $asset_id = 'asset_id_example'; // string | The ID of the asset.
-$update_asset_request = new \OpenAPI\Client\Model\UpdateAssetRequest(); // \OpenAPI\Client\Model\UpdateAssetRequest
+$update_asset_request = new \Integrations\Canva\SDK\Model\UpdateAssetRequest(); // \Integrations\Canva\SDK\Model\UpdateAssetRequest
 
 try {
     $result = $apiInstance->updateAsset($asset_id, $update_asset_request);
@@ -295,11 +295,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **asset_id** | **string**| The ID of the asset. | |
-| **update_asset_request** | [**\OpenAPI\Client\Model\UpdateAssetRequest**](../Model/UpdateAssetRequest.md)|  | [optional] |
+| **update_asset_request** | [**\Integrations\Canva\SDK\Model\UpdateAssetRequest**](../Model/UpdateAssetRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\UpdateAssetResponse**](../Model/UpdateAssetResponse.md)
+[**\Integrations\Canva\SDK\Model\UpdateAssetResponse**](../Model/UpdateAssetResponse.md)
 
 ### Authorization
 

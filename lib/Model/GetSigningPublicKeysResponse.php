@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * GetSigningPublicKeysResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetSigningPublicKeysResponse implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'keys' => '\OpenAPI\Client\Model\EdDsaJwk[]'
+        'keys' => '\Integrations\Canva\SDK\Model\EdDsaJwk[]'
     ];
 
     /**
@@ -295,7 +295,7 @@ class GetSigningPublicKeysResponse implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets keys
      *
-     * @return \OpenAPI\Client\Model\EdDsaJwk[]
+     * @return \Integrations\Canva\SDK\Model\EdDsaJwk[]
      */
     public function getKeys()
     {
@@ -305,7 +305,7 @@ class GetSigningPublicKeysResponse implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets keys
      *
-     * @param \OpenAPI\Client\Model\EdDsaJwk[] $keys A Json Web Key Set (JWKS) with public keys used for signing webhooks. You can use this JWKS to verify that a webhook was sent from Canva.
+     * @param \Integrations\Canva\SDK\Model\EdDsaJwk[] $keys A Json Web Key Set (JWKS) with public keys used for signing webhooks. You can use this JWKS to verify that a webhook was sent from Canva.
      *
      * @return self
      */

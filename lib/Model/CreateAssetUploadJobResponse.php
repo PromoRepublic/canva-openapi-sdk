@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * CreateAssetUploadJobResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class CreateAssetUploadJobResponse implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'job' => '\OpenAPI\Client\Model\AssetUploadJob'
+        'job' => '\Integrations\Canva\SDK\Model\AssetUploadJob'
     ];
 
     /**
@@ -295,7 +295,7 @@ class CreateAssetUploadJobResponse implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets job
      *
-     * @return \OpenAPI\Client\Model\AssetUploadJob
+     * @return \Integrations\Canva\SDK\Model\AssetUploadJob
      */
     public function getJob()
     {
@@ -305,7 +305,7 @@ class CreateAssetUploadJobResponse implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets job
      *
-     * @param \OpenAPI\Client\Model\AssetUploadJob $job job
+     * @param \Integrations\Canva\SDK\Model\AssetUploadJob $job job
      *
      * @return self
      */

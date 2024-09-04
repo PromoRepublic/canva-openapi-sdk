@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Integrations\Canva\SDK\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Integrations\Canva\SDK\ApiException;
+use Integrations\Canva\SDK\Configuration;
+use Integrations\Canva\SDK\HeaderSelector;
+use Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * FolderApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -140,12 +140,12 @@ class FolderApi
     /**
      * Operation createFolder
      *
-     * @param  \OpenAPI\Client\Model\CreateFolderRequest $create_folder_request create_folder_request (required)
+     * @param  \Integrations\Canva\SDK\Model\CreateFolderRequest $create_folder_request create_folder_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createFolder'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\CreateFolderResponse|\OpenAPI\Client\Model\Error
+     * @return \Integrations\Canva\SDK\Model\CreateFolderResponse|\Integrations\Canva\SDK\Model\Error
      */
     public function createFolder($create_folder_request, string $contentType = self::contentTypes['createFolder'][0])
     {
@@ -156,12 +156,12 @@ class FolderApi
     /**
      * Operation createFolderWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\CreateFolderRequest $create_folder_request (required)
+     * @param  \Integrations\Canva\SDK\Model\CreateFolderRequest $create_folder_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createFolder'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\CreateFolderResponse|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Integrations\Canva\SDK\Model\CreateFolderResponse|\Integrations\Canva\SDK\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function createFolderWithHttpInfo($create_folder_request, string $contentType = self::contentTypes['createFolder'][0])
     {
@@ -204,11 +204,11 @@ class FolderApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\CreateFolderResponse' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\CreateFolderResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\CreateFolderResponse' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\CreateFolderResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -226,16 +226,16 @@ class FolderApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\CreateFolderResponse', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\CreateFolderResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\Error' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -253,13 +253,13 @@ class FolderApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\CreateFolderResponse';
+            $returnType = '\Integrations\Canva\SDK\Model\CreateFolderResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -292,7 +292,7 @@ class FolderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\CreateFolderResponse',
+                        '\Integrations\Canva\SDK\Model\CreateFolderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -300,7 +300,7 @@ class FolderApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Integrations\Canva\SDK\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -313,7 +313,7 @@ class FolderApi
     /**
      * Operation createFolderAsync
      *
-     * @param  \OpenAPI\Client\Model\CreateFolderRequest $create_folder_request (required)
+     * @param  \Integrations\Canva\SDK\Model\CreateFolderRequest $create_folder_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createFolder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -332,7 +332,7 @@ class FolderApi
     /**
      * Operation createFolderAsyncWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\CreateFolderRequest $create_folder_request (required)
+     * @param  \Integrations\Canva\SDK\Model\CreateFolderRequest $create_folder_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createFolder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -340,7 +340,7 @@ class FolderApi
      */
     public function createFolderAsyncWithHttpInfo($create_folder_request, string $contentType = self::contentTypes['createFolder'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\CreateFolderResponse';
+        $returnType = '\Integrations\Canva\SDK\Model\CreateFolderResponse';
         $request = $this->createFolderRequest($create_folder_request, $contentType);
 
         return $this->client
@@ -382,7 +382,7 @@ class FolderApi
     /**
      * Create request for operation 'createFolder'
      *
-     * @param  \OpenAPI\Client\Model\CreateFolderRequest $create_folder_request (required)
+     * @param  \Integrations\Canva\SDK\Model\CreateFolderRequest $create_folder_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createFolder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -480,7 +480,7 @@ class FolderApi
      * @param  string $folder_id The folder ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteFolder'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -495,7 +495,7 @@ class FolderApi
      * @param  string $folder_id The folder ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteFolder'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -545,7 +545,7 @@ class FolderApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Integrations\Canva\SDK\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -716,9 +716,9 @@ class FolderApi
      * @param  string $folder_id The folder ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFolder'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetFolderResponse|\OpenAPI\Client\Model\Error
+     * @return \Integrations\Canva\SDK\Model\GetFolderResponse|\Integrations\Canva\SDK\Model\Error
      */
     public function getFolder($folder_id, string $contentType = self::contentTypes['getFolder'][0])
     {
@@ -732,9 +732,9 @@ class FolderApi
      * @param  string $folder_id The folder ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getFolder'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetFolderResponse|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Integrations\Canva\SDK\Model\GetFolderResponse|\Integrations\Canva\SDK\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function getFolderWithHttpInfo($folder_id, string $contentType = self::contentTypes['getFolder'][0])
     {
@@ -777,11 +777,11 @@ class FolderApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetFolderResponse' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\GetFolderResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetFolderResponse' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\GetFolderResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -799,16 +799,16 @@ class FolderApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetFolderResponse', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\GetFolderResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\Error' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -826,13 +826,13 @@ class FolderApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetFolderResponse';
+            $returnType = '\Integrations\Canva\SDK\Model\GetFolderResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -865,7 +865,7 @@ class FolderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetFolderResponse',
+                        '\Integrations\Canva\SDK\Model\GetFolderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -873,7 +873,7 @@ class FolderApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Integrations\Canva\SDK\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -913,7 +913,7 @@ class FolderApi
      */
     public function getFolderAsyncWithHttpInfo($folder_id, string $contentType = self::contentTypes['getFolder'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetFolderResponse';
+        $returnType = '\Integrations\Canva\SDK\Model\GetFolderResponse';
         $request = $this->getFolderRequest($folder_id, $contentType);
 
         return $this->client
@@ -1056,13 +1056,13 @@ class FolderApi
      *
      * @param  string $folder_id The folder ID. (required)
      * @param  string $continuation If the success response contains a continuation token, the folder contains more items you can list. You can use this token as a query parameter and retrieve more items from the list, for example &#x60;/v1/folders/{folderId}/items?continuation&#x3D;{continuation}&#x60;.  To retrieve all the items in a folder, you might need to make multiple requests. (optional)
-     * @param  \OpenAPI\Client\Model\FolderItemType[] $item_types Filter the folder items to only return specified types. The available types are: &#x60;asset&#x60;, &#x60;design&#x60;, &#x60;folder&#x60;, and &#x60;template&#x60;. To filter for more than one item type, provide a comma-delimited list. (optional)
+     * @param  \Integrations\Canva\SDK\Model\FolderItemType[] $item_types Filter the folder items to only return specified types. The available types are: &#x60;asset&#x60;, &#x60;design&#x60;, &#x60;folder&#x60;, and &#x60;template&#x60;. To filter for more than one item type, provide a comma-delimited list. (optional)
      * @param  FolderItemSortBy $sort_by Sort the list of folder items. This can be one of the following:  - &#x60;created_ascending&#x60;: Sort results by creation date, in ascending order. - &#x60;created_descending&#x60;: Sort results by creation date, in descending order. - &#x60;modified_ascending&#x60;: Sort results by the last modified date, in ascending order. - &#x60;modified_descending&#x60;: (Default) Sort results by the last modified date, in descending order. - &#x60;title_ascending&#x60;: Sort results by title, in ascending order. The title is either the &#x60;name&#x60; field for a folder or asset, or the &#x60;title&#x60; field for a design. - &#x60;title_descending&#x60;: Sort results by title, in descending order. The title is either the &#x60;name&#x60; field for a folder or asset, or the &#x60;title&#x60; field for a design. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listFolderItems'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ListFolderItemsResponse|\OpenAPI\Client\Model\Error
+     * @return \Integrations\Canva\SDK\Model\ListFolderItemsResponse|\Integrations\Canva\SDK\Model\Error
      */
     public function listFolderItems($folder_id, $continuation = null, $item_types = null, $sort_by = null, string $contentType = self::contentTypes['listFolderItems'][0])
     {
@@ -1075,13 +1075,13 @@ class FolderApi
      *
      * @param  string $folder_id The folder ID. (required)
      * @param  string $continuation If the success response contains a continuation token, the folder contains more items you can list. You can use this token as a query parameter and retrieve more items from the list, for example &#x60;/v1/folders/{folderId}/items?continuation&#x3D;{continuation}&#x60;.  To retrieve all the items in a folder, you might need to make multiple requests. (optional)
-     * @param  \OpenAPI\Client\Model\FolderItemType[] $item_types Filter the folder items to only return specified types. The available types are: &#x60;asset&#x60;, &#x60;design&#x60;, &#x60;folder&#x60;, and &#x60;template&#x60;. To filter for more than one item type, provide a comma-delimited list. (optional)
+     * @param  \Integrations\Canva\SDK\Model\FolderItemType[] $item_types Filter the folder items to only return specified types. The available types are: &#x60;asset&#x60;, &#x60;design&#x60;, &#x60;folder&#x60;, and &#x60;template&#x60;. To filter for more than one item type, provide a comma-delimited list. (optional)
      * @param  FolderItemSortBy $sort_by Sort the list of folder items. This can be one of the following:  - &#x60;created_ascending&#x60;: Sort results by creation date, in ascending order. - &#x60;created_descending&#x60;: Sort results by creation date, in descending order. - &#x60;modified_ascending&#x60;: Sort results by the last modified date, in ascending order. - &#x60;modified_descending&#x60;: (Default) Sort results by the last modified date, in descending order. - &#x60;title_ascending&#x60;: Sort results by title, in ascending order. The title is either the &#x60;name&#x60; field for a folder or asset, or the &#x60;title&#x60; field for a design. - &#x60;title_descending&#x60;: Sort results by title, in descending order. The title is either the &#x60;name&#x60; field for a folder or asset, or the &#x60;title&#x60; field for a design. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listFolderItems'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ListFolderItemsResponse|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Integrations\Canva\SDK\Model\ListFolderItemsResponse|\Integrations\Canva\SDK\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function listFolderItemsWithHttpInfo($folder_id, $continuation = null, $item_types = null, $sort_by = null, string $contentType = self::contentTypes['listFolderItems'][0])
     {
@@ -1124,11 +1124,11 @@ class FolderApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ListFolderItemsResponse' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\ListFolderItemsResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ListFolderItemsResponse' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\ListFolderItemsResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1146,16 +1146,16 @@ class FolderApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ListFolderItemsResponse', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\ListFolderItemsResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\Error' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1173,13 +1173,13 @@ class FolderApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ListFolderItemsResponse';
+            $returnType = '\Integrations\Canva\SDK\Model\ListFolderItemsResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1212,7 +1212,7 @@ class FolderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ListFolderItemsResponse',
+                        '\Integrations\Canva\SDK\Model\ListFolderItemsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1220,7 +1220,7 @@ class FolderApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Integrations\Canva\SDK\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1235,7 +1235,7 @@ class FolderApi
      *
      * @param  string $folder_id The folder ID. (required)
      * @param  string $continuation If the success response contains a continuation token, the folder contains more items you can list. You can use this token as a query parameter and retrieve more items from the list, for example &#x60;/v1/folders/{folderId}/items?continuation&#x3D;{continuation}&#x60;.  To retrieve all the items in a folder, you might need to make multiple requests. (optional)
-     * @param  \OpenAPI\Client\Model\FolderItemType[] $item_types Filter the folder items to only return specified types. The available types are: &#x60;asset&#x60;, &#x60;design&#x60;, &#x60;folder&#x60;, and &#x60;template&#x60;. To filter for more than one item type, provide a comma-delimited list. (optional)
+     * @param  \Integrations\Canva\SDK\Model\FolderItemType[] $item_types Filter the folder items to only return specified types. The available types are: &#x60;asset&#x60;, &#x60;design&#x60;, &#x60;folder&#x60;, and &#x60;template&#x60;. To filter for more than one item type, provide a comma-delimited list. (optional)
      * @param  FolderItemSortBy $sort_by Sort the list of folder items. This can be one of the following:  - &#x60;created_ascending&#x60;: Sort results by creation date, in ascending order. - &#x60;created_descending&#x60;: Sort results by creation date, in descending order. - &#x60;modified_ascending&#x60;: Sort results by the last modified date, in ascending order. - &#x60;modified_descending&#x60;: (Default) Sort results by the last modified date, in descending order. - &#x60;title_ascending&#x60;: Sort results by title, in ascending order. The title is either the &#x60;name&#x60; field for a folder or asset, or the &#x60;title&#x60; field for a design. - &#x60;title_descending&#x60;: Sort results by title, in descending order. The title is either the &#x60;name&#x60; field for a folder or asset, or the &#x60;title&#x60; field for a design. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listFolderItems'] to see the possible values for this operation
      *
@@ -1257,7 +1257,7 @@ class FolderApi
      *
      * @param  string $folder_id The folder ID. (required)
      * @param  string $continuation If the success response contains a continuation token, the folder contains more items you can list. You can use this token as a query parameter and retrieve more items from the list, for example &#x60;/v1/folders/{folderId}/items?continuation&#x3D;{continuation}&#x60;.  To retrieve all the items in a folder, you might need to make multiple requests. (optional)
-     * @param  \OpenAPI\Client\Model\FolderItemType[] $item_types Filter the folder items to only return specified types. The available types are: &#x60;asset&#x60;, &#x60;design&#x60;, &#x60;folder&#x60;, and &#x60;template&#x60;. To filter for more than one item type, provide a comma-delimited list. (optional)
+     * @param  \Integrations\Canva\SDK\Model\FolderItemType[] $item_types Filter the folder items to only return specified types. The available types are: &#x60;asset&#x60;, &#x60;design&#x60;, &#x60;folder&#x60;, and &#x60;template&#x60;. To filter for more than one item type, provide a comma-delimited list. (optional)
      * @param  FolderItemSortBy $sort_by Sort the list of folder items. This can be one of the following:  - &#x60;created_ascending&#x60;: Sort results by creation date, in ascending order. - &#x60;created_descending&#x60;: Sort results by creation date, in descending order. - &#x60;modified_ascending&#x60;: Sort results by the last modified date, in ascending order. - &#x60;modified_descending&#x60;: (Default) Sort results by the last modified date, in descending order. - &#x60;title_ascending&#x60;: Sort results by title, in ascending order. The title is either the &#x60;name&#x60; field for a folder or asset, or the &#x60;title&#x60; field for a design. - &#x60;title_descending&#x60;: Sort results by title, in descending order. The title is either the &#x60;name&#x60; field for a folder or asset, or the &#x60;title&#x60; field for a design. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listFolderItems'] to see the possible values for this operation
      *
@@ -1266,7 +1266,7 @@ class FolderApi
      */
     public function listFolderItemsAsyncWithHttpInfo($folder_id, $continuation = null, $item_types = null, $sort_by = null, string $contentType = self::contentTypes['listFolderItems'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ListFolderItemsResponse';
+        $returnType = '\Integrations\Canva\SDK\Model\ListFolderItemsResponse';
         $request = $this->listFolderItemsRequest($folder_id, $continuation, $item_types, $sort_by, $contentType);
 
         return $this->client
@@ -1310,7 +1310,7 @@ class FolderApi
      *
      * @param  string $folder_id The folder ID. (required)
      * @param  string $continuation If the success response contains a continuation token, the folder contains more items you can list. You can use this token as a query parameter and retrieve more items from the list, for example &#x60;/v1/folders/{folderId}/items?continuation&#x3D;{continuation}&#x60;.  To retrieve all the items in a folder, you might need to make multiple requests. (optional)
-     * @param  \OpenAPI\Client\Model\FolderItemType[] $item_types Filter the folder items to only return specified types. The available types are: &#x60;asset&#x60;, &#x60;design&#x60;, &#x60;folder&#x60;, and &#x60;template&#x60;. To filter for more than one item type, provide a comma-delimited list. (optional)
+     * @param  \Integrations\Canva\SDK\Model\FolderItemType[] $item_types Filter the folder items to only return specified types. The available types are: &#x60;asset&#x60;, &#x60;design&#x60;, &#x60;folder&#x60;, and &#x60;template&#x60;. To filter for more than one item type, provide a comma-delimited list. (optional)
      * @param  FolderItemSortBy $sort_by Sort the list of folder items. This can be one of the following:  - &#x60;created_ascending&#x60;: Sort results by creation date, in ascending order. - &#x60;created_descending&#x60;: Sort results by creation date, in descending order. - &#x60;modified_ascending&#x60;: Sort results by the last modified date, in ascending order. - &#x60;modified_descending&#x60;: (Default) Sort results by the last modified date, in descending order. - &#x60;title_ascending&#x60;: Sort results by title, in ascending order. The title is either the &#x60;name&#x60; field for a folder or asset, or the &#x60;title&#x60; field for a design. - &#x60;title_descending&#x60;: Sort results by title, in descending order. The title is either the &#x60;name&#x60; field for a folder or asset, or the &#x60;title&#x60; field for a design. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listFolderItems'] to see the possible values for this operation
      *
@@ -1440,10 +1440,10 @@ class FolderApi
     /**
      * Operation moveFolderItem
      *
-     * @param  \OpenAPI\Client\Model\MoveFolderItemRequest $move_folder_item_request move_folder_item_request (optional)
+     * @param  \Integrations\Canva\SDK\Model\MoveFolderItemRequest $move_folder_item_request move_folder_item_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['moveFolderItem'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1455,10 +1455,10 @@ class FolderApi
     /**
      * Operation moveFolderItemWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\MoveFolderItemRequest $move_folder_item_request (optional)
+     * @param  \Integrations\Canva\SDK\Model\MoveFolderItemRequest $move_folder_item_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['moveFolderItem'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1508,7 +1508,7 @@ class FolderApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Integrations\Canva\SDK\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1521,7 +1521,7 @@ class FolderApi
     /**
      * Operation moveFolderItemAsync
      *
-     * @param  \OpenAPI\Client\Model\MoveFolderItemRequest $move_folder_item_request (optional)
+     * @param  \Integrations\Canva\SDK\Model\MoveFolderItemRequest $move_folder_item_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['moveFolderItem'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1540,7 +1540,7 @@ class FolderApi
     /**
      * Operation moveFolderItemAsyncWithHttpInfo
      *
-     * @param  \OpenAPI\Client\Model\MoveFolderItemRequest $move_folder_item_request (optional)
+     * @param  \Integrations\Canva\SDK\Model\MoveFolderItemRequest $move_folder_item_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['moveFolderItem'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1577,7 +1577,7 @@ class FolderApi
     /**
      * Create request for operation 'moveFolderItem'
      *
-     * @param  \OpenAPI\Client\Model\MoveFolderItemRequest $move_folder_item_request (optional)
+     * @param  \Integrations\Canva\SDK\Model\MoveFolderItemRequest $move_folder_item_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['moveFolderItem'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1667,12 +1667,12 @@ class FolderApi
      * Operation updateFolder
      *
      * @param  string $folder_id The folder ID. (required)
-     * @param  \OpenAPI\Client\Model\UpdateFolderRequest $update_folder_request update_folder_request (required)
+     * @param  \Integrations\Canva\SDK\Model\UpdateFolderRequest $update_folder_request update_folder_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateFolder'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\UpdateFolderResponse|\OpenAPI\Client\Model\Error
+     * @return \Integrations\Canva\SDK\Model\UpdateFolderResponse|\Integrations\Canva\SDK\Model\Error
      */
     public function updateFolder($folder_id, $update_folder_request, string $contentType = self::contentTypes['updateFolder'][0])
     {
@@ -1684,12 +1684,12 @@ class FolderApi
      * Operation updateFolderWithHttpInfo
      *
      * @param  string $folder_id The folder ID. (required)
-     * @param  \OpenAPI\Client\Model\UpdateFolderRequest $update_folder_request (required)
+     * @param  \Integrations\Canva\SDK\Model\UpdateFolderRequest $update_folder_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateFolder'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\UpdateFolderResponse|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Integrations\Canva\SDK\Model\UpdateFolderResponse|\Integrations\Canva\SDK\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateFolderWithHttpInfo($folder_id, $update_folder_request, string $contentType = self::contentTypes['updateFolder'][0])
     {
@@ -1732,11 +1732,11 @@ class FolderApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\UpdateFolderResponse' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\UpdateFolderResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\UpdateFolderResponse' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\UpdateFolderResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1754,16 +1754,16 @@ class FolderApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\UpdateFolderResponse', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\UpdateFolderResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\Error' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1781,13 +1781,13 @@ class FolderApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\UpdateFolderResponse';
+            $returnType = '\Integrations\Canva\SDK\Model\UpdateFolderResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1820,7 +1820,7 @@ class FolderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\UpdateFolderResponse',
+                        '\Integrations\Canva\SDK\Model\UpdateFolderResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1828,7 +1828,7 @@ class FolderApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Integrations\Canva\SDK\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1842,7 +1842,7 @@ class FolderApi
      * Operation updateFolderAsync
      *
      * @param  string $folder_id The folder ID. (required)
-     * @param  \OpenAPI\Client\Model\UpdateFolderRequest $update_folder_request (required)
+     * @param  \Integrations\Canva\SDK\Model\UpdateFolderRequest $update_folder_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateFolder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1862,7 +1862,7 @@ class FolderApi
      * Operation updateFolderAsyncWithHttpInfo
      *
      * @param  string $folder_id The folder ID. (required)
-     * @param  \OpenAPI\Client\Model\UpdateFolderRequest $update_folder_request (required)
+     * @param  \Integrations\Canva\SDK\Model\UpdateFolderRequest $update_folder_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateFolder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1870,7 +1870,7 @@ class FolderApi
      */
     public function updateFolderAsyncWithHttpInfo($folder_id, $update_folder_request, string $contentType = self::contentTypes['updateFolder'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\UpdateFolderResponse';
+        $returnType = '\Integrations\Canva\SDK\Model\UpdateFolderResponse';
         $request = $this->updateFolderRequest($folder_id, $update_folder_request, $contentType);
 
         return $this->client
@@ -1913,7 +1913,7 @@ class FolderApi
      * Create request for operation 'updateFolder'
      *
      * @param  string $folder_id The folder ID. (required)
-     * @param  \OpenAPI\Client\Model\UpdateFolderRequest $update_folder_request (required)
+     * @param  \Integrations\Canva\SDK\Model\UpdateFolderRequest $update_folder_request (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['updateFolder'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

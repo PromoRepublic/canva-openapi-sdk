@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * AssetUploadJob Class Doc Comment
  *
  * @category Class
  * @description The status of the asset upload job.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,9 +59,9 @@ class AssetUploadJob implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'status' => '\OpenAPI\Client\Model\AssetUploadStatus',
-        'error' => '\OpenAPI\Client\Model\AssetUploadError',
-        'asset' => '\OpenAPI\Client\Model\Asset'
+        'status' => '\Integrations\Canva\SDK\Model\AssetUploadStatus',
+        'error' => '\Integrations\Canva\SDK\Model\AssetUploadError',
+        'asset' => '\Integrations\Canva\SDK\Model\Asset'
     ];
 
     /**
@@ -347,7 +347,7 @@ class AssetUploadJob implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets status
      *
-     * @return \OpenAPI\Client\Model\AssetUploadStatus
+     * @return \Integrations\Canva\SDK\Model\AssetUploadStatus
      */
     public function getStatus()
     {
@@ -357,7 +357,7 @@ class AssetUploadJob implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets status
      *
-     * @param \OpenAPI\Client\Model\AssetUploadStatus $status status
+     * @param \Integrations\Canva\SDK\Model\AssetUploadStatus $status status
      *
      * @return self
      */
@@ -374,7 +374,7 @@ class AssetUploadJob implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets error
      *
-     * @return \OpenAPI\Client\Model\AssetUploadError|null
+     * @return \Integrations\Canva\SDK\Model\AssetUploadError|null
      */
     public function getError()
     {
@@ -384,7 +384,7 @@ class AssetUploadJob implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets error
      *
-     * @param \OpenAPI\Client\Model\AssetUploadError|null $error error
+     * @param \Integrations\Canva\SDK\Model\AssetUploadError|null $error error
      *
      * @return self
      */
@@ -401,7 +401,7 @@ class AssetUploadJob implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets asset
      *
-     * @return \OpenAPI\Client\Model\Asset|null
+     * @return \Integrations\Canva\SDK\Model\Asset|null
      */
     public function getAsset()
     {
@@ -411,7 +411,7 @@ class AssetUploadJob implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets asset
      *
-     * @param \OpenAPI\Client\Model\Asset|null $asset asset
+     * @param \Integrations\Canva\SDK\Model\Asset|null $asset asset
      *
      * @return self
      */

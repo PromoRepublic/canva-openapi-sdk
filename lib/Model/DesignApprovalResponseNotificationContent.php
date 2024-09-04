@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * DesignApprovalResponseNotificationContent Class Doc Comment
  *
  * @category Class
  * @description The notification content for when someone approves a design or gives feeback.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,12 +59,12 @@ class DesignApprovalResponseNotificationContent implements ModelInterface, Array
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'triggering_user' => '\OpenAPI\Client\Model\User',
-        'receiving_team_user' => '\OpenAPI\Client\Model\TeamUser',
-        'requesting_user' => '\OpenAPI\Client\Model\User',
-        'responding_groups' => '\OpenAPI\Client\Model\Group[]',
-        'design' => '\OpenAPI\Client\Model\DesignSummary',
-        'approval_response' => '\OpenAPI\Client\Model\ApprovalResponseAction'
+        'triggering_user' => '\Integrations\Canva\SDK\Model\User',
+        'receiving_team_user' => '\Integrations\Canva\SDK\Model\TeamUser',
+        'requesting_user' => '\Integrations\Canva\SDK\Model\User',
+        'responding_groups' => '\Integrations\Canva\SDK\Model\Group[]',
+        'design' => '\Integrations\Canva\SDK\Model\DesignSummary',
+        'approval_response' => '\Integrations\Canva\SDK\Model\ApprovalResponseAction'
     ];
 
     /**
@@ -412,7 +412,7 @@ class DesignApprovalResponseNotificationContent implements ModelInterface, Array
     /**
      * Gets triggering_user
      *
-     * @return \OpenAPI\Client\Model\User
+     * @return \Integrations\Canva\SDK\Model\User
      */
     public function getTriggeringUser()
     {
@@ -422,7 +422,7 @@ class DesignApprovalResponseNotificationContent implements ModelInterface, Array
     /**
      * Sets triggering_user
      *
-     * @param \OpenAPI\Client\Model\User $triggering_user triggering_user
+     * @param \Integrations\Canva\SDK\Model\User $triggering_user triggering_user
      *
      * @return self
      */
@@ -439,7 +439,7 @@ class DesignApprovalResponseNotificationContent implements ModelInterface, Array
     /**
      * Gets receiving_team_user
      *
-     * @return \OpenAPI\Client\Model\TeamUser
+     * @return \Integrations\Canva\SDK\Model\TeamUser
      */
     public function getReceivingTeamUser()
     {
@@ -449,7 +449,7 @@ class DesignApprovalResponseNotificationContent implements ModelInterface, Array
     /**
      * Sets receiving_team_user
      *
-     * @param \OpenAPI\Client\Model\TeamUser $receiving_team_user receiving_team_user
+     * @param \Integrations\Canva\SDK\Model\TeamUser $receiving_team_user receiving_team_user
      *
      * @return self
      */
@@ -466,7 +466,7 @@ class DesignApprovalResponseNotificationContent implements ModelInterface, Array
     /**
      * Gets requesting_user
      *
-     * @return \OpenAPI\Client\Model\User|null
+     * @return \Integrations\Canva\SDK\Model\User|null
      */
     public function getRequestingUser()
     {
@@ -476,7 +476,7 @@ class DesignApprovalResponseNotificationContent implements ModelInterface, Array
     /**
      * Sets requesting_user
      *
-     * @param \OpenAPI\Client\Model\User|null $requesting_user requesting_user
+     * @param \Integrations\Canva\SDK\Model\User|null $requesting_user requesting_user
      *
      * @return self
      */
@@ -493,7 +493,7 @@ class DesignApprovalResponseNotificationContent implements ModelInterface, Array
     /**
      * Gets responding_groups
      *
-     * @return \OpenAPI\Client\Model\Group[]
+     * @return \Integrations\Canva\SDK\Model\Group[]
      */
     public function getRespondingGroups()
     {
@@ -503,7 +503,7 @@ class DesignApprovalResponseNotificationContent implements ModelInterface, Array
     /**
      * Sets responding_groups
      *
-     * @param \OpenAPI\Client\Model\Group[] $responding_groups responding_groups
+     * @param \Integrations\Canva\SDK\Model\Group[] $responding_groups responding_groups
      *
      * @return self
      */
@@ -520,7 +520,7 @@ class DesignApprovalResponseNotificationContent implements ModelInterface, Array
     /**
      * Gets design
      *
-     * @return \OpenAPI\Client\Model\DesignSummary
+     * @return \Integrations\Canva\SDK\Model\DesignSummary
      */
     public function getDesign()
     {
@@ -530,7 +530,7 @@ class DesignApprovalResponseNotificationContent implements ModelInterface, Array
     /**
      * Sets design
      *
-     * @param \OpenAPI\Client\Model\DesignSummary $design design
+     * @param \Integrations\Canva\SDK\Model\DesignSummary $design design
      *
      * @return self
      */
@@ -547,7 +547,7 @@ class DesignApprovalResponseNotificationContent implements ModelInterface, Array
     /**
      * Gets approval_response
      *
-     * @return \OpenAPI\Client\Model\ApprovalResponseAction
+     * @return \Integrations\Canva\SDK\Model\ApprovalResponseAction
      */
     public function getApprovalResponse()
     {
@@ -557,7 +557,7 @@ class DesignApprovalResponseNotificationContent implements ModelInterface, Array
     /**
      * Sets approval_response
      *
-     * @param \OpenAPI\Client\Model\ApprovalResponseAction $approval_response approval_response
+     * @param \Integrations\Canva\SDK\Model\ApprovalResponseAction $approval_response approval_response
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * Template Class Doc Comment
  *
  * @category Class
  * @description The template object, which contains metadata about the template.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class Template implements ModelInterface, ArrayAccess, \JsonSerializable
         'id' => 'string',
         'title' => 'string',
         'url' => 'string',
-        'thumbnails' => '\OpenAPI\Client\Model\Thumbnail[]'
+        'thumbnails' => '\Integrations\Canva\SDK\Model\Thumbnail[]'
     ];
 
     /**
@@ -407,7 +407,7 @@ class Template implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets thumbnails
      *
-     * @return \OpenAPI\Client\Model\Thumbnail[]
+     * @return \Integrations\Canva\SDK\Model\Thumbnail[]
      */
     public function getThumbnails()
     {
@@ -417,7 +417,7 @@ class Template implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets thumbnails
      *
-     * @param \OpenAPI\Client\Model\Thumbnail[] $thumbnails A list of thumbnail images representing the template. This list contains one thumbnail for each page of the template.
+     * @param \Integrations\Canva\SDK\Model\Thumbnail[] $thumbnails A list of thumbnail images representing the template. This list contains one thumbnail for each page of the template.
      *
      * @return self
      */

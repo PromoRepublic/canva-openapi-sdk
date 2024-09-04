@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * DesignSummary Class Doc Comment
  *
  * @category Class
  * @description Basic details about the design, such as the design&#39;s ID, title, and URL.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class DesignSummary implements ModelInterface, ArrayAccess, \JsonSerializable
         'id' => 'string',
         'title' => 'string',
         'url' => 'string',
-        'thumbnail' => '\OpenAPI\Client\Model\Thumbnail'
+        'thumbnail' => '\Integrations\Canva\SDK\Model\Thumbnail'
     ];
 
     /**
@@ -395,7 +395,7 @@ class DesignSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets thumbnail
      *
-     * @return \OpenAPI\Client\Model\Thumbnail|null
+     * @return \Integrations\Canva\SDK\Model\Thumbnail|null
      */
     public function getThumbnail()
     {
@@ -405,7 +405,7 @@ class DesignSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets thumbnail
      *
-     * @param \OpenAPI\Client\Model\Thumbnail|null $thumbnail thumbnail
+     * @param \Integrations\Canva\SDK\Model\Thumbnail|null $thumbnail thumbnail
      *
      * @return self
      */

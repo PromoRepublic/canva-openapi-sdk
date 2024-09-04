@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * GetDesignAutofillJobResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetDesignAutofillJobResponse implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'job' => '\OpenAPI\Client\Model\DesignAutofillJob'
+        'job' => '\Integrations\Canva\SDK\Model\DesignAutofillJob'
     ];
 
     /**
@@ -295,7 +295,7 @@ class GetDesignAutofillJobResponse implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets job
      *
-     * @return \OpenAPI\Client\Model\DesignAutofillJob
+     * @return \Integrations\Canva\SDK\Model\DesignAutofillJob
      */
     public function getJob()
     {
@@ -305,7 +305,7 @@ class GetDesignAutofillJobResponse implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets job
      *
-     * @param \OpenAPI\Client\Model\DesignAutofillJob $job job
+     * @param \Integrations\Canva\SDK\Model\DesignAutofillJob $job job
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * DesignMentionNotificationContent Class Doc Comment
  *
  * @category Class
  * @description The notification content for when someone mentions a user in a design.  The link to the design in this notification is valid for 30 days, and can only be opened by the recipient of the notification.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,9 +59,9 @@ class DesignMentionNotificationContent implements ModelInterface, ArrayAccess, \
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'triggering_user' => '\OpenAPI\Client\Model\User',
-        'receiving_team_user' => '\OpenAPI\Client\Model\TeamUser',
-        'design' => '\OpenAPI\Client\Model\DesignSummary'
+        'triggering_user' => '\Integrations\Canva\SDK\Model\User',
+        'receiving_team_user' => '\Integrations\Canva\SDK\Model\TeamUser',
+        'design' => '\Integrations\Canva\SDK\Model\DesignSummary'
     ];
 
     /**
@@ -385,7 +385,7 @@ class DesignMentionNotificationContent implements ModelInterface, ArrayAccess, \
     /**
      * Gets triggering_user
      *
-     * @return \OpenAPI\Client\Model\User
+     * @return \Integrations\Canva\SDK\Model\User
      */
     public function getTriggeringUser()
     {
@@ -395,7 +395,7 @@ class DesignMentionNotificationContent implements ModelInterface, ArrayAccess, \
     /**
      * Sets triggering_user
      *
-     * @param \OpenAPI\Client\Model\User $triggering_user triggering_user
+     * @param \Integrations\Canva\SDK\Model\User $triggering_user triggering_user
      *
      * @return self
      */
@@ -412,7 +412,7 @@ class DesignMentionNotificationContent implements ModelInterface, ArrayAccess, \
     /**
      * Gets receiving_team_user
      *
-     * @return \OpenAPI\Client\Model\TeamUser
+     * @return \Integrations\Canva\SDK\Model\TeamUser
      */
     public function getReceivingTeamUser()
     {
@@ -422,7 +422,7 @@ class DesignMentionNotificationContent implements ModelInterface, ArrayAccess, \
     /**
      * Sets receiving_team_user
      *
-     * @param \OpenAPI\Client\Model\TeamUser $receiving_team_user receiving_team_user
+     * @param \Integrations\Canva\SDK\Model\TeamUser $receiving_team_user receiving_team_user
      *
      * @return self
      */
@@ -439,7 +439,7 @@ class DesignMentionNotificationContent implements ModelInterface, ArrayAccess, \
     /**
      * Gets design
      *
-     * @return \OpenAPI\Client\Model\DesignSummary
+     * @return \Integrations\Canva\SDK\Model\DesignSummary
      */
     public function getDesign()
     {
@@ -449,7 +449,7 @@ class DesignMentionNotificationContent implements ModelInterface, ArrayAccess, \
     /**
      * Sets design
      *
-     * @param \OpenAPI\Client\Model\DesignSummary $design design
+     * @param \Integrations\Canva\SDK\Model\DesignSummary $design design
      *
      * @return self
      */

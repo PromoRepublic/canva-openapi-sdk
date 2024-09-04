@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * AssetUploadError Class Doc Comment
  *
  * @category Class
  * @description If the upload fails, this object provides details about the error.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class AssetUploadError implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'code' => '\OpenAPI\Client\Model\AssetUploadErrorCode',
+        'code' => '\Integrations\Canva\SDK\Model\AssetUploadErrorCode',
         'message' => 'string'
     ];
 
@@ -306,7 +306,7 @@ class AssetUploadError implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets code
      *
-     * @return \OpenAPI\Client\Model\AssetUploadErrorCode
+     * @return \Integrations\Canva\SDK\Model\AssetUploadErrorCode
      */
     public function getCode()
     {
@@ -316,7 +316,7 @@ class AssetUploadError implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets code
      *
-     * @param \OpenAPI\Client\Model\AssetUploadErrorCode $code code
+     * @param \Integrations\Canva\SDK\Model\AssetUploadErrorCode $code code
      *
      * @return self
      */

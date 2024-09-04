@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**design_type** | [**\OpenAPI\Client\Model\DesignTypeInput**](DesignTypeInput.md) |  | [optional]
+**design_type** | [**\Integrations\Canva\SDK\Model\DesignTypeInput**](DesignTypeInput.md) |  | [optional]
 **asset_id** | **string** | The ID of an asset to insert into the created design. | [optional]
 **title** | **string** | The name of the design. Must be less than 256 characters. | [optional]
 

@@ -1,0 +1,9 @@
+{
+  "composerPackageName": "promorepublic/canva-openapi-sdk",
+  "invokerPackage": "Integrations\\Canva\\SDK",
+  "packageVersion": "1.0.0",
+  "library": "guzzle",
+  "additionalProperties": {
+    "guzzleVersion": "6.0"
+  }
+}

@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **type** | **string** |  |
-**export_quality** | [**\OpenAPI\Client\Model\ExportQuality**](ExportQuality.md) |  | [optional]
+**export_quality** | [**\Integrations\Canva\SDK\Model\ExportQuality**](ExportQuality.md) |  | [optional]
 **height** | **int** | Specify the height in pixels of the exported image. If only one of height or width is specified, then the image will be scaled to match that dimension, respecting the design&#39;s aspect ratio. If no width or height is specified, the image will be exported using the dimensions of the design. | [optional]
 **width** | **int** | Specify the width in pixels of the exported image. If only one of height or width is specified, then the image will be scaled to match that dimension, respecting the design&#39;s aspect ratio. If no width or height is specified, the image will be exported using the dimensions of the design. | [optional]
 **lossless** | **bool** | When &#x60;true&#x60;, the PNG is compressed with a lossless compression algorithm (&#x60;false&#x60; by default). | [optional] [default to false]

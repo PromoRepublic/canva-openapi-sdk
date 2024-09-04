@@ -1,4 +1,4 @@
-# OpenAPI\Client\AppApi
+# Integrations\Canva\SDK\AppApi
 
 All URIs are relative to https://api.canva.com/rest, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://api.canva.com/rest, except if the operation def
 ## `getAppJwks()`
 
 ```php
-getAppJwks($app_id): \OpenAPI\Client\Model\GetAppJwksResponse
+getAppJwks($app_id): \Integrations\Canva\SDK\Model\GetAppJwksResponse
 ```
 
 
@@ -25,7 +25,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\AppApi(
+$apiInstance = new Integrations\Canva\SDK\Api\AppApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -48,7 +48,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\GetAppJwksResponse**](../Model/GetAppJwksResponse.md)
+[**\Integrations\Canva\SDK\Model\GetAppJwksResponse**](../Model/GetAppJwksResponse.md)
 
 ### Authorization
 

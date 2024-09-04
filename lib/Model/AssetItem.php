@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Integrations\Canva\SDK\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * AssetItem Class Doc Comment
  *
  * @category Class
  * @description Details about the asset.
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class AssetItem implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'asset' => '\OpenAPI\Client\Model\Asset'
+        'asset' => '\Integrations\Canva\SDK\Model\Asset'
     ];
 
     /**
@@ -365,7 +365,7 @@ class AssetItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets asset
      *
-     * @return \OpenAPI\Client\Model\Asset
+     * @return \Integrations\Canva\SDK\Model\Asset
      */
     public function getAsset()
     {
@@ -375,7 +375,7 @@ class AssetItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets asset
      *
-     * @param \OpenAPI\Client\Model\Asset $asset asset
+     * @param \Integrations\Canva\SDK\Model\Asset $asset asset
      *
      * @return self
      */

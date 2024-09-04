@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Integrations\Canva\SDK\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Integrations\Canva\SDK\ApiException;
+use Integrations\Canva\SDK\Configuration;
+use Integrations\Canva\SDK\HeaderSelector;
+use Integrations\Canva\SDK\ObjectSerializer;
 
 /**
  * BrandTemplateApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Integrations\Canva\SDK
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -134,9 +134,9 @@ class BrandTemplateApi
      * @param  string $brand_template_id The brand template ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getBrandTemplate'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetBrandTemplateResponse|\OpenAPI\Client\Model\Error
+     * @return \Integrations\Canva\SDK\Model\GetBrandTemplateResponse|\Integrations\Canva\SDK\Model\Error
      */
     public function getBrandTemplate($brand_template_id, string $contentType = self::contentTypes['getBrandTemplate'][0])
     {
@@ -150,9 +150,9 @@ class BrandTemplateApi
      * @param  string $brand_template_id The brand template ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getBrandTemplate'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetBrandTemplateResponse|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Integrations\Canva\SDK\Model\GetBrandTemplateResponse|\Integrations\Canva\SDK\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function getBrandTemplateWithHttpInfo($brand_template_id, string $contentType = self::contentTypes['getBrandTemplate'][0])
     {
@@ -195,11 +195,11 @@ class BrandTemplateApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetBrandTemplateResponse' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\GetBrandTemplateResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetBrandTemplateResponse' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\GetBrandTemplateResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -217,16 +217,16 @@ class BrandTemplateApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetBrandTemplateResponse', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\GetBrandTemplateResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\Error' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -244,13 +244,13 @@ class BrandTemplateApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetBrandTemplateResponse';
+            $returnType = '\Integrations\Canva\SDK\Model\GetBrandTemplateResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -283,7 +283,7 @@ class BrandTemplateApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetBrandTemplateResponse',
+                        '\Integrations\Canva\SDK\Model\GetBrandTemplateResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -291,7 +291,7 @@ class BrandTemplateApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Integrations\Canva\SDK\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -331,7 +331,7 @@ class BrandTemplateApi
      */
     public function getBrandTemplateAsyncWithHttpInfo($brand_template_id, string $contentType = self::contentTypes['getBrandTemplate'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetBrandTemplateResponse';
+        $returnType = '\Integrations\Canva\SDK\Model\GetBrandTemplateResponse';
         $request = $this->getBrandTemplateRequest($brand_template_id, $contentType);
 
         return $this->client
@@ -475,9 +475,9 @@ class BrandTemplateApi
      * @param  string $brand_template_id The brand template ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getBrandTemplateDataset'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetBrandTemplateDatasetResponse|\OpenAPI\Client\Model\Error
+     * @return \Integrations\Canva\SDK\Model\GetBrandTemplateDatasetResponse|\Integrations\Canva\SDK\Model\Error
      */
     public function getBrandTemplateDataset($brand_template_id, string $contentType = self::contentTypes['getBrandTemplateDataset'][0])
     {
@@ -491,9 +491,9 @@ class BrandTemplateApi
      * @param  string $brand_template_id The brand template ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getBrandTemplateDataset'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetBrandTemplateDatasetResponse|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Integrations\Canva\SDK\Model\GetBrandTemplateDatasetResponse|\Integrations\Canva\SDK\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function getBrandTemplateDatasetWithHttpInfo($brand_template_id, string $contentType = self::contentTypes['getBrandTemplateDataset'][0])
     {
@@ -536,11 +536,11 @@ class BrandTemplateApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetBrandTemplateDatasetResponse' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\GetBrandTemplateDatasetResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetBrandTemplateDatasetResponse' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\GetBrandTemplateDatasetResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -558,16 +558,16 @@ class BrandTemplateApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetBrandTemplateDatasetResponse', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\GetBrandTemplateDatasetResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\Error' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -585,13 +585,13 @@ class BrandTemplateApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetBrandTemplateDatasetResponse';
+            $returnType = '\Integrations\Canva\SDK\Model\GetBrandTemplateDatasetResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -624,7 +624,7 @@ class BrandTemplateApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetBrandTemplateDatasetResponse',
+                        '\Integrations\Canva\SDK\Model\GetBrandTemplateDatasetResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -632,7 +632,7 @@ class BrandTemplateApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Integrations\Canva\SDK\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -672,7 +672,7 @@ class BrandTemplateApi
      */
     public function getBrandTemplateDatasetAsyncWithHttpInfo($brand_template_id, string $contentType = self::contentTypes['getBrandTemplateDataset'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetBrandTemplateDatasetResponse';
+        $returnType = '\Integrations\Canva\SDK\Model\GetBrandTemplateDatasetResponse';
         $request = $this->getBrandTemplateDatasetRequest($brand_template_id, $contentType);
 
         return $this->client
@@ -819,9 +819,9 @@ class BrandTemplateApi
      * @param  SortByType $sort_by Sort the list of brand templates. This can be one of the following:  - &#x60;relevance&#x60;: (Default) Sort results using a relevance algorithm. - &#x60;modified_descending&#x60;: Sort results by the date last modified in descending order. - &#x60;modified_ascending&#x60;: Sort results by the date last modified in ascending order. - &#x60;title_descending&#x60;: Sort results by title in descending order. - &#x60;title_ascending&#x60;: Sort results by title in ascending order. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listBrandTemplates'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ListBrandTemplatesResponse|\OpenAPI\Client\Model\Error
+     * @return \Integrations\Canva\SDK\Model\ListBrandTemplatesResponse|\Integrations\Canva\SDK\Model\Error
      */
     public function listBrandTemplates($query = null, $continuation = null, $ownership = null, $sort_by = null, string $contentType = self::contentTypes['listBrandTemplates'][0])
     {
@@ -838,9 +838,9 @@ class BrandTemplateApi
      * @param  SortByType $sort_by Sort the list of brand templates. This can be one of the following:  - &#x60;relevance&#x60;: (Default) Sort results using a relevance algorithm. - &#x60;modified_descending&#x60;: Sort results by the date last modified in descending order. - &#x60;modified_ascending&#x60;: Sort results by the date last modified in ascending order. - &#x60;title_descending&#x60;: Sort results by title in descending order. - &#x60;title_ascending&#x60;: Sort results by title in ascending order. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['listBrandTemplates'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \Integrations\Canva\SDK\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ListBrandTemplatesResponse|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Integrations\Canva\SDK\Model\ListBrandTemplatesResponse|\Integrations\Canva\SDK\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function listBrandTemplatesWithHttpInfo($query = null, $continuation = null, $ownership = null, $sort_by = null, string $contentType = self::contentTypes['listBrandTemplates'][0])
     {
@@ -883,11 +883,11 @@ class BrandTemplateApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ListBrandTemplatesResponse' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\ListBrandTemplatesResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ListBrandTemplatesResponse' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\ListBrandTemplatesResponse' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -905,16 +905,16 @@ class BrandTemplateApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ListBrandTemplatesResponse', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\ListBrandTemplatesResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 default:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\Integrations\Canva\SDK\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\Integrations\Canva\SDK\Model\Error' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -932,13 +932,13 @@ class BrandTemplateApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\Integrations\Canva\SDK\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ListBrandTemplatesResponse';
+            $returnType = '\Integrations\Canva\SDK\Model\ListBrandTemplatesResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -971,7 +971,7 @@ class BrandTemplateApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ListBrandTemplatesResponse',
+                        '\Integrations\Canva\SDK\Model\ListBrandTemplatesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -979,7 +979,7 @@ class BrandTemplateApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Integrations\Canva\SDK\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1025,7 +1025,7 @@ class BrandTemplateApi
      */
     public function listBrandTemplatesAsyncWithHttpInfo($query = null, $continuation = null, $ownership = null, $sort_by = null, string $contentType = self::contentTypes['listBrandTemplates'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ListBrandTemplatesResponse';
+        $returnType = '\Integrations\Canva\SDK\Model\ListBrandTemplatesResponse';
         $request = $this->listBrandTemplatesRequest($query, $continuation, $ownership, $sort_by, $contentType);
 
         return $this->client
