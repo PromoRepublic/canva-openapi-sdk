@@ -411,7 +411,7 @@ class CommentApi
         if (isset($create_comment_request)) {
             if (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the body
-                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($create_comment_request));
+                $httpBody = \Integrations\Canva\SDK\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($create_comment_request));
             } else {
                 $httpBody = $create_comment_request;
             }
@@ -432,7 +432,7 @@ class CommentApi
 
             } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the form parameters
-                $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
+                $httpBody = \Integrations\Canva\SDK\Utils::jsonEncode($formParams);
             } else {
                 // for HTTP post (form)
                 $httpBody = ObjectSerializer::buildQuery($formParams);
@@ -771,7 +771,7 @@ class CommentApi
         if (isset($create_reply_request)) {
             if (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the body
-                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($create_reply_request));
+                $httpBody = \Integrations\Canva\SDK\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($create_reply_request));
             } else {
                 $httpBody = $create_reply_request;
             }
@@ -792,7 +792,7 @@ class CommentApi
 
             } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the form parameters
-                $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
+                $httpBody = \Integrations\Canva\SDK\Utils::jsonEncode($formParams);
             } else {
                 // for HTTP post (form)
                 $httpBody = ObjectSerializer::buildQuery($formParams);
@@ -1156,7 +1156,7 @@ class CommentApi
 
             } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the form parameters
-                $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
+                $httpBody = \Integrations\Canva\SDK\Utils::jsonEncode($formParams);
             } else {
                 // for HTTP post (form)
                 $httpBody = ObjectSerializer::buildQuery($formParams);

@@ -402,7 +402,7 @@ class AutofillApi
         if (isset($create_design_autofill_job_request)) {
             if (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the body
-                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($create_design_autofill_job_request));
+                $httpBody = \Integrations\Canva\SDK\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($create_design_autofill_job_request));
             } else {
                 $httpBody = $create_design_autofill_job_request;
             }
@@ -423,7 +423,7 @@ class AutofillApi
 
             } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the form parameters
-                $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
+                $httpBody = \Integrations\Canva\SDK\Utils::jsonEncode($formParams);
             } else {
                 // for HTTP post (form)
                 $httpBody = ObjectSerializer::buildQuery($formParams);
@@ -764,7 +764,7 @@ class AutofillApi
 
             } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the form parameters
-                $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
+                $httpBody = \Integrations\Canva\SDK\Utils::jsonEncode($formParams);
             } else {
                 // for HTTP post (form)
                 $httpBody = ObjectSerializer::buildQuery($formParams);

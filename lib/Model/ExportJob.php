@@ -59,7 +59,7 @@ class ExportJob implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'status' => '\Integrations\Canva\SDK\Model\DesignExportStatus',
+        'status' => 'string',
         'urls' => 'string[]',
         'error' => '\Integrations\Canva\SDK\Model\ExportError'
     ];
@@ -347,7 +347,7 @@ class ExportJob implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets status
      *
-     * @return \Integrations\Canva\SDK\Model\DesignExportStatus
+     * @return string
      */
     public function getStatus()
     {
@@ -357,7 +357,7 @@ class ExportJob implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets status
      *
-     * @param \Integrations\Canva\SDK\Model\DesignExportStatus $status status
+     * @param string $status status
      *
      * @return self
      */

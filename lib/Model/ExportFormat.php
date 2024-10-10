@@ -62,7 +62,7 @@ class ExportFormat implements ModelInterface, ArrayAccess, \JsonSerializable
         'export_quality' => '\Integrations\Canva\SDK\Model\ExportQuality',
         'size' => '\Integrations\Canva\SDK\Model\ExportPageSize',
         'pages' => 'int[]',
-        'quality' => '\Integrations\Canva\SDK\Model\Mp4ExportQuality',
+        'quality' => 'string',
         'height' => 'int',
         'width' => 'int',
         'lossless' => 'bool',
@@ -524,7 +524,7 @@ class ExportFormat implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets quality
      *
-     * @return \Integrations\Canva\SDK\Model\Mp4ExportQuality
+     * @return string
      */
     public function getQuality()
     {
@@ -534,7 +534,7 @@ class ExportFormat implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets quality
      *
-     * @param \Integrations\Canva\SDK\Model\Mp4ExportQuality $quality quality
+     * @param string $quality quality
      *
      * @return self
      */
