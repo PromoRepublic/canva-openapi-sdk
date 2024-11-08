@@ -46,58 +46,61 @@ class Design implements ModelInterface, ArrayAccess, \JsonSerializable
     public const DISCRIMINATOR = null;
 
     /**
-      * The original name of the model.
-      *
-      * @var string
-      */
+     * The original name of the model.
+     *
+     * @var string
+     */
     protected static $openAPIModelName = 'Design';
 
     /**
-      * Array of property to type mappings. Used for (de)serialization
-      *
-      * @var string[]
-      */
+     * Array of property to type mappings. Used for (de)serialization
+     *
+     * @var string[]
+     */
     protected static $openAPITypes = [
         'id' => 'string',
         'title' => 'string',
         'owner' => '\Integrations\Canva\SDK\Model\TeamUserSummary',
         'thumbnail' => '\Integrations\Canva\SDK\Model\Thumbnail',
-        'urls' => '\Integrations\Canva\SDK\Model\DesignLinks'
+        'urls' => '\Integrations\Canva\SDK\Model\DesignLinks',
+        'page_count' => 'int'
     ];
 
     /**
-      * Array of property to format mappings. Used for (de)serialization
-      *
-      * @var string[]
-      * @phpstan-var array<string, string|null>
-      * @psalm-var array<string, string|null>
-      */
+     * Array of property to format mappings. Used for (de)serialization
+     *
+     * @var string[]
+     * @phpstan-var array<string, string|null>
+     * @psalm-var array<string, string|null>
+     */
     protected static $openAPIFormats = [
         'id' => null,
         'title' => null,
         'owner' => null,
         'thumbnail' => null,
-        'urls' => null
+        'urls' => null,
+        'page_count' => null
     ];
 
     /**
-      * Array of nullable properties. Used for (de)serialization
-      *
-      * @var boolean[]
-      */
+     * Array of nullable properties. Used for (de)serialization
+     *
+     * @var boolean[]
+     */
     protected static array $openAPINullables = [
         'id' => false,
         'title' => false,
         'owner' => false,
         'thumbnail' => false,
-        'urls' => false
+        'urls' => false,
+        'page_count' => true
     ];
 
     /**
-      * If a nullable field gets set to null, insert it here
-      *
-      * @var boolean[]
-      */
+     * If a nullable field gets set to null, insert it here
+     *
+     * @var boolean[]
+     */
     protected array $openAPINullablesSetToNull = [];
 
     /**
@@ -183,7 +186,8 @@ class Design implements ModelInterface, ArrayAccess, \JsonSerializable
         'title' => 'title',
         'owner' => 'owner',
         'thumbnail' => 'thumbnail',
-        'urls' => 'urls'
+        'urls' => 'urls',
+        'page_count' => 'page_count',
     ];
 
     /**
@@ -196,7 +200,8 @@ class Design implements ModelInterface, ArrayAccess, \JsonSerializable
         'title' => 'setTitle',
         'owner' => 'setOwner',
         'thumbnail' => 'setThumbnail',
-        'urls' => 'setUrls'
+        'urls' => 'setUrls',
+        'page_count' => 'setPageCount'
     ];
 
     /**
@@ -209,7 +214,8 @@ class Design implements ModelInterface, ArrayAccess, \JsonSerializable
         'title' => 'getTitle',
         'owner' => 'getOwner',
         'thumbnail' => 'getThumbnail',
-        'urls' => 'getUrls'
+        'urls' => 'getUrls',
+        'page_count' => 'getPageCount'
     ];
 
     /**
@@ -274,20 +280,22 @@ class Design implements ModelInterface, ArrayAccess, \JsonSerializable
         $this->setIfExists('owner', $data ?? [], null);
         $this->setIfExists('thumbnail', $data ?? [], null);
         $this->setIfExists('urls', $data ?? [], null);
+        $this->setIfExists('page_count', $data ?? [], null);
     }
 
     /**
-    * Sets $this->container[$variableName] to the given data or to the given default Value; if $variableName
-    * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
-    * $this->openAPINullablesSetToNull array
-    *
-    * @param string $variableName
-    * @param array  $fields
-    * @param mixed  $defaultValue
-    */
+     * Sets $this->container[$variableName] to the given data or to the given default Value; if $variableName
+     * is nullable and its value is set to null in the $fields array, then mark it as "set to null" in the
+     * $this->openAPINullablesSetToNull array
+     *
+     * @param string $variableName
+     * @param array $fields
+     * @param mixed $defaultValue
+     */
     private function setIfExists(string $variableName, array $fields, $defaultValue): void
     {
-        if (self::isNullable($variableName) && array_key_exists($variableName, $fields) && is_null($fields[$variableName])) {
+        if (self::isNullable($variableName) && array_key_exists($variableName,
+                $fields) && is_null($fields[$variableName])) {
             $this->openAPINullablesSetToNull[] = $variableName;
         }
 
@@ -461,6 +469,31 @@ class Design implements ModelInterface, ArrayAccess, \JsonSerializable
 
         return $this;
     }
+
+    /**
+     * Gets page_count
+     *
+     * @return int|null
+     */
+    public function getPageCount()
+    {
+        return $this->container['page_count'];
+    }
+
+    /**
+     * Sets page_count
+     *
+     * @param int|null $page_count The number of pages in the design.
+     *
+     * @return self
+     */
+    public function setPageCount($page_count)
+    {
+        $this->container['page_count'] = $page_count;
+
+        return $this;
+    }
+
     /**
      * Returns true if offset exists. False otherwise.
      *
@@ -490,7 +523,7 @@ class Design implements ModelInterface, ArrayAccess, \JsonSerializable
      * Sets value based on offset.
      *
      * @param int|null $offset Offset
-     * @param mixed    $value  Value to be set
+     * @param mixed $value Value to be set
      *
      * @return void
      */
@@ -525,7 +558,7 @@ class Design implements ModelInterface, ArrayAccess, \JsonSerializable
     #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
-       return ObjectSerializer::sanitizeForSerialization($this);
+        return ObjectSerializer::sanitizeForSerialization($this);
     }
 
     /**
@@ -551,5 +584,3 @@ class Design implements ModelInterface, ArrayAccess, \JsonSerializable
         return json_encode(ObjectSerializer::sanitizeForSerialization($this));
     }
 }
-
-
